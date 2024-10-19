@@ -2,7 +2,7 @@
 
 ## Tools
 1. [QuiltMC Enigma Swing](https://maven.quiltmc.org/repository/release/org/quiltmc/enigma-swing/) ([Github Repo](https://github.com/QuiltMC/enigma)) - Used for demangling the .jar names
-2. [KEmulator nnmod](https://nnp.nnchan.ru/kem/) - Used for emulating the games
+2. [KEmulator nnmod](https://nnp.nnchan.ru/kem/) ([Github](https://github.com/shinovon/KEmulator)) - Used for emulating the games
 <!--May be worth looking into: https://github.com/Storyyeller/Krakatau & https://dirty-joe.com/-->
 
 ## File structure

@@ -1,5 +1,5 @@
 CLASS a CanvasProxy
-CLASS b PlayerListener
+CLASS b PlayerListenerProxy
 	METHOD playerUpdate playerUpdate (Ljavax/microedition/media/Player;Ljava/lang/String;Ljava/lang/Object;)V
 		ARG 1 player
 CLASS c AudioHandler
@@ -11,18 +11,37 @@ CLASS c AudioHandler
 	FIELD c FILE_TYPES [Ljava/lang/String;
 	METHOD a vibrate (I)V
 		ARG 0 duration
+	METHOD a keyPressed (IZ)V
 	METHOD a (IZZ)V
 		ARG 0 player_id
 		ARG 1 loop
-	METHOD a ([Ljava/lang/String;I)V
+	METHOD a loadMusicLst ([Ljava/lang/String;I)V
 		ARG 4 index
 CLASS d ClassD
-CLASS e ClassE
-CLASS f ClassF
+CLASS e Maths
+	FIELD a randomNumberState J
+	FIELD a byteArray [B
+	FIELD a intArray [I
+	METHOD a random ()I
+	METHOD b max (II)I
+		ARG 0 int1
+		ARG 1 int2
+	METHOD c min (II)I
+		ARG 0 int1
+		ARG 1 int2
+CLASS f Level1
+	FIELD b cs1File [[S
+	FIELD c cs2File [[S
+	FIELD d cs3File [[S
+	FIELD e cs4File [[S
+	FIELD f objsFile [[S
+	FIELD i colsFile [[S
+	METHOD a a ([I)Z
 CLASS g LevelAssetsMaybe
 	FIELD a graphics Ljavax/microedition/lcdui/Graphics;
 	FIELD a image Ljavax/microedition/lcdui/Image;
 	FIELD a LEVEL_COLORS [I
+	FIELD a sprites [Ld;
 	FIELD a LEVEL_SOMETHING_2 [[I
 	FIELD b LEVEL_SOMETHING_1 [I
 	FIELD c hudImage Ld;
@@ -31,41 +50,61 @@ CLASS g LevelAssetsMaybe
 CLASS h GameLogic
 	FIELD a levelId B
 	FIELD a debugInfoSomethingCount I
-	FIELD a bool1 Z
+	FIELD a loadTime J
 	FIELD a CHEATS [[B
 	FIELD b currentScreen B
 	FIELD b displayDebugInfo I
-	FIELD b bool2 Z
 	FIELD b gameVars2 [I
-	FIELD c bool3 Z
-	FIELD d bool4 Z
-	FIELD e bool5 Z
+	FIELD b mobsFile [[S
+	FIELD c colsFile [[S
+	FIELD c LEVEL_SOMETHIGNS2 [[[S
+	FIELD d colGridFile [S
+	FIELD d walls [[S
+	FIELD d LEVEL_SOMETHINGS3 [[[S
+	FIELD e leftPressed Z
 	FIELD e cheatCharactersEntered [I
-	FIELD f bool6 Z
+	FIELD f rightPressed Z
+	FIELD f objsFIleTHingy3 [I
+	FIELD g objsFIleThingy0 [I
+	FIELD g objsFile [[S
+	FIELD h objsFileThingy1 [I
 	FIELD i wallsCount S
-	FIELD p bool7 Z
-	FIELD q bool8 Z
+	FIELD i objsFileThingy2 [I
+	FIELD j mlevelIdFile [[S
+	FIELD m LEVEL_SOMETHINGS [S
+	FIELD o loadBonusStage Z
+	FIELD p downPressed Z
+	FIELD q leftRudderPressed Z
 	FIELD r debugInfoUnused I
-	FIELD r bool9 Z
+	FIELD r upPressed Z
 	FIELD s debugInfoStringId I
 	METHOD a destroy ()V
 	METHOD a switchScreen (B)V
 		ARG 0 screen_id
 	METHOD a load (I)V
 		ARG 0 level
-	METHOD a (Ljava/lang/String;I)[[S
+	METHOD a readBinary (Ljava/lang/String;I)[[S
 		ARG 8 bytes
 		ARG 9 byteStream
 		ARG 10 stream_length
 	METHOD a init_specials (ZI)V
-	METHOD a readLevel_UNSURE ([B)V
+	METHOD a readLevelData ([B)V
+		ARG 0 levelData
 	METHOD b loadExtra (I)V
 		ARG 0 level
 	METHOD c TriggerCheat (I)V
 	METHOD c flipperCollisions ([I)Z
+	METHOD g run ()V
 CLASS i ClassI
-CLASS j ClassJ
-CLASS k ClassK
+	FIELD a banimFIleContents [[S
+CLASS j Level2
+	FIELD b objsFile [[S
+	FIELD e colsFile [[S
+	METHOD a a ([I)Z
+CLASS k Level3
+	FIELD b objsFile [[S
+	FIELD e colsFile [[S
+	METHOD a a ([I)Z
 CLASS l ResourceLoader
 	FIELD a file_length Ljava/lang/String;
 	FIELD a midlet Ljavax/microedition/midlet/MIDlet;
@@ -74,7 +113,7 @@ CLASS l ResourceLoader
 	METHOD a loadImage (Ljava/lang/String;)Ljavax/microedition/lcdui/Image;
 		ARG 0 file_name
 		ARG 4 file_length
-	METHOD a readImage (Ljava/lang/String;)[B
+	METHOD a read (Ljava/lang/String;)[B
 		ARG 0 file_name
 	METHOD a readFile (Ljava/lang/String;I)[B
 		ARG 0 file_name
@@ -89,19 +128,28 @@ CLASS l ResourceLoader
 		ARG 0 lmidlet
 		ARG 6 file
 	METHOD b load (Ljava/lang/String;)[B
-CLASS m ClassM
+CLASS m Level4
+	FIELD c objsFile [[S
+	FIELD f colsFile [[S
+	METHOD a a ([I)Z
 CLASS n HighScoreInputHandler
+	METHOD a keyPressed (II)I
 CLASS o ClassO
 	FIELD a upsell_url_trimmed Ljava/lang/String;
 	FIELD a stringBuffer1 Ljava/lang/StringBuffer;
 	FIELD a random Ljava/util/Random;
+	FIELD a graphics2 Ljavax/microedition/lcdui/Graphics;
+	FIELD a image Ljavax/microedition/lcdui/Image;
 	FIELD a highscoreNames [B
 	FIELD a gameVars1 [I
 	FIELD b stringBuffer2 Ljava/lang/StringBuffer;
+	FIELD b graphics Ljavax/microedition/lcdui/Graphics;
+	FIELD b menuStrings2 [B
 	FIELD b gameVars2 [I
 	FIELD c menuId I
 	FIELD c menuStrings [B
 	FIELD c highscoreScores [I
+	FIELD e languageId I
 	FIELD x upsellMode I
 	METHOD a (II)I
 		ARG 6 midlet_version
@@ -114,7 +162,11 @@ CLASS o ClassO
 		ARG 13 demomode_enabled_trimmed
 		ARG 16 demomode_active
 		ARG 17 demomode_url_trimmed
+	METHOD a paint (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
 	METHOD a (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;IIIIIII)V
 		ARG 0 graphics
 	METHOD a (Lp;)V
 		ARG 0 main_class
@@ -123,16 +175,24 @@ CLASS o ClassO
 		ARG 0 reset_scores
 	METHOD c loadMenuStrings ()V
 CLASS p MainClass
-	FIELD a fps_counter_last_time J
+	FIELD a fpsCounterLastTime J
 	FIELD a projectMain LProjectMain;
 	FIELD a demoUrl Ljava/lang/String;
-	FIELD b last_render_time J
-	FIELD c ExceptionOccured I
-	FIELD g display_fps_counter Z
+	FIELD a splashImage Ljavax/microedition/lcdui/Image;
+	FIELD a leftPressed Z
+	FIELD a MUSIC_NAMES [Ljava/lang/String;
+	FIELD b lastRenderTime J
+	FIELD b rightPressed Z
+	FIELD c exceptionOccursed I
+	FIELD c upPressed Z
+	FIELD d downPressed Z
+	FIELD e leftRudderPressed Z
+	FIELD f splashId I
+	FIELD g displayFpsCounter Z
 	FIELD h demoEnabled Z
 	FIELD i demoStaticEnabled Z
-	FIELD m fps_counter_frames I
-	FIELD n fps_counter I
+	FIELD m fpsCounterFrameCount I
+	FIELD n fpsCounter I
 	METHOD <init> (LProjectMain;)V
 		ARG 1 projectMain
 	METHOD a startThread ()V
@@ -141,12 +201,20 @@ CLASS p MainClass
 	METHOD keyPressed keyPressed (I)V
 		ARG 1 keyCode
 	METHOD keyReleased keyReleased (I)V
+		ARG 1 keyCode
 	METHOD keyRepeated keyRepeated (I)V
+		ARG 1 keyCode
 	METHOD paint paint (Ljavax/microedition/lcdui/Graphics;)V
 		ARG 1 graphics
 	METHOD pointerDragged pointerDragged (II)V
+		ARG 1 x
+		ARG 2 y
 	METHOD pointerPressed pointerPressed (II)V
+		ARG 1 x
+		ARG 2 y
 	METHOD pointerReleased pointerReleased (II)V
+		ARG 1 x
+		ARG 2 y
 	METHOD run run ()V
 	METHOD showNotify showNotify ()V
 CLASS ProjectMain ProjectMain
