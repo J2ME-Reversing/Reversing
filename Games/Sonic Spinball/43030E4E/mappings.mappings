@@ -1,13 +1,141 @@
+CLASS a CanvasProxy
+CLASS b PlayerListener
+	METHOD playerUpdate playerUpdate (Ljavax/microedition/media/Player;Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 1 player
+CLASS c AudioHandler
+	FIELD a midlet Ljavax/microedition/midlet/MIDlet;
+	FIELD a fileNames [Ljava/lang/String;
+	FIELD a musicPlayers [Ljavax/microedition/media/Player;
+	FIELD b FILE_EXTENSIONS [Ljava/lang/String;
+	FIELD c vibrationEnabled Z
+	FIELD c FILE_TYPES [Ljava/lang/String;
+	METHOD a vibrate (I)V
+		ARG 0 duration
+	METHOD a (IZZ)V
+		ARG 0 player_id
+		ARG 1 loop
+	METHOD a ([Ljava/lang/String;I)V
+		ARG 4 index
+CLASS d ClassD
+CLASS e ClassE
+CLASS f ClassF
+CLASS g LevelAssetsMaybe
+	FIELD a graphics Ljavax/microedition/lcdui/Graphics;
+	FIELD a image Ljavax/microedition/lcdui/Image;
+	FIELD a LEVEL_COLORS [I
+	FIELD a LEVEL_SOMETHING_2 [[I
+	FIELD b LEVEL_SOMETHING_1 [I
+	FIELD c hudImage Ld;
+	METHOD b (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+CLASS h GameLogic
+	FIELD a levelId B
+	FIELD a debugInfoSomethingCount I
+	FIELD a bool1 Z
+	FIELD a CHEATS [[B
+	FIELD b currentScreen B
+	FIELD b displayDebugInfo I
+	FIELD b bool2 Z
+	FIELD b gameVars2 [I
+	FIELD c bool3 Z
+	FIELD d bool4 Z
+	FIELD e bool5 Z
+	FIELD e cheatCharactersEntered [I
+	FIELD f bool6 Z
+	FIELD i wallsCount S
+	FIELD p bool7 Z
+	FIELD q bool8 Z
+	FIELD r debugInfoUnused I
+	FIELD r bool9 Z
+	FIELD s debugInfoStringId I
+	METHOD a destroy ()V
+	METHOD a switchScreen (B)V
+		ARG 0 screen_id
+	METHOD a load (I)V
+		ARG 0 level
+	METHOD a (Ljava/lang/String;I)[[S
+		ARG 8 bytes
+		ARG 9 byteStream
+		ARG 10 stream_length
+	METHOD a init_specials (ZI)V
+	METHOD a readLevel_UNSURE ([B)V
+	METHOD b loadExtra (I)V
+		ARG 0 level
+	METHOD c TriggerCheat (I)V
+	METHOD c flipperCollisions ([I)Z
+CLASS i ClassI
+CLASS j ClassJ
+CLASS k ClassK
+CLASS l ResourceLoader
+	FIELD a file_length Ljava/lang/String;
+	FIELD a midlet Ljavax/microedition/midlet/MIDlet;
+	METHOD a getFileLengthByName (Ljava/lang/String;)I
+		ARG 0 name
+	METHOD a loadImage (Ljava/lang/String;)Ljavax/microedition/lcdui/Image;
+		ARG 0 file_name
+		ARG 4 file_length
+	METHOD a readImage (Ljava/lang/String;)[B
+		ARG 0 file_name
+	METHOD a readFile (Ljava/lang/String;I)[B
+		ARG 0 file_name
+		ARG 1 file_length
+		ARG 4 stream
+		ARG 5 stream
+	METHOD a saveRecord (Ljava/lang/String;[BI)Z
+		ARG 0 name
+		ARG 1 bytes
+		ARG 2 length
+	METHOD a (Ljavax/microedition/midlet/MIDlet;)V
+		ARG 0 lmidlet
+		ARG 6 file
+	METHOD b load (Ljava/lang/String;)[B
+CLASS m ClassM
+CLASS n HighScoreInputHandler
+CLASS o ClassO
+	FIELD a upsell_url_trimmed Ljava/lang/String;
+	FIELD a stringBuffer1 Ljava/lang/StringBuffer;
+	FIELD a random Ljava/util/Random;
+	FIELD a highscoreNames [B
+	FIELD a gameVars1 [I
+	FIELD b stringBuffer2 Ljava/lang/StringBuffer;
+	FIELD b gameVars2 [I
+	FIELD c menuId I
+	FIELD c menuStrings [B
+	FIELD c highscoreScores [I
+	FIELD x upsellMode I
+	METHOD a (II)I
+		ARG 6 midlet_version
+	METHOD a (III)V
+		ARG 0 new_menu_id
+		ARG 9 upsell_function
+		ARG 10 upsell_function_trimmed
+		ARG 11 upsell_url
+		ARG 12 demomode_enabled
+		ARG 13 demomode_enabled_trimmed
+		ARG 16 demomode_active
+		ARG 17 demomode_url_trimmed
+	METHOD a (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+	METHOD a (Lp;)V
+		ARG 0 main_class
+		ARG 1 i
+	METHOD a loadHighscoreVariables (Z)V
+		ARG 0 reset_scores
+	METHOD c loadMenuStrings ()V
 CLASS p MainClass
 	FIELD a fps_counter_last_time J
-	FIELD a project_main LProjectMain;
+	FIELD a projectMain LProjectMain;
+	FIELD a demoUrl Ljava/lang/String;
 	FIELD b last_render_time J
 	FIELD c ExceptionOccured I
 	FIELD g display_fps_counter Z
+	FIELD h demoEnabled Z
+	FIELD i demoStaticEnabled Z
 	FIELD m fps_counter_frames I
 	FIELD n fps_counter I
 	METHOD <init> (LProjectMain;)V
 		ARG 1 projectMain
+	METHOD a startThread ()V
 	METHOD b destroy ()V
 	METHOD hideNotify hideNotify ()V
 	METHOD keyPressed keyPressed (I)V
@@ -21,89 +149,9 @@ CLASS p MainClass
 	METHOD pointerReleased pointerReleased (II)V
 	METHOD run run ()V
 	METHOD showNotify showNotify ()V
-CLASS a CanvasProxy
-CLASS b PlayerListener
-	METHOD playerUpdate playerUpdate (Ljavax/microedition/media/Player;Ljava/lang/String;Ljava/lang/Object;)V
-		ARG 1 player
-CLASS ProjectMain
+CLASS ProjectMain ProjectMain
 	FIELD a display Ljavax/microedition/lcdui/Display;
-	FIELD a main_class Lp;
+	FIELD a mainClass Lp;
 	METHOD destroyApp destroyApp (Z)V
 	METHOD pauseApp pauseApp ()V
 	METHOD startApp startApp ()V
-CLASS c AudioHandler
-	FIELD a int1 I
-	FIELD a omidlet Ljavax/microedition/midlet/MIDlet;
-	FIELD a array_1 [B
-CLASS g
-	FIELD a LEVEL_COLORS [I
-CLASS h GameLogic
-	FIELD a level_number B
-	FIELD a debugStatistic1 I
-	FIELD a bool1 Z
-	FIELD a CHEATS [[B
-	FIELD b CONDITION_THING_DEBUG B
-	FIELD b displayDebugInfo I
-	FIELD b bool2 Z
-	FIELD b game_vars_2 [I
-	FIELD c bool3 Z
-	FIELD d bool4 Z
-	FIELD e bool5 Z
-	FIELD e cheats_characters_entered [I
-	FIELD f bool6 Z
-	FIELD i walls_count S
-	FIELD p bool7 Z
-	FIELD q bool8 Z
-	FIELD r debug_info_unused I
-	FIELD r bool9 Z
-	FIELD s debug_info_string_id I
-	METHOD a destroy ()V
-	METHOD a load (I)V
-		ARG 0 level
-	METHOD a (Ljava/lang/String;I)[[S
-		ARG 8 bytes
-		ARG 9 byteStream
-		ARG 10 stream_length
-	METHOD a init_specials (ZI)V
-	METHOD a readLevel_UNSURE ([B)V
-	METHOD b loadExtra (I)V
-		ARG 0 level
-	METHOD c TriggerCheat (I)V
-	METHOD c flipperCollisions ([I)Z
-CLASS l ResourceLoader
-	FIELD a file_length Ljava/lang/String;
-	FIELD a midlet Ljavax/microedition/midlet/MIDlet;
-	METHOD a get_file_length_by_name (Ljava/lang/String;)I
-		ARG 0 name
-	METHOD a readBinary (Ljava/lang/String;)[B
-	METHOD a saveBinary_UNSURE (Ljava/lang/String;[BI)Z
-	METHOD a (Ljavax/microedition/midlet/MIDlet;)V
-		ARG 0 lmidlet
-		ARG 6 file
-	METHOD b load (Ljava/lang/String;)[B
-CLASS n HighScoreInputHandler
-CLASS o
-	FIELD a stringBuffer1 Ljava/lang/StringBuffer;
-	FIELD a random Ljava/util/Random;
-	FIELD a highscore_names [B
-	FIELD a game_vars_1 [I
-	FIELD b stringBuffer2 Ljava/lang/StringBuffer;
-	FIELD b game_vars_2 [I
-	FIELD c menu_id I
-	FIELD c menu_strings [B
-	FIELD c highscore_scores [I
-	METHOD a (II)I
-		ARG 6 midlet_version
-	METHOD a (III)V
-		ARG 9 upsell_function
-		ARG 11 upsell_url
-		ARG 12 demomode_enabled
-		ARG 16 demomode_active
-	METHOD a (Ljavax/microedition/lcdui/Graphics;II)V
-		ARG 0 graphics
-	METHOD a (Lp;)V
-		ARG 0 main_class
-		ARG 1 i
-	METHOD a loadHighscoreVariables (Z)V
-		ARG 0 reset_scores
-	METHOD c loadMenuStrings ()V

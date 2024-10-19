@@ -11,3 +11,9 @@ Games/$game_name/$version_name/ - Games are stored under $game_name and $version
     src/ - A plce to temporarily store the exported decompilation, not published to github.
     contents/ - A place to store the extracted contents of the .jar, not published to github.
     mappings.mappings - A file which contains the mappings which you can import into Enigma.
+
+## Style guidelines.
+* Classes - PascalCase
+* Methods - camelCase
+* Variables - snake_case
+* Constants - UPPER_SNAKE_CASE
