@@ -1,0 +1,1 @@
+TODO: Put a list of game demangling statuses here.

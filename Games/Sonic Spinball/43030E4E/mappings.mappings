@@ -1,0 +1,109 @@
+CLASS p MainClass
+	FIELD a fps_counter_last_time J
+	FIELD a project_main LProjectMain;
+	FIELD b last_render_time J
+	FIELD c ExceptionOccured I
+	FIELD g display_fps_counter Z
+	FIELD m fps_counter_frames I
+	FIELD n fps_counter I
+	METHOD <init> (LProjectMain;)V
+		ARG 1 projectMain
+	METHOD b destroy ()V
+	METHOD hideNotify hideNotify ()V
+	METHOD keyPressed keyPressed (I)V
+		ARG 1 keyCode
+	METHOD keyReleased keyReleased (I)V
+	METHOD keyRepeated keyRepeated (I)V
+	METHOD paint paint (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD pointerDragged pointerDragged (II)V
+	METHOD pointerPressed pointerPressed (II)V
+	METHOD pointerReleased pointerReleased (II)V
+	METHOD run run ()V
+	METHOD showNotify showNotify ()V
+CLASS a CanvasProxy
+CLASS b PlayerListener
+	METHOD playerUpdate playerUpdate (Ljavax/microedition/media/Player;Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 1 player
+CLASS ProjectMain
+	FIELD a display Ljavax/microedition/lcdui/Display;
+	FIELD a main_class Lp;
+	METHOD destroyApp destroyApp (Z)V
+	METHOD pauseApp pauseApp ()V
+	METHOD startApp startApp ()V
+CLASS c AudioHandler
+	FIELD a int1 I
+	FIELD a omidlet Ljavax/microedition/midlet/MIDlet;
+	FIELD a array_1 [B
+CLASS g
+	FIELD a LEVEL_COLORS [I
+CLASS h GameLogic
+	FIELD a level_number B
+	FIELD a debugStatistic1 I
+	FIELD a bool1 Z
+	FIELD a CHEATS [[B
+	FIELD b CONDITION_THING_DEBUG B
+	FIELD b displayDebugInfo I
+	FIELD b bool2 Z
+	FIELD b game_vars_2 [I
+	FIELD c bool3 Z
+	FIELD d bool4 Z
+	FIELD e bool5 Z
+	FIELD e cheats_characters_entered [I
+	FIELD f bool6 Z
+	FIELD i walls_count S
+	FIELD p bool7 Z
+	FIELD q bool8 Z
+	FIELD r debug_info_unused I
+	FIELD r bool9 Z
+	FIELD s debug_info_string_id I
+	METHOD a destroy ()V
+	METHOD a load (I)V
+		ARG 0 level
+	METHOD a (Ljava/lang/String;I)[[S
+		ARG 8 bytes
+		ARG 9 byteStream
+		ARG 10 stream_length
+	METHOD a init_specials (ZI)V
+	METHOD a readLevel_UNSURE ([B)V
+	METHOD b loadExtra (I)V
+		ARG 0 level
+	METHOD c TriggerCheat (I)V
+	METHOD c flipperCollisions ([I)Z
+CLASS l ResourceLoader
+	FIELD a file_length Ljava/lang/String;
+	FIELD a midlet Ljavax/microedition/midlet/MIDlet;
+	METHOD a get_file_length_by_name (Ljava/lang/String;)I
+		ARG 0 name
+	METHOD a readBinary (Ljava/lang/String;)[B
+	METHOD a saveBinary_UNSURE (Ljava/lang/String;[BI)Z
+	METHOD a (Ljavax/microedition/midlet/MIDlet;)V
+		ARG 0 lmidlet
+		ARG 6 file
+	METHOD b load (Ljava/lang/String;)[B
+CLASS n HighScoreInputHandler
+CLASS o
+	FIELD a stringBuffer1 Ljava/lang/StringBuffer;
+	FIELD a random Ljava/util/Random;
+	FIELD a highscore_names [B
+	FIELD a game_vars_1 [I
+	FIELD b stringBuffer2 Ljava/lang/StringBuffer;
+	FIELD b game_vars_2 [I
+	FIELD c menu_id I
+	FIELD c menu_strings [B
+	FIELD c highscore_scores [I
+	METHOD a (II)I
+		ARG 6 midlet_version
+	METHOD a (III)V
+		ARG 9 upsell_function
+		ARG 11 upsell_url
+		ARG 12 demomode_enabled
+		ARG 16 demomode_active
+	METHOD a (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+	METHOD a (Lp;)V
+		ARG 0 main_class
+		ARG 1 i
+	METHOD a loadHighscoreVariables (Z)V
+		ARG 0 reset_scores
+	METHOD c loadMenuStrings ()V

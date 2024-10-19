@@ -1,0 +1,7 @@
+Tools/
+OriginalDumps/
+
+/Games/*/*/*.jar 
+/Games/*/*/src
+/Games/*/*/contents
+/Games/*/*/kemulator.cfg
