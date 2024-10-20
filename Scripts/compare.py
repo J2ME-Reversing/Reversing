@@ -1,8 +1,9 @@
 from zipfile import ZipFile
 import os
 import binascii
+import sys
 
-directory = "./OriginalDumps/Sonic the Hedgehog 2 Dash"
+directory = sys.argv[1]
 
 dumps = []
 for file_name in os.listdir(directory):

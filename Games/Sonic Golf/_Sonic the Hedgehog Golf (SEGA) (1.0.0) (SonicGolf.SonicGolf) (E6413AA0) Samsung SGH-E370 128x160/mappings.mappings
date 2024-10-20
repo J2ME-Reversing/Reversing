@@ -1,0 +1,61 @@
+CLASS Coral/crlCanvas Coral/crlCanvas
+	METHOD hideNotify hideNotify ()V
+	METHOD keyPressed keyPressed (I)V
+		ARG 1 integer
+	METHOD keyReleased keyReleased (I)V
+		ARG 1 integer
+	METHOD keyRepeated keyRepeated (I)V
+		ARG 1 integer
+	METHOD run run ()V
+	METHOD showNotify showNotify ()V
+CLASS SonicGolf/cObjects SonicGolf/cObjects
+	CLASS cMarker cMarker
+CLASS Coral/Util/crlBinArray Coral/Util/crlBinArray
+CLASS SonicGolf/cSonicGolfspng SonicGolf/cSonicGolfspng
+CLASS SonicGolf/SonicGolf SonicGolf/SonicGolf
+	METHOD destroyApp destroyApp (Z)V
+		ARG 1 boolean1
+	METHOD pauseApp pauseApp ()V
+	METHOD startApp startApp ()V
+CLASS Coral/UI/crlUI Coral/UI/crlUI
+CLASS Coral/Util/crlInt Coral/Util/crlInt
+	METHOD <init> (I)V
+		ARG 1 integer
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object
+CLASS SonicGolf/cSprite SonicGolf/cSprite
+	METHOD <init> (IIIIIII)V
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+		ARG 6 integer6
+		ARG 7 integer7
+	CLASS cAnimData cAnimData
+CLASS SonicGolf/cPlayer SonicGolf/cPlayer
+	METHOD <init> (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+CLASS Coral/Graphics2D/crlImagePacked Coral/Graphics2D/crlImagePacked
+CLASS SonicGolf/cCourse SonicGolf/cCourse
+CLASS SonicGolf/cFP SonicGolf/cFP
+CLASS Coral/Util/crlString Coral/Util/crlString
+	METHOD <init> ([BII)V
+		ARG 1 arr
+		ARG 2 integer2
+		ARG 3 integer3
+CLASS SonicGolf/cCanvas SonicGolf/cCanvas
+	METHOD <init> (LSonicGolf/SonicGolf;)V
+		ARG 1 sonicGolf
+CLASS Coral/Util/cCacheProcObj Coral/Util/cCacheProcObj
+CLASS Coral/Util/cResProcessObj Coral/Util/cResProcessObj
+CLASS Coral/Util/crlManagerBase Coral/Util/crlManagerBase
+CLASS SonicGolf/cBall SonicGolf/cBall
+CLASS Coral/Util/cStringLoaderProcObj Coral/Util/cStringLoaderProcObj
+CLASS SonicGolf/cUI SonicGolf/cUI
+	METHOD <init> (LSonicGolf/cCanvas;)V
+		ARG 1 cCanvas
+CLASS Coral/Graphics2D/crlFont Coral/Graphics2D/crlFont
+CLASS Coral/Util/crlUtil Coral/Util/crlUtil
+CLASS Coral/Util/crlResourceManager Coral/Util/crlResourceManager

@@ -1,0 +1,2684 @@
+CLASS Coral/Debug/crlProfiler Coral/Debug/crlProfiler
+	FIELD MAX_PROFILES MAX_PROFILES I
+	FIELD gProfileCnvsUpdate gProfileCnvsUpdate I
+	FIELD gProfilePaint gProfilePaint I
+	FIELD gProfileRun gProfileRun I
+	METHOD add add (Ljava/lang/String;)V
+		ARG 0 string
+	METHOD close close ()V
+	METHOD disable disable ()V
+	METHOD disableBackground disableBackground ()V
+	METHOD enable enable ()V
+	METHOD enableBackground enableBackground ()V
+	METHOD open open ()V
+	METHOD pause pause (I)V
+		ARG 0 integer
+	METHOD report report (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD reset reset ()V
+	METHOD setColour setColour (I)V
+		ARG 0 integer
+	METHOD setColourError setColourError (I)V
+		ARG 0 integer
+	METHOD setEnd setEnd (I)V
+		ARG 0 integer
+	METHOD setName setName (Ljava/lang/String;I)V
+		ARG 0 string
+		ARG 1 integer
+	METHOD setStart setStart (I)V
+		ARG 0 integer
+	METHOD setXpos setXpos (I)V
+		ARG 0 integer
+	METHOD setYpos setYpos (I)V
+		ARG 0 integer
+	METHOD start start (I)V
+		ARG 0 integer
+	METHOD stop stop (I)V
+		ARG 0 integer
+	METHOD value value (IJ)V
+		ARG 0 integer
+		ARG 1 long2
+CLASS Coral/Util/crlBinArray Coral/Util/crlBinArray
+	FIELD _mArray _mArray [B
+	FIELD _mLength _mLength I
+	FIELD _mOffset _mOffset I
+	METHOD getArray getArray ()[B
+	METHOD getLength getLength ()I
+	METHOD getOffset getOffset ()I
+	METHOD set set ([BII)V
+		ARG 1 arr
+		ARG 2 integer2
+		ARG 3 integer3
+CLASS SonicGolf/SonicGolf SonicGolf/SonicGolf
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD _gmCnvs _gmCnvs LSonicGolf/cCanvas;
+	FIELD _gmMdlt _gmMdlt LSonicGolf/SonicGolf;
+	METHOD destroyApp destroyApp (Z)V
+		ARG 1 boolean1
+	METHOD pauseApp pauseApp ()V
+	METHOD quitApp quitApp ()V
+	METHOD startApp startApp ()V
+CLASS Coral/UI/crlUI Coral/UI/crlUI
+	FIELD _AYS_NO _AYS_NO I
+	FIELD _AYS_YES _AYS_YES I
+	FIELD _mCanvas _mCanvas LCoral/crlCanvas;
+	FIELD _mCreatedString _mCreatedString [B
+	FIELD _mEnableAudio _mEnableAudio [Ljava/lang/String;
+	FIELD _mExit _mExit [Ljava/lang/String;
+	FIELD _mLanguage _mLanguage [Ljava/lang/String;
+	FIELD _mLoading _mLoading [Ljava/lang/String;
+	FIELD _mNo _mNo [Ljava/lang/String;
+	FIELD _mNumber _mNumber [B
+	FIELD _mSaveFont _mSaveFont I
+	FIELD _mSelect _mSelect [Ljava/lang/String;
+	FIELD _mSplashTimer _mSplashTimer I
+	FIELD _mUIdefs _mUIdefs [I
+	FIELD _mUIdown _mUIdown Z
+	FIELD _mUIdsgnCT _mUIdsgnCT [I
+	FIELD _mUIdsgnCTm _mUIdsgnCTm [B
+	FIELD _mUIdsgnFlash _mUIdsgnFlash I
+	FIELD _mUIdsgn _mUIdsgn I
+	FIELD _mUIdsgnLayout _mUIdsgnLayout [[I
+	FIELD _mUIdsgnSave _mUIdsgnSave I
+	FIELD _mUIdsgnXc _mUIdsgnXc [B
+	FIELD _mUIdsgnXo _mUIdsgnXo [I
+	FIELD _mUIheightCent _mUIheightCent I
+	FIELD _mUIheight _mUIheight I
+	FIELD _mUIiLine _mUIiLine I
+	FIELD _mUIlastOption _mUIlastOption I
+	FIELD _mUIoption _mUIoption I
+	FIELD _mUIoptionSave _mUIoptionSave I
+	FIELD _mUIoptionStore _mUIoptionStore [I
+	FIELD _mUIup _mUIup Z
+	FIELD _mUIwidthCent _mUIwidthCent I
+	FIELD _mUIwidth _mUIwidth I
+	FIELD _mWorkBuffer _mWorkBuffer [B
+	FIELD _mYes _mYes [Ljava/lang/String;
+	FIELD gCreditScrollSpeed gCreditScrollSpeed I
+	FIELD gDefaultWrappedTextWidth gDefaultWrappedTextWidth I
+	FIELD gUIfontLarge gUIfontLarge I
+	FIELD gUIfontMedium gUIfontMedium I
+	FIELD gUIfontSmall gUIfontSmall I
+	FIELD gUIfooter gUIfooter I
+	FIELD gUIheader gUIheader I
+	FIELD gUImiddle gUImiddle I
+	FIELD gUInullImage gUInullImage I
+	FIELD mCurrentFont mCurrentFont I
+	FIELD mFont mFont [LCoral/Graphics2D/crlFont;
+	FIELD mLocale mLocale I
+	FIELD mUImaxOpt mUImaxOpt I
+	FIELD sin_table sin_table [S
+	METHOD _actionUI _actionUI (I)V
+		ARG 1 integer
+	METHOD _resetColours _resetColours ()V
+	METHOD _restoreDesign _restoreDesign ()V
+	METHOD _saveDesign _saveDesign ()V
+	METHOD _setUIDesign _setUIDesign (I)Z
+		ARG 1 integer
+	METHOD _updateUIscrollers _updateUIscrollers ()V
+	METHOD close close ()V
+	METHOD drawForeground drawForeground (Ljavax/microedition/lcdui/Graphics;I)V
+		ARG 1 graphics
+		ARG 2 integer
+	METHOD drawNumber drawNumber (Ljavax/microedition/lcdui/Graphics;IIII)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+	METHOD drawOptions drawOptions (Ljavax/microedition/lcdui/Graphics;I)V
+		ARG 1 graphics
+		ARG 2 integer
+	METHOD drawPanel drawPanel (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD drawScrollText drawScrollText (Ljavax/microedition/lcdui/Graphics;[BIIII)V
+		ARG 1 graphics
+		ARG 2 arr
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+		ARG 6 integer6
+	METHOD drawSurround drawSurround (Ljavax/microedition/lcdui/Graphics;)I
+		ARG 1 graphics
+	METHOD drawTextCentered drawTextCentered (Ljavax/microedition/lcdui/Graphics;LCoral/Util/crlString;II)V
+		ARG 1 graphics
+		ARG 2 crlString
+		ARG 3 integer3
+		ARG 4 integer4
+	METHOD getCurrentOptionData getCurrentOptionData (I)I
+		ARG 1 integer
+	METHOD getFontHeight getFontHeight (I)I
+		ARG 1 integer
+	METHOD getMarginX getMarginX ()I
+	METHOD getMarginY getMarginY ()I
+	METHOD getMode getMode ()I
+	METHOD getRenderMode getRenderMode ()I
+	METHOD getSKNegativeX getSKNegativeX (I)I
+		ARG 1 integer
+	METHOD getSKNegativeX getSKNegativeX (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;)I
+		ARG 1 graphics
+		ARG 2 string
+	METHOD getSKPositiveX getSKPositiveX (I)I
+		ARG 1 integer
+	METHOD getSKPositiveX getSKPositiveX (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;)I
+		ARG 1 graphics
+		ARG 2 string
+	METHOD getSKfooterY getSKfooterY ()I
+	METHOD getWidth getWidth (LCoral/Util/crlString;)I
+		ARG 1 crlString
+	METHOD open open (LCoral/crlCanvas;I[[II)V
+		ARG 1 crlCanvas
+		ARG 2 integer2
+		ARG 3 arr
+		ARG 4 integer4
+	METHOD popFont popFont ()V
+	METHOD popMode popMode ()V
+	METHOD postLoadSetup postLoadSetup ()V
+	METHOD pushFont pushFont ()V
+	METHOD pushMode pushMode (I)V
+		ARG 1 integer
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;I)V
+		ARG 1 graphics
+		ARG 2 integer
+	METHOD setFontSize setFontSize (I)V
+		ARG 1 integer
+	METHOD setMode setMode (I)V
+		ARG 1 integer
+	METHOD stdAudioEnable stdAudioEnable (Ljavax/microedition/lcdui/Graphics;I)I
+		ARG 1 graphics
+		ARG 2 integer
+	METHOD stdLanguage stdLanguage (Ljavax/microedition/lcdui/Graphics;II)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD stdLoading stdLoading (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;Ljavax/microedition/lcdui/Image;IIB)Z
+		ARG 1 graphics
+		ARG 2 image2
+		ARG 3 image3
+		ARG 4 integer4
+		ARG 5 integer5
+		ARG 6 byte6
+	METHOD stdSplash stdSplash (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIIZ)Z
+		ARG 1 graphics
+		ARG 2 image
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+		ARG 6 boolean6
+	METHOD update update (I)V
+		ARG 1 integer
+	METHOD updateUI updateUI (I)V
+		ARG 1 integer
+	METHOD usrActionUI usrActionUI (I)V
+		ARG 1 integer
+	METHOD usrDrawOptions usrDrawOptions (Ljavax/microedition/lcdui/Graphics;[II)V
+		ARG 1 graphics
+		ARG 2 arr
+		ARG 3 integer
+	METHOD usrDrawPanel usrDrawPanel (Ljavax/microedition/lcdui/Graphics;I)V
+		ARG 1 graphics
+		ARG 2 integer
+	CLASS gUIOffset gUIOffset
+		FIELD FontAdj FontAdj I
+		FIELD FootFontColour FootFontColour I
+		FIELD HeadFontColour HeadFontColour I
+		FIELD LastItem LastItem I
+		FIELD LogoHiColour LogoHiColour I
+		FIELD LogoLoColour LogoLoColour I
+		FIELD LogoShadow LogoShadow I
+		FIELD MarginX MarginX I
+		FIELD MarginY MarginY I
+		FIELD MaxOptions MaxOptions I
+		FIELD MenuBackColour MenuBackColour I
+		FIELD MenuFontColour MenuFontColour I
+		FIELD MenuFontHiColour MenuFontHiColour I
+	CLASS uiCBar uiCBar
+		FIELD NONE NONE I
+		FIELD NOnVE NOnVE I
+		FIELD NOpVE NOpVE I
+		FIELD OPTION OPTION I
+	CLASS uiDsgnFlags uiDsgnFlags
+		FIELD dfPauseScreen dfPauseScreen I
+		FIELD dfRenderModeAlways dfRenderModeAlways I
+		FIELD dfRenderMode dfRenderMode I
+		FIELD dfRenderModeOnce dfRenderModeOnce I
+		FIELD dfResetOption dfResetOption I
+		FIELD dfTrans dfTrans I
+		FIELD dfTransMovePanel dfTransMovePanel I
+		FIELD dfTransScrollHoriz dfTransScrollHoriz I
+		FIELD dfTransScrollVert dfTransScrollVert I
+	CLASS uiDsgnStrt uiDsgnStrt
+		FIELD dsExtra dsExtra I
+		FIELD dsFlags dsFlags I
+		FIELD dsMode dsMode I
+		FIELD dsNumOptions dsNumOptions I
+		FIELD dsOptionAction dsOptionAction I
+		FIELD dsOptionControl dsOptionControl I
+		FIELD dsOptionElements dsOptionElements I
+		FIELD dsOptionImage dsOptionImage I
+		FIELD dsOptionList dsOptionList I
+		FIELD dsOptionStyle dsOptionStyle I
+		FIELD dsOptionText dsOptionText I
+		FIELD dsSKnegActn dsSKnegActn I
+		FIELD dsSKneg dsSKneg I
+		FIELD dsSKposActn dsSKposActn I
+		FIELD dsSKpos dsSKpos I
+		FIELD dsTitle dsTitle I
+	CLASS uiLocaleFlags uiLocaleFlags
+		FIELD EFIGS EFIGS I
+		FIELD ENGLISH ENGLISH I
+		FIELD FRENCH FRENCH I
+		FIELD GERMAN GERMAN I
+		FIELD ITALIAN ITALIAN I
+		FIELD SPANISH SPANISH I
+	CLASS uiOption uiOption
+		FIELD CREDITS CREDITS I
+		FIELD LIST LIST I
+		FIELD LISTUP LISTUP I
+		FIELD SCROLL SCROLL I
+		FIELD SINGLE SINGLE I
+		FIELD _USER _USER I
+	CLASS uiOptionControl uiOptionControl
+		FIELD COMBINED COMBINED I
+		FIELD DISABLED DISABLED I
+		FIELD LEFTRIGHT LEFTRIGHT I
+		FIELD UPDOWN UPDOWN I
+	CLASS uiPanel uiPanel
+		FIELD NONE NONE I
+CLASS SonicGolf/cSprite SonicGolf/cSprite
+	FIELD _mAnimData _mAnimData [LSonicGolf/cSprite$cAnimData;
+	FIELD _mCnvsHeight _mCnvsHeight I
+	FIELD _mCnvsWidth _mCnvsWidth I
+	FIELD _mCurrAnim _mCurrAnim I
+	FIELD _mCurrFrameIndex _mCurrFrameIndex I
+	FIELD _mDynamicAnim _mDynamicAnim Z
+	FIELD _mFrameSwapTime _mFrameSwapTime J
+	FIELD _mNumAnim _mNumAnim B
+	FIELD _mResetToStart _mResetToStart Z
+	FIELD _mXSrc _mXSrc I
+	FIELD _mYSrc _mYSrc I
+	FIELD mFacingLeft mFacingLeft Z
+	FIELD mFrameHeight mFrameHeight I
+	FIELD mFrameWidth mFrameWidth I
+	FIELD mVisible mVisible Z
+	FIELD mX mX I
+	FIELD mY mY I
+	METHOD <init> (IIIIIII)V
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+		ARG 6 integer6
+		ARG 7 integer7
+	METHOD getCurrAnim getCurrAnim ()I
+	METHOD getCurrFrame getCurrFrame ()I
+	METHOD getCurrFrameIndex getCurrFrameIndex ()I
+	METHOD getEndFrame getEndFrame (I)I
+		ARG 1 integer
+	METHOD playAnim playAnim (IZZ)V
+		ARG 1 integer
+		ARG 2 boolean2
+		ARG 3 boolean3
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;II)V
+		ARG 1 graphics
+		ARG 2 image
+		ARG 3 integer3
+		ARG 4 integer4
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIB)V
+		ARG 1 graphics
+		ARG 2 image
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 byte5
+	METHOD restartAnim restartAnim (IZZ)V
+		ARG 1 integer
+		ARG 2 boolean2
+		ARG 3 boolean3
+	METHOD setAnimProps setAnimProps (I[BII)V
+		ARG 1 integer1
+		ARG 2 arr
+		ARG 3 integer3
+		ARG 4 integer4
+	METHOD setCurrFrame setCurrFrame (I)V
+		ARG 1 integer
+	METHOD updateAnim updateAnim ()Z
+	CLASS cAnimData cAnimData
+		FIELD mAnimSpeed mAnimSpeed I
+		FIELD mFrameIdx mFrameIdx [B
+		FIELD mNumFrames mNumFrames B
+CLASS Coral/Audio/crlAudioManager Coral/Audio/crlAudioManager
+	FIELD INFINITE_LOOP INFINITE_LOOP I
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD NO_SOUND NO_SOUND I
+	FIELD VOLUME_FULL VOLUME_FULL I
+	FIELD VOLUME_HALF VOLUME_HALF I
+	FIELD VOLUME_LEVEL VOLUME_LEVEL [I
+	FIELD VOLUME_OFF VOLUME_OFF I
+	FIELD _AUDIO_TYPE _AUDIO_TYPE [Ljava/lang/String;
+	FIELD _VIBRATION_OFF _VIBRATION_OFF I
+	FIELD _VIBRATION_ON _VIBRATION_ON I
+	FIELD _gGlobalVolume _gGlobalVolume I
+	FIELD _mChannelDividerIndex _mChannelDividerIndex I
+	FIELD _mDisplay _mDisplay Ljavax/microedition/lcdui/Display;
+	FIELD _mLoadedPlayers _mLoadedPlayers [I
+	FIELD _mNumPlayers _mNumPlayers I
+	FIELD _mPlayerData _mPlayerData [LCoral/Util/crlBinArray;
+	FIELD _mPlayerLoop _mPlayerLoop [I
+	FIELD _mPlayerState _mPlayerState [I
+	FIELD _mPlayerType _mPlayerType [I
+	FIELD _mPlayer _mPlayer [Ljavax/microedition/media/Player;
+	FIELD _mPrefetchedPlayers _mPrefetchedPlayers [I
+	FIELD _mRequestedSound _mRequestedSound I
+	FIELD _mResManager _mResManager LCoral/Util/crlResourceManager;
+	FIELD _mVibrateTimer _mVibrateTimer I
+	FIELD _mVibrating _mVibrating Z
+	FIELD _mVibrationUnit _mVibrationUnit I
+	FIELD forceStop forceStop Z
+	FIELD mAudioState mAudioState I
+	METHOD _deallocatePlayer _deallocatePlayer (I)I
+		ARG 1 integer
+	METHOD _getFirstIndex _getFirstIndex (I)I
+		ARG 1 integer
+	METHOD _getLastIndex _getLastIndex (I)I
+		ARG 1 integer
+	METHOD _isLoaded _isLoaded (I)Z
+		ARG 1 integer
+	METHOD _isPrefetched _isPrefetched (I)Z
+		ARG 1 integer
+	METHOD _isStopped _isStopped (I)Z
+		ARG 1 integer
+	METHOD _killPlayer _killPlayer (I)I
+		ARG 1 integer
+	METHOD _loadPlayer _loadPlayer (I)I
+		ARG 1 integer
+	METHOD _pause _pause ()I
+	METHOD _prefetchPlayer _prefetchPlayer (I)I
+		ARG 1 integer
+	METHOD _resume _resume ()I
+	METHOD _sortArray _sortArray ([III)V
+		ARG 1 arr
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD _startPlayer _startPlayer (I)I
+		ARG 1 integer
+	METHOD _stopPlayer _stopPlayer (I)I
+		ARG 1 integer
+	METHOD _unloadPlayer _unloadPlayer (I)I
+		ARG 1 integer
+	METHOD getAudioVolume getAudioVolume ()I
+	METHOD isStarted isStarted (I)Z
+		ARG 1 integer
+	METHOD isSupported isSupported (I)Z
+		ARG 0 integer
+	METHOD isVibrationSupported isVibrationSupported ()Z
+	METHOD loadAudioBank loadAudioBank ([J)I
+		ARG 1 arr
+	METHOD loadAudioBank loadAudioBank ([JI)I
+		ARG 1 arr
+		ARG 2 integer
+	METHOD loadAudioBank loadAudioBank ([Ljava/lang/String;[I)I
+		ARG 1 arr
+		ARG 2 arr2
+	METHOD loadAudioBank loadAudioBank ([Ljava/lang/String;[II)I
+		ARG 1 arr
+		ARG 2 arrx
+		ARG 3 integer
+	METHOD open open (LCoral/Util/crlResourceManager;I)I
+		ARG 1 crlResourceManager
+		ARG 2 integer
+	METHOD open open (LCoral/Util/crlResourceManager;III)I
+		ARG 1 crlResourceManager
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 6 var6
+		ARG 7 var7
+	METHOD open open (LCoral/Util/crlResourceManager;IIILjavax/microedition/lcdui/Display;)I
+		ARG 1 crlResourceManager
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 display
+	METHOD open open (LCoral/Util/crlResourceManager;ILjavax/microedition/lcdui/Display;)I
+		ARG 1 crlResourceManager
+		ARG 2 integer
+		ARG 3 display
+	METHOD pauseAudio pauseAudio ()V
+	METHOD playAudio playAudio (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD playAudio playAudio (III)V
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD removeAudioBank removeAudioBank ()I
+	METHOD removeAudioBank removeAudioBank (I)I
+		ARG 1 integer
+	METHOD resumeAudio resumeAudio ()V
+	METHOD setForceStop setForceStop (Z)V
+		ARG 1 boolean1
+	METHOD setGlobalVolume setGlobalVolume (I)V
+		ARG 1 integer
+	METHOD setVibrationUnitType setVibrationUnitType (I)V
+		ARG 1 integer
+	METHOD startVibrations startVibrations (I)V
+		ARG 1 integer
+	METHOD stopAllAudio stopAllAudio ()V
+	METHOD stopAudio stopAudio (I)V
+		ARG 1 integer
+	METHOD stopVibrations stopVibrations ()V
+	METHOD vibrate vibrate (I)V
+		ARG 1 integer
+	CLASS _iSortAction _iSortAction
+		FIELD PLACE_FIRST PLACE_FIRST I
+		FIELD REMOVE REMOVE I
+	CLASS iVibrationUnitType iVibrationUnitType
+		FIELD FRAMES FRAMES I
+		FIELD TIME_MS TIME_MS I
+	CLASS iVolume iVolume
+		FIELD FULL FULL I
+		FIELD HALF HALF I
+		FIELD OFF OFF I
+		FIELD QUARTER QUARTER I
+	CLASS mAudioStatus mAudioStatus
+		FIELD ERROR ERROR I
+		FIELD LOOPING LOOPING I
+		FIELD PAUSED PAUSED I
+		FIELD PLAYING PLAYING I
+		FIELD STANDBY STANDBY I
+		FIELD STOPPING STOPPING I
+	CLASS mAudioType mAudioType
+		FIELD AMR AMR I
+		FIELD FORMAT_TONE FORMAT_TONE I
+		FIELD MIDI MIDI I
+		FIELD MP3 MP3 I
+		FIELD TOTAL TOTAL I
+		FIELD XWAV XWAV I
+CLASS SonicGolf/cPlayer SonicGolf/cPlayer
+	FIELD BORED_TIMEOUT BORED_TIMEOUT I
+	FIELD CHAR_KNUCKLES CHAR_KNUCKLES B
+	FIELD CHAR_SONIC CHAR_SONIC B
+	FIELD CHAR_TAILS CHAR_TAILS B
+	FIELD FALSE FALSE B
+	FIELD MAX_PLAYERS MAX_PLAYERS B
+	FIELD POWER_SPARKLES POWER_SPARKLES I
+	FIELD SWING_HIT_FRAME SWING_HIT_FRAME B
+	FIELD SWING_TOP_FRAME SWING_TOP_FRAME B
+	FIELD TRUE TRUE B
+	FIELD _mCnvsHeight _mCnvsHeight I
+	FIELD _mCnvsWidth _mCnvsWidth I
+	FIELD _mImgBoredR _mImgBoredR Ljavax/microedition/lcdui/Image;
+	FIELD _mImgEyesR _mImgEyesR Ljavax/microedition/lcdui/Image;
+	FIELD _mImgJoyR _mImgJoyR Ljavax/microedition/lcdui/Image;
+	FIELD _mImgSwingL _mImgSwingL Ljavax/microedition/lcdui/Image;
+	FIELD _mImgTailR _mImgTailR Ljavax/microedition/lcdui/Image;
+	FIELD mAverageDrive mAverageDrive I
+	FIELD mBalls mBalls B
+	FIELD mBallsBonus mBallsBonus I
+	FIELD mBirdsFreed mBirdsFreed I
+	FIELD mBoredTimeout mBoredTimeout J
+	FIELD mBored mBored Z
+	FIELD mCharacter mCharacter B
+	FIELD mChipIns mChipIns B
+	FIELD mCurrentDrive mCurrentDrive I
+	FIELD mCurrentPutt mCurrentPutt I
+	FIELD mFPX mFPX I
+	FIELD mFPY0 mFPY0 I
+	FIELD mFPY mFPY I
+	FIELD mFacingLeft mFacingLeft Z
+	FIELD mFairwaysHit mFairwaysHit I
+	FIELD mFrame0to2 mFrame0to2 [B
+	FIELD mFrame0to4 mFrame0to4 [B
+	FIELD mFrame2to2 mFrame2to2 [B
+	FIELD mFrame3to3 mFrame3to3 [B
+	FIELD mFrame4to6 mFrame4to6 [B
+	FIELD mFrame4to9 mFrame4to9 [B
+	FIELD mFrame6to7 mFrame6to7 [B
+	FIELD mFrameIronBack mFrameIronBack [B
+	FIELD mFrameIronFore mFrameIronFore [B
+	FIELD mFrameKnucklesJoy mFrameKnucklesJoy [B
+	FIELD mFrameResetSwing mFrameResetSwing [B
+	FIELD mFrameTailsBored mFrameTailsBored [B
+	FIELD mGameOver mGameOver Z
+	FIELD mHoleFinished mHoleFinished Z
+	FIELD mHoleParScore mHoleParScore I
+	FIELD mHolesInOne mHolesInOne B
+	FIELD mLongestDrive mLongestDrive I
+	FIELD mLongestPutt mLongestPutt I
+	FIELD mMaxShotPower mMaxShotPower I
+	FIELD mMinShotPower mMinShotPower B
+	FIELD mMostRingsShot mMostRingsShot B
+	FIELD mParBonus mParBonus I
+	FIELD mPointsScore mPointsScore I
+	FIELD mPuttSuccess mPuttSuccess I
+	FIELD mRingBonus mRingBonus I
+	FIELD mRings mRings I
+	FIELD mRingsPickedUp mRingsPickedUp I
+	FIELD mRingsThisHole mRingsThisHole I
+	FIELD mRingsThisShot mRingsThisShot B
+	FIELD mShotNumber mShotNumber B
+	FIELD mShotPower mShotPower B
+	FIELD mShotPowerIncs mShotPowerIncs B
+	FIELD mShots mShots [B
+	FIELD mSpin mSpin B
+	FIELD mSprBored mSprBored LSonicGolf/cSprite;
+	FIELD mSprJoy mSprJoy LSonicGolf/cSprite;
+	FIELD mSprPowerSparkle mSprPowerSparkle [LSonicGolf/cSprite;
+	FIELD mSprSwing mSprSwing LSonicGolf/cSprite;
+	FIELD mSprTail mSprTail LSonicGolf/cSprite;
+	FIELD mTotParScore mTotParScore I
+	FIELD mTotalDrives mTotalDrives I
+	FIELD mTotalPutts mTotalPutts I
+	METHOD <init> (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD checkPlayerBoredom checkPlayerBoredom ()V
+	METHOD checkProgress checkProgress (Z)I
+		ARG 1 boolean1
+	METHOD clockScore clockScore (Z)Z
+		ARG 1 boolean1
+	METHOD close close ()V
+	METHOD init init (I)V
+		ARG 1 integer
+	METHOD initHoleComplete initHoleComplete (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD initShot initShot (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD pickupRings pickupRings (I)V
+		ARG 1 integer
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD resetBoredom resetBoredom ()V
+	METHOD resetInfo resetInfo ()V
+	METHOD setHoleCompleteStats setHoleCompleteStats ()V
+	METHOD setParScore setParScore (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD setShotCompleteStats setShotCompleteStats ()V
+	METHOD update update ()V
+CLASS Coral/Graphics2D/crlImagePacked Coral/Graphics2D/crlImagePacked
+	FIELD FRAME_OFFSET FRAME_OFFSET B
+	FIELD METRICS METRICS B
+	FIELD _W _W B
+	FIELD _frames _frames I
+	FIELD _mImage _mImage Ljavax/microedition/lcdui/Image;
+	FIELD _mMetrics _mMetrics [S
+	METHOD draw draw (Ljavax/microedition/lcdui/Graphics;III)V
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+	METHOD getMetrics getMetrics (I)I
+		ARG 1 integer
+	METHOD getWidth getWidth (I)I
+		ARG 1 integer
+	METHOD open open (Ljavax/microedition/lcdui/Image;[S)V
+		ARG 1 image
+		ARG 2 arr
+CLASS SonicGolf/cFP SonicGolf/cFP
+	FIELD FP_0_1 FP_0_1 I
+	FIELD FP_0_3 FP_0_3 I
+	FIELD FP_0_6 FP_0_6 I
+	FIELD FP_0_75 FP_0_75 I
+	FIELD FP_0_8 FP_0_8 I
+	FIELD FP_12 FP_12 I
+	FIELD FP_16 FP_16 I
+	FIELD FP_180 FP_180 I
+	FIELD FP_1 FP_1 I
+	FIELD FP_1_5 FP_1_5 I
+	FIELD FP_2 FP_2 I
+	FIELD FP_2_5 FP_2_5 I
+	FIELD FP_3 FP_3 I
+	FIELD FP_4 FP_4 I
+	FIELD FP_6 FP_6 I
+	FIELD FP_90 FP_90 I
+	FIELD FP_PI FP_PI I
+	FIELD FP_PI_OVER_180 FP_PI_OVER_180 I
+	FIELD SIN_TABLE SIN_TABLE [I
+	METHOD cos cos (I)I
+		ARG 0 integer
+	METHOD div div (II)I
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD getX getX (II)I
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD getY getY (II)I
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD mul mul (II)I
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD round round (II)I
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD sin sin (I)I
+		ARG 0 integer
+	METHOD sinLookUp sinLookUp (II)I
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD toFP toFP (I)I
+		ARG 0 integer
+	METHOD toFP toFP (Ljava/lang/String;)I
+		ARG 0 string
+	METHOD toInt toInt (I)I
+		ARG 0 integer
+CLASS Coral/Util/crlString Coral/Util/crlString
+	FIELD _mString _mString [B
+	METHOD <init> ([BII)V
+		ARG 1 arr
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD findString findString ([BI)I
+		ARG 1 arr
+		ARG 2 integer
+	METHOD get get ()[B
+	METHOD insert insert ([B[B)V
+		ARG 1 arr1
+		ARG 2 arr2
+CLASS Coral/Util/cCacheProcObj Coral/Util/cCacheProcObj
+CLASS Coral/Util/crlManagerBase Coral/Util/crlManagerBase
+	FIELD _mStatus _mStatus I
+	METHOD close close ()I
+	METHOD crlManagerBase crlManagerBase ()V
+	METHOD getStatus getStatus ()I
+	METHOD open open ()I
+	METHOD report report (I)Ljava/lang/String;
+		ARG 1 integer
+	METHOD reset reset ()I
+	METHOD setStatus setStatus (I)V
+		ARG 1 integer
+	METHOD update update_ ()I
+	CLASS mngrReturnCodes mngrReturnCodes
+		FIELD Error Error I
+		FIELD OK OK I
+	CLASS mngrStatus mngrStatus
+		FIELD Active Active I
+		FIELD Closed Closed I
+		FIELD Closing Closing I
+		FIELD Loading Loading I
+		FIELD Opening Opening I
+		FIELD Paused Paused I
+		FIELD Pausing Pausing I
+		FIELD _USR _USR I
+CLASS SonicGolf/cUI SonicGolf/cUI
+	FIELD BLACK BLACK I
+	FIELD BLUE BLUE I
+	FIELD DARK_BLUE DARK_BLUE I
+	FIELD FALSE FALSE B
+	FIELD FONT_BIG FONT_BIG B
+	FIELD FONT_GREEN FONT_GREEN B
+	FIELD FONT_RED FONT_RED B
+	FIELD FONT_WHITE FONT_WHITE B
+	FIELD FONT_YELLOW FONT_YELLOW B
+	FIELD GREEN GREEN I
+	FIELD LOGO_TOP_Y LOGO_TOP_Y B
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD MENU_OPTIONS_Y MENU_OPTIONS_Y I
+	FIELD MENU_TITLE_Y MENU_TITLE_Y I
+	FIELD RED RED I
+	FIELD SS_MARGIN_BOTTOM SS_MARGIN_BOTTOM B
+	FIELD SS_MARGIN_LEFT SS_MARGIN_LEFT B
+	FIELD SS_MARGIN_RIGHT SS_MARGIN_RIGHT B
+	FIELD SS_MARGIN_TOP SS_MARGIN_TOP B
+	FIELD TRUE TRUE B
+	FIELD WHITE WHITE I
+	FIELD YELLOW YELLOW I
+	FIELD _CheatKeySeq _CheatKeySeq [I
+	FIELD _CheatProgress _CheatProgress B
+	FIELD _mCanvas _mCanvas LSonicGolf/cCanvas;
+	FIELD _mCurrPlayer _mCurrPlayer B
+	FIELD _mDownArrow _mDownArrow Z
+	FIELD _mFlashChar _mFlashChar I
+	FIELD _mHeight _mHeight I
+	FIELD _mHighScoreCourse _mHighScoreCourse B
+	FIELD _mHighScoresBottom _mHighScoresBottom Z
+	FIELD _mHoleSelect _mHoleSelect B
+	FIELD _mLeftArrow _mLeftArrow Z
+	FIELD _mOption _mOption I
+	FIELD _mPrinted _mPrinted [Z
+	FIELD _mRightArrow _mRightArrow Z
+	FIELD _mSprUIRing _mSprUIRing LSonicGolf/cSprite;
+	FIELD _mStartGame _mStartGame Z
+	FIELD _mTextWidth _mTextWidth I
+	FIELD _mUpArrow _mUpArrow Z
+	FIELD _mWidth _mWidth I
+	FIELD _mWork _mWork [B
+	FIELD mCharacterSelected mCharacterSelected [Z
+	FIELD mCurrChar mCurrChar B
+	FIELD mEntryCount mEntryCount B
+	FIELD mHoleCompleteFade mHoleCompleteFade [I
+	FIELD mImgHUDDisc mImgHUDDisc Ljavax/microedition/lcdui/Image;
+	FIELD mInitials mInitials [B
+	FIELD uiDsgn uiDsgn [[I
+	METHOD <init> (LSonicGolf/cCanvas;)V
+		ARG 1 cCanvas
+	METHOD loadGameResources loadGameResources ()V
+	METHOD menuKeyEvent menuKeyEvent (I)Z
+		ARG 1 integer
+	METHOD optionToLetter optionToLetter (I)B
+		ARG 0 integer
+	METHOD optionToNumber optionToNumber (I)B
+		ARG 0 integer
+	METHOD pause pause ()V
+	METHOD playUIRingChing playUIRingChing ()V
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD renderArrowsLR renderArrowsLR (Ljavax/microedition/lcdui/Graphics;IIIZZ)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 boolean5
+		ARG 5 boolean6
+	METHOD renderArrowsUD renderArrowsUD (Ljavax/microedition/lcdui/Graphics;IIZZZ)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 boolean4
+		ARG 4 boolean5
+		ARG 5 boolean6
+	METHOD renderBox renderBox (Ljavax/microedition/lcdui/Graphics;IIIIIII)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 integer8
+	METHOD renderCharSelect renderCharSelect (Ljavax/microedition/lcdui/Graphics;I)V
+		ARG 1 graphics
+		ARG 2 integer
+	METHOD renderCharStatBar renderCharStatBar (Ljavax/microedition/lcdui/Graphics;III)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+	METHOD renderGameOver renderGameOver (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD renderHUD renderHUD (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderHUDIcons renderHUDIcons (Ljavax/microedition/lcdui/Graphics;Z)V
+		ARG 0 graphics
+		ARG 1 boolean2
+	METHOD renderHighScores renderHighScores (Ljavax/microedition/lcdui/Graphics;IZ)V
+		ARG 1 graphics
+		ARG 2 integer
+		ARG 3 boolean3
+	METHOD renderHoleComplete renderHoleComplete (Ljavax/microedition/lcdui/Graphics;III)V
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+	METHOD renderHoleIntro renderHoleIntro (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderHoleSelect renderHoleSelect (Ljavax/microedition/lcdui/Graphics;)I
+		ARG 0 graphics
+	METHOD renderMultiplayerScores renderMultiplayerScores (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD renderNameEntry renderNameEntry (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD renderPowerBar renderPowerBar (Ljavax/microedition/lcdui/Graphics;I)V
+		ARG 0 graphics
+		ARG 1 integer
+	METHOD renderPowerBarBack renderPowerBarBack (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderScore renderScore (Ljavax/microedition/lcdui/Graphics;IIIIIIZ)I
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 boolean8
+	METHOD renderScorecard renderScorecard (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD renderScreenBorder renderScreenBorder (Ljavax/microedition/lcdui/Graphics;IIIIII)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+		ARG 6 integer6
+		ARG 7 integer7
+	METHOD renderSpin renderSpin (Ljavax/microedition/lcdui/Graphics;ZZI)V
+		ARG 0 graphics
+		ARG 1 boolean2
+		ARG 2 boolean3
+		ARG 3 integer
+	METHOD renderStatsScore renderStatsScore (Ljavax/microedition/lcdui/Graphics;IIIIZZI)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+		ARG 6 boolean6
+		ARG 7 boolean7
+		ARG 8 integer8
+	METHOD renderStatsScreen renderStatsScreen (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD renderStatsScreenUI renderStatsScreenUI (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD renderSystemError renderSystemError (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD renderUnlockEnding renderUnlockEnding (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD renderViewArrows renderViewArrows (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD resetMenu resetMenu ()V
+	METHOD resumeGame resumeGame ()V
+	METHOD setMainMenu setMainMenu ()V
+	METHOD setPause setPause ()V
+	METHOD setPauseSingleHole setPauseSingleHole ()V
+	METHOD toggleMusic toggleMusic ()V
+	METHOD toggleSound toggleSound ()V
+	CLASS uiModes uiModes
+		FIELD SET_BACK_CHOOSE_CHARS SET_BACK_CHOOSE_CHARS B
+		FIELD SET_BACK_CHOOSE_COURSE SET_BACK_CHOOSE_COURSE B
+		FIELD SET_CHAR SET_CHAR B
+		FIELD SET_CONTINUE SET_CONTINUE B
+		FIELD SET_COURSE SET_COURSE B
+		FIELD SET_DIFFICULTY SET_DIFFICULTY B
+		FIELD SET_ENTER_NAME SET_ENTER_NAME B
+		FIELD SET_ENTER_NAME_DELETE SET_ENTER_NAME_DELETE B
+		FIELD SET_EXIT SET_EXIT B
+		FIELD SET_EXIT_GAME_AYS SET_EXIT_GAME_AYS B
+		FIELD SET_EXIT_TO_MENU SET_EXIT_TO_MENU B
+		FIELD SET_GAME_TYPE SET_GAME_TYPE B
+		FIELD SET_GET_MORE_GAMES SET_GET_MORE_GAMES B
+		FIELD SET_GET_THE_GAME SET_GET_THE_GAME B
+		FIELD SET_HOLE SET_HOLE B
+		FIELD SET_MAIN_MENU SET_MAIN_MENU B
+		FIELD SET_MUSIC SET_MUSIC B
+		FIELD SET_NEW_GAME_AYS SET_NEW_GAME_AYS B
+		FIELD SET_NUM_PLAYERS SET_NUM_PLAYERS B
+		FIELD SET_PAUSE SET_PAUSE B
+		FIELD SET_PAUSE_MENU SET_PAUSE_MENU B
+		FIELD SET_PAUSE_SINGLE_HOLE SET_PAUSE_SINGLE_HOLE B
+		FIELD SET_RESET_DATA SET_RESET_DATA B
+		FIELD SET_RESET_RECORDS SET_RESET_RECORDS B
+		FIELD SET_RESTART_HOLE SET_RESTART_HOLE B
+		FIELD SET_RESUME SET_RESUME B
+		FIELD SET_RESUME_GAME SET_RESUME_GAME B
+		FIELD SET_SCORECARD SET_SCORECARD B
+		FIELD SET_SOUND SET_SOUND B
+		FIELD SET_STATS_SCREEN SET_STATS_SCREEN B
+		FIELD SET_VIBRATIONS SET_VIBRATIONS B
+		FIELD UI_ABOUT UI_ABOUT B
+		FIELD UI_CHOOSE_CHARS UI_CHOOSE_CHARS B
+		FIELD UI_CHOOSE_COURSE UI_CHOOSE_COURSE B
+		FIELD UI_CHOOSE_DIFF UI_CHOOSE_DIFF B
+		FIELD UI_CHOOSE_HOLE UI_CHOOSE_HOLE B
+		FIELD UI_CHOOSE_NUM_PLAYERS UI_CHOOSE_NUM_PLAYERS B
+		FIELD UI_CONTROLS UI_CONTROLS B
+		FIELD UI_COURSE_HIGH_SCORES UI_COURSE_HIGH_SCORES B
+		FIELD UI_DIFFICULTY_LEVELS UI_DIFFICULTY_LEVELS B
+		FIELD UI_ENTER_NAME UI_ENTER_NAME B
+		FIELD UI_EXIT_GAME_AYS UI_EXIT_GAME_AYS B
+		FIELD UI_EXIT_TO_MENU_AYS UI_EXIT_TO_MENU_AYS B
+		FIELD UI_GAME_MODES UI_GAME_MODES B
+		FIELD UI_GET_MORE_GAMES_AYS UI_GET_MORE_GAMES_AYS B
+		FIELD UI_GET_THE_GAME_AYS UI_GET_THE_GAME_AYS B
+		FIELD UI_HELP UI_HELP B
+		FIELD UI_HIGH_SCORES UI_HIGH_SCORES B
+		FIELD UI_HOLE_HIGH_SCORES UI_HOLE_HIGH_SCORES B
+		FIELD UI_HOW_TO_PLAY UI_HOW_TO_PLAY B
+		FIELD UI_INTERRUPT_PAUSE_GAME UI_INTERRUPT_PAUSE_GAME B
+		FIELD UI_MAIN_MENU UI_MAIN_MENU B
+		FIELD UI_MENU_PAUSE UI_MENU_PAUSE B
+		FIELD UI_NEW_GAME UI_NEW_GAME B
+		FIELD UI_NEW_GAME_AYS UI_NEW_GAME_AYS B
+		FIELD UI_NULL UI_NULL B
+		FIELD UI_OPTIONS UI_OPTIONS B
+		FIELD UI_OVERALL_HIGH_SCORES UI_OVERALL_HIGH_SCORES B
+		FIELD UI_PAUSE UI_PAUSE B
+		FIELD UI_PAUSE_OPTIONS UI_PAUSE_OPTIONS B
+		FIELD UI_PAUSE_SINGLE_HOLE UI_PAUSE_SINGLE_HOLE B
+		FIELD UI_PAUSE_SINGLE_HOLE_OPTIONS UI_PAUSE_SINGLE_HOLE_OPTIONS B
+		FIELD UI_RECORDS UI_RECORDS B
+		FIELD UI_RESET_DATA_AYS UI_RESET_DATA_AYS B
+		FIELD UI_RESET_RECORDS_AYS UI_RESET_RECORDS_AYS B
+		FIELD UI_RESTART_HOLE_AYS UI_RESTART_HOLE_AYS B
+		FIELD UI_STATS UI_STATS B
+		FIELD UI_TOP_TIPS UI_TOP_TIPS B
+	CLASS uiPanel uiPanel
+		FIELD ABOUT ABOUT B
+		FIELD CHAR_SELECT CHAR_SELECT B
+		FIELD COURSE_HIGH_SCORES COURSE_HIGH_SCORES B
+		FIELD COURSE_SELECT COURSE_SELECT B
+		FIELD DIFFICULTY_SELECT DIFFICULTY_SELECT B
+		FIELD ENTER_NAME ENTER_NAME B
+		FIELD HELP HELP B
+		FIELD HOLE_HIGH_SCORES HOLE_HIGH_SCORES B
+		FIELD HOLE_SELECT HOLE_SELECT B
+		FIELD MODE_SELECT MODE_SELECT B
+		FIELD NONE NONE B
+		FIELD OVERALL_HIGH_SCORES OVERALL_HIGH_SCORES B
+		FIELD STATS STATS B
+CLASS Coral/Graphics2D/crlFont Coral/Graphics2D/crlFont
+	FIELD ALIGN_CENTER ALIGN_CENTER I
+	FIELD ALIGN_LEFT ALIGN_LEFT I
+	FIELD ALIGN_RIGHT ALIGN_RIGHT I
+	FIELD _mAlign _mAlign I
+	FIELD _mFontHeight _mFontHeight I
+	FIELD _mFontWidth _mFontWidth I
+	FIELD _mImagePacked _mImagePacked LCoral/Graphics2D/crlImagePacked;
+	FIELD _mProportional _mProportional Z
+	FIELD _mSpecialChars _mSpecialChars [I
+	FIELD mCharSpacing mCharSpacing I
+	FIELD mClipBottom mClipBottom I
+	FIELD mClipTop mClipTop I
+	FIELD mFirstLineWidth mFirstLineWidth I
+	FIELD mLastLineWidth mLastLineWidth I
+	FIELD mLinesDrawn mLinesDrawn I
+	FIELD mLongestLineWidth mLongestLineWidth I
+	METHOD _B2I _B2I (B)I
+		ARG 1 byte1
+	METHOD getHeight getHeight ()I
+	METHOD getWidth getWidth ()I
+	METHOD getWidth getWidth (B)I
+		ARG 1 byte1
+	METHOD getWidth getWidth (LCoral/Util/crlString;)I
+		ARG 1 crlString
+	METHOD getWidth getWidth ([B)I
+		ARG 1 arr
+	METHOD open open (LCoral/Graphics2D/crlImagePacked;I)V
+		ARG 1 crlImagePacked
+		ARG 2 integer
+	METHOD open open (LCoral/Graphics2D/crlImagePacked;II)V
+		ARG 1 crlImagePacked
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD print print (Ljavax/microedition/lcdui/Graphics;II[B)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 arr
+	METHOD print print (Ljavax/microedition/lcdui/Graphics;II[BI)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 arr
+		ARG 5 integer5
+	METHOD printChar printChar (Ljavax/microedition/lcdui/Graphics;IIB)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 byte4
+	METHOD printNumber printNumber (Ljavax/microedition/lcdui/Graphics;IIII)V
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+		ARG 5 integer5
+	METHOD printWrapped printWrapped (Ljavax/microedition/lcdui/Graphics;II[B[BIZI)I
+		ARG 1 graphics
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 arr4
+		ARG 5 arr5
+		ARG 6 integer6
+		ARG 7 boolean7
+		ARG 8 integer8
+	METHOD setAlign setAlign (I)V
+		ARG 1 integer
+	METHOD setProportional setProportional (Z)V
+		ARG 1 boolean1
+	METHOD setWidth setWidth (I)V
+		ARG 1 integer
+CLASS Coral/crlCanvas Coral/crlCanvas
+	FIELD ROCKPOOL_JAD_PREFIX ROCKPOOL_JAD_PREFIX Ljava/lang/String;
+	FIELD STANDARD_JAD_PREFIX STANDARD_JAD_PREFIX Ljava/lang/String;
+	FIELD _mApplication _mApplication Ljava/lang/String;
+	FIELD _mCanvasShowing _mCanvasShowing Z
+	FIELD _mCheatCode _mCheatCode I
+	FIELD _mDJL _mDJL Ljava/lang/String;
+	FIELD _mDirectGraphics _mDirectGraphics Lcom/nokia/mid/ui/DirectGraphics;
+	FIELD _mFadeColour _mFadeColour I
+	FIELD _mFadeCounter _mFadeCounter I
+	FIELD _mFadeStatus _mFadeStatus I
+	FIELD _mGameSpeed _mGameSpeed J
+	FIELD _mGraphics _mGraphics Ljavax/microedition/lcdui/Graphics;
+	FIELD _mHeight _mHeight I
+	FIELD _mLastFrameTime _mLastFrameTime J
+	FIELD _mPaintFinished _mPaintFinished Z
+	FIELD _mPaintReady _mPaintReady Z
+	FIELD _mPolyLeftRight _mPolyLeftRight [I
+	FIELD _mPolyPosition _mPolyPosition [I
+	FIELD _mPolyTopStart _mPolyTopStart I
+	FIELD _mQuitApp _mQuitApp Z
+	FIELD _mStartTime _mStartTime J
+	FIELD _mThread _mThread Ljava/lang/Thread;
+	FIELD _mThreadRunning _mThreadRunning Z
+	FIELD _mTriggerPaintUI _mTriggerPaintUI Z
+	FIELD _mVendor _mVendor Ljava/lang/String;
+	FIELD _mVersion _mVersion Ljava/lang/String;
+	FIELD _mWidth _mWidth I
+	FIELD fxpoints fxpoints [I
+	FIELD fypoints fypoints [I
+	FIELD gCanvas gCanvas LCoral/crlCanvas;
+	FIELD gDisplay gDisplay Ljavax/microedition/lcdui/Display;
+	FIELD gRandom gRandom Ljava/util/Random;
+	FIELD gResourceManager gResourceManager LCoral/Util/crlResourceManager;
+	FIELD mCounter mCounter J
+	FIELD mDeviceControl mDeviceControl Z
+	FIELD mFadeColData mFadeColData [I
+	FIELD mGameAction mGameAction I
+	FIELD mGameState mGameState I
+	FIELD mKeyCounter mKeyCounter [I
+	FIELD mKey mKey I
+	FIELD mKeyMappingString mKeyMappingString [Ljava/lang/String;
+	FIELD mKeyMapping mKeyMapping [I
+	FIELD mLoadInterrupted mLoadInterrupted Z
+	FIELD mPadCount mPadCount I
+	FIELD mPadDB mPadDB I
+	FIELD mPad mPad I
+	FIELD mPausedState mPausedState I
+	FIELD mStatus mStatus B
+	METHOD cancelFade cancelFade ()V
+	METHOD close close_ ()V
+	METHOD cnvsUpdate cnvsUpdate_ ()V
+	METHOD getFullHeight getFullHeight ()I
+	METHOD hideNotify hideNotify ()V
+	METHOD isFading isFading ()Z
+	METHOD keyPressed keyPressed (I)V
+		ARG 1 integer
+	METHOD keyReleased keyReleased (I)V
+		ARG 1 integer
+	METHOD keyRepeated keyRepeated (I)V
+		ARG 1 integer
+	METHOD open open ()V
+	METHOD open open (Ljavax/microedition/midlet/MIDlet;)V
+		ARG 1 mIDlet
+	METHOD pause pause_ ()V
+	METHOD quitApp quitApp_ ()V
+	METHOD render render_ (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD renderOverFade renderOverFade_ (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD reset reset_ ()V
+	METHOD resume resume_ ()V
+	METHOD run run ()V
+	METHOD setFade setFade (I)V
+		ARG 1 integer
+	METHOD setPaintReady setPaintReady (Z)V
+		ARG 0 boolean1
+	METHOD showNotify showNotify ()V
+	METHOD startFade startFade (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD startFadeIn startFadeIn (II)V
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD startFadeOut startFadeOut (II)V
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD startThread startThread ()V
+	METHOD stopThread stopThread ()V
+	METHOD triggerPaint triggerPaint ()V
+	METHOD updateFade updateFade (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	CLASS Status Status
+		FIELD CNVS_DOUBLE CNVS_DOUBLE B
+		FIELD CNVS_FULLSCREEN CNVS_FULLSCREEN B
+		FIELD CNVS_NULL CNVS_NULL B
+		FIELD CNVS_READY CNVS_READY B
+		FIELD CNVS_SUSPEND CNVS_SUSPEND B
+	CLASS gGameStates gGameStates
+		FIELD CLOSE_DOWN CLOSE_DOWN I
+		FIELD INIT_GAME INIT_GAME I
+		FIELD LOADING_SCREEN LOADING_SCREEN I
+		FIELD LOOP_GAME LOOP_GAME I
+		FIELD LOOP_GAMEPAUSE LOOP_GAMEPAUSE I
+		FIELD LOOP_MENU LOOP_MENU I
+		FIELD LOOP_MENUPAUSE LOOP_MENUPAUSE I
+		FIELD NULL NULL I
+		FIELD SELECT_AUDIO SELECT_AUDIO I
+		FIELD SELECT_LANGUAGE SELECT_LANGUAGE I
+		FIELD SPLASH_SCREEN SPLASH_SCREEN I
+		FIELD SYSTEM_ERROR SYSTEM_ERROR I
+		FIELD TITLE_SCREEN TITLE_SCREEN I
+		FIELD _USER _USER I
+	CLASS gPauseStates gPauseStates
+		FIELD NULL NULL I
+		FIELD PAUSED PAUSED I
+		FIELD START_PAUSE START_PAUSE I
+		FIELD START_RESUME START_RESUME I
+	CLASS mPadAND mPadAND
+		FIELD PAD_A PAD_A I
+		FIELD PAD_B PAD_B I
+		FIELD PAD_C PAD_C I
+		FIELD PAD_D PAD_D I
+		FIELD PAD_DL PAD_DL I
+		FIELD PAD_DOWN PAD_DOWN I
+		FIELD PAD_DR PAD_DR I
+		FIELD PAD_LEFT PAD_LEFT I
+		FIELD PAD_RIGHT PAD_RIGHT I
+		FIELD PAD_SK3 PAD_SK3 I
+		FIELD PAD_SK4 PAD_SK4 I
+		FIELD PAD_SKneg PAD_SKneg I
+		FIELD PAD_SKneu PAD_SKneu I
+		FIELD PAD_SKpos PAD_SKpos I
+		FIELD PAD_UL PAD_UL I
+		FIELD PAD_UP PAD_UP I
+		FIELD PAD_UR PAD_UR I
+	CLASS mPadBIT mPadBIT
+		FIELD PAD_A PAD_A I
+		FIELD PAD_B PAD_B I
+		FIELD PAD_C PAD_C I
+		FIELD PAD_D PAD_D I
+		FIELD PAD_DL PAD_DL I
+		FIELD PAD_DOWN PAD_DOWN I
+		FIELD PAD_DR PAD_DR I
+		FIELD PAD_LEFT PAD_LEFT I
+		FIELD PAD_RIGHT PAD_RIGHT I
+		FIELD PAD_SK3 PAD_SK3 I
+		FIELD PAD_SK4 PAD_SK4 I
+		FIELD PAD_SKneg PAD_SKneg I
+		FIELD PAD_SKneu PAD_SKneu I
+		FIELD PAD_SKpos PAD_SKpos I
+		FIELD PAD_UL PAD_UL I
+		FIELD PAD_UP PAD_UP I
+		FIELD PAD_UR PAD_UR I
+	CLASS mPadCNT mPadCNT
+		FIELD PAD_A PAD_A I
+		FIELD PAD_B PAD_B I
+		FIELD PAD_C PAD_C I
+		FIELD PAD_D PAD_D I
+		FIELD PAD_DL PAD_DL I
+		FIELD PAD_DOWN PAD_DOWN I
+		FIELD PAD_DR PAD_DR I
+		FIELD PAD_LEFT PAD_LEFT I
+		FIELD PAD_RIGHT PAD_RIGHT I
+		FIELD PAD_SK3 PAD_SK3 I
+		FIELD PAD_SK4 PAD_SK4 I
+		FIELD PAD_SKneg PAD_SKneg I
+		FIELD PAD_SKneu PAD_SKneu I
+		FIELD PAD_SKpos PAD_SKpos I
+		FIELD PAD_UL PAD_UL I
+		FIELD PAD_UP PAD_UP I
+		FIELD PAD_UR PAD_UR I
+	CLASS vendorKeys vendorKeys
+		FIELD VENDOR_DKY VENDOR_DKY B
+		FIELD VENDOR_FKY VENDOR_FKY B
+		FIELD VENDOR_LKY VENDOR_LKY B
+		FIELD VENDOR_NSK VENDOR_NSK B
+		FIELD VENDOR_PSK VENDOR_PSK B
+		FIELD VENDOR_RKY VENDOR_RKY B
+		FIELD VENDOR_UKY VENDOR_UKY B
+CLASS SonicGolf/cObjects SonicGolf/cObjects
+	FIELD BAT_MOVE_DIST BAT_MOVE_DIST B
+	FIELD BAT_SIZE_X BAT_SIZE_X B
+	FIELD BAT_SIZE_Y BAT_SIZE_Y B
+	FIELD BAT_SPEED BAT_SPEED B
+	FIELD BAT_WAKE_UP_RADIUS BAT_WAKE_UP_RADIUS I
+	FIELD BEE_MOVE_DIST BEE_MOVE_DIST I
+	FIELD BEE_SIZE_X BEE_SIZE_X B
+	FIELD BEE_SIZE_Y BEE_SIZE_Y B
+	FIELD BEE_SPEED BEE_SPEED B
+	FIELD BIRD_SIZE_X BIRD_SIZE_X B
+	FIELD BIRD_SIZE_Y BIRD_SIZE_Y B
+	FIELD BOBIN_DIAMETER BOBIN_DIAMETER B
+	FIELD EXPLOSION_SIZE_X EXPLOSION_SIZE_X B
+	FIELD EXPLOSION_SIZE_Y EXPLOSION_SIZE_Y B
+	FIELD FALSE FALSE B
+	FIELD FISH_JUMP_HEIGHT FISH_JUMP_HEIGHT I
+	FIELD FISH_SIZE FISH_SIZE B
+	FIELD FISH_SPEED FISH_SPEED B
+	FIELD FLAG_SIZE_X FLAG_SIZE_X B
+	FIELD FLAG_SIZE_Y FLAG_SIZE_Y B
+	FIELD MAX_AIM_MARKERS MAX_AIM_MARKERS B
+	FIELD MAX_BOBINS MAX_BOBINS B
+	FIELD MAX_DROP_MARKERS MAX_DROP_MARKERS B
+	FIELD MAX_ENEMIES MAX_ENEMIES B
+	FIELD MAX_HOLE_FLAG_SPARKLE MAX_HOLE_FLAG_SPARKLE B
+	FIELD MAX_RINGS MAX_RINGS I
+	FIELD MAX_RING_BOXES MAX_RING_BOXES B
+	FIELD MAX_SPRINGS MAX_SPRINGS B
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD OBJ_BOBIN OBJ_BOBIN B
+	FIELD OBJ_ENEMY OBJ_ENEMY B
+	FIELD OBJ_EXTRA_BALL OBJ_EXTRA_BALL B
+	FIELD OBJ_RING OBJ_RING B
+	FIELD OBJ_RING_BOX OBJ_RING_BOX B
+	FIELD OBJ_ROBOTNIK OBJ_ROBOTNIK B
+	FIELD OBJ_SPIKE_BALL OBJ_SPIKE_BALL B
+	FIELD OBJ_SPIKE_CHAIN OBJ_SPIKE_CHAIN B
+	FIELD OBJ_SPRING_45L OBJ_SPRING_45L B
+	FIELD OBJ_SPRING_45R OBJ_SPRING_45R B
+	FIELD OBJ_SPRING_RED OBJ_SPRING_RED B
+	FIELD RED_45_SPRING_BOOST_X RED_45_SPRING_BOOST_X I
+	FIELD RED_45_SPRING_BOOST_Y RED_45_SPRING_BOOST_Y I
+	FIELD RED_SPRING_BOOST RED_SPRING_BOOST I
+	FIELD RING_BOX_EFFECT_SIZE_X RING_BOX_EFFECT_SIZE_X B
+	FIELD RING_BOX_EFFECT_SIZE_Y RING_BOX_EFFECT_SIZE_Y B
+	FIELD RING_BOX_HIT_OFFSET RING_BOX_HIT_OFFSET B
+	FIELD RING_BOX_RINGS RING_BOX_RINGS B
+	FIELD RING_BOX_SIZE RING_BOX_SIZE B
+	FIELD RING_SIZE RING_SIZE B
+	FIELD RING_SMALL_SIZE RING_SMALL_SIZE B
+	FIELD ROBOTNIK_SIZE_X ROBOTNIK_SIZE_X B
+	FIELD ROBOTNIK_SIZE_Y ROBOTNIK_SIZE_Y B
+	FIELD SAND_EFFECT_SIZE_X SAND_EFFECT_SIZE_X B
+	FIELD SAND_EFFECT_SIZE_Y SAND_EFFECT_SIZE_Y B
+	FIELD SMALL_EXPLOSION_SIZE_X SMALL_EXPLOSION_SIZE_X B
+	FIELD SMALL_EXPLOSION_SIZE_Y SMALL_EXPLOSION_SIZE_Y B
+	FIELD SPIKE_BALL_MOVEMENT SPIKE_BALL_MOVEMENT B
+	FIELD SPIKE_BALL_SIZE SPIKE_BALL_SIZE B
+	FIELD SPLASH_EFFECT_SIZE_X SPLASH_EFFECT_SIZE_X B
+	FIELD SPLASH_EFFECT_SIZE_Y SPLASH_EFFECT_SIZE_Y B
+	FIELD SPRING45_SIZE_X SPRING45_SIZE_X B
+	FIELD SPRING45_SIZE_Y SPRING45_SIZE_Y B
+	FIELD SPRING_SIZE_X SPRING_SIZE_X B
+	FIELD SPRING_SIZE_Y SPRING_SIZE_Y B
+	FIELD SPRING_SIZE_Y_COILED SPRING_SIZE_Y_COILED B
+	FIELD TRUE TRUE B
+	FIELD _mCnvsHeight _mCnvsHeight I
+	FIELD _mCnvsWidth _mCnvsWidth I
+	FIELD _mEnemyBirdUpFrames _mEnemyBirdUpFrames [B
+	FIELD _mImgBirdR _mImgBirdR Ljavax/microedition/lcdui/Image;
+	FIELD _mImgBobin _mImgBobin Ljavax/microedition/lcdui/Image;
+	FIELD _mImgEnemyL _mImgEnemyL Ljavax/microedition/lcdui/Image;
+	FIELD _mImgExplosion _mImgExplosion Ljavax/microedition/lcdui/Image;
+	FIELD _mImgExtraBall _mImgExtraBall Ljavax/microedition/lcdui/Image;
+	FIELD _mImgHoleFlag _mImgHoleFlag Ljavax/microedition/lcdui/Image;
+	FIELD _mImgRingBox _mImgRingBox Ljavax/microedition/lcdui/Image;
+	FIELD _mImgRing _mImgRing Ljavax/microedition/lcdui/Image;
+	FIELD _mImgRobotnikL _mImgRobotnikL Ljavax/microedition/lcdui/Image;
+	FIELD _mImgSandEffect _mImgSandEffect Ljavax/microedition/lcdui/Image;
+	FIELD _mImgScore _mImgScore Ljavax/microedition/lcdui/Image;
+	FIELD _mImgSmallExplosion _mImgSmallExplosion Ljavax/microedition/lcdui/Image;
+	FIELD _mImgSpikeThing _mImgSpikeThing Ljavax/microedition/lcdui/Image;
+	FIELD _mImgSplashEffect _mImgSplashEffect Ljavax/microedition/lcdui/Image;
+	FIELD _mImgSpring45L _mImgSpring45L Ljavax/microedition/lcdui/Image;
+	FIELD _mImgSpring _mImgSpring Ljavax/microedition/lcdui/Image;
+	FIELD _mSprEBBExplosion _mSprEBBExplosion LSonicGolf/cSprite;
+	FIELD _mSprEnemyExplosions _mSprEnemyExplosions [LSonicGolf/cSprite;
+	FIELD _mSprHoleFlagSparkle _mSprHoleFlagSparkle [LSonicGolf/cSprite;
+	FIELD _mSprRBExplosions _mSprRBExplosions [LSonicGolf/cSprite;
+	FIELD mAimMarker mAimMarker [LSonicGolf/cObjects$cMarker;
+	FIELD mBirdLeft mBirdLeft Z
+	FIELD mBirdUp mBirdUp Z
+	FIELD mBlockSpikeMove mBlockSpikeMove [I
+	FIELD mBlockSpikeX mBlockSpikeX [I
+	FIELD mBlockSpikeY mBlockSpikeY [I
+	FIELD mBobinBounce mBobinBounce [Z
+	FIELD mBobinX mBobinX [I
+	FIELD mBobinY mBobinY [I
+	FIELD mEnemyUDRL mEnemyUDRL [Z
+	FIELD mEnemyX mEnemyX [I
+	FIELD mEnemyY mEnemyY [I
+	FIELD mExtraBallEffect mExtraBallEffect LSonicGolf/cObjects$cMarker;
+	FIELD mFishSpikesDone mFishSpikesDone [Z
+	FIELD mFishY mFishY [I
+	FIELD mFrm0to1 mFrm0to1 [B
+	FIELD mFrm0to3 mFrm0to3 [B
+	FIELD mFrm0to4 mFrm0to4 [B
+	FIELD mFrm0to5 mFrm0to5 [B
+	FIELD mFrm0to8 mFrm0to8 [B
+	FIELD mFrm1to0 mFrm1to0 [B
+	FIELD mFrm1to2 mFrm1to2 [B
+	FIELD mFrm1to3 mFrm1to3 [B
+	FIELD mFrm3to0 mFrm3to0 [B
+	FIELD mFrm4to8 mFrm4to8 [B
+	FIELD mFrmStatic0 mFrmStatic0 [B
+	FIELD mFrmStatic1 mFrmStatic1 [B
+	FIELD mFrmStatic2 mFrmStatic2 [B
+	FIELD mFrmStatic3 mFrmStatic3 [B
+	FIELD mFrmStatic4 mFrmStatic4 [B
+	FIELD mFrmStatic6 mFrmStatic6 [B
+	FIELD mRingBoxEffect mRingBoxEffect [LSonicGolf/cObjects$cMarker;
+	FIELD mRobotnikLaughTimer mRobotnikLaughTimer I
+	FIELD mRobotnikMaxY mRobotnikMaxY I
+	FIELD mRobotnikMinY mRobotnikMinY I
+	FIELD mRobotnikUp mRobotnikUp Z
+	FIELD mShotDropped mShotDropped I
+	FIELD mSpikeMarker mSpikeMarker [LSonicGolf/cObjects$cMarker;
+	FIELD mSprBallExplosion mSprBallExplosion LSonicGolf/cSprite;
+	FIELD mSprBird mSprBird LSonicGolf/cSprite;
+	FIELD mSprEnemies mSprEnemies [LSonicGolf/cSprite;
+	FIELD mSprEnemyBirds mSprEnemyBirds [LSonicGolf/cSprite;
+	FIELD mSprExtraBallBox mSprExtraBallBox LSonicGolf/cSprite;
+	FIELD mSprHoleFlagExplosion mSprHoleFlagExplosion LSonicGolf/cSprite;
+	FIELD mSprHoleFlag mSprHoleFlag LSonicGolf/cSprite;
+	FIELD mSprRingBoxes mSprRingBoxes [LSonicGolf/cSprite;
+	FIELD mSprRings mSprRings [LSonicGolf/cSprite;
+	FIELD mSprRobotnik mSprRobotnik LSonicGolf/cSprite;
+	FIELD mSprSandEffect mSprSandEffect LSonicGolf/cSprite;
+	FIELD mSprSplashEffect mSprSplashEffect LSonicGolf/cSprite;
+	FIELD mSprSprings45L mSprSprings45L [LSonicGolf/cSprite;
+	FIELD mSprSprings45R mSprSprings45R [LSonicGolf/cSprite;
+	FIELD mSprSprings mSprSprings [LSonicGolf/cSprite;
+	FIELD mWaterMarker mWaterMarker [LSonicGolf/cObjects$cMarker;
+	METHOD checkCollisions checkCollisions (IIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+	METHOD checkGenericCircleCollision checkGenericCircleCollision (IIIIIIIII)Z
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 integer8
+		ARG 8 integer9
+	METHOD checkGenericRectCollision checkGenericRectCollision (IIIIBIIIIBI)Z
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 byte5
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 integer8
+		ARG 8 integer9
+		ARG 9 byte10
+		ARG 10 integer11
+	METHOD checkSimpleBoxColl checkSimpleBoxColl (IIIIIIII)Z
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 integer8
+	METHOD checkSpringCollision checkSpringCollision (IIII[LSonicGolf/cSprite;III)Z
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 arr
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 integer8
+	METHOD close close ()V
+	METHOD collided collided (BI)V
+		ARG 0 byte1
+		ARG 1 integer
+	METHOD collidedBobin collidedBobin (III)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD collidedEnemy collidedEnemy (I)V
+		ARG 0 integer
+	METHOD collidedExtraBall collidedExtraBall ()V
+	METHOD collidedRing collidedRing (I)V
+		ARG 0 integer
+	METHOD collidedRingBox collidedRingBox (I)V
+		ARG 0 integer
+	METHOD collidedRobotnik collidedRobotnik ()V
+	METHOD collidedSpikeObj collidedSpikeObj (I)V
+		ARG 0 integer
+	METHOD collidedSpring collidedSpring (LSonicGolf/cSprite;III)V
+		ARG 0 cSprite
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+	METHOD init init (B)V
+		ARG 0 byte1
+	METHOD loadObjectGraphics loadObjectGraphics (B)V
+		ARG 0 byte1
+	METHOD open open (II)V
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD playEffect playEffect (LSonicGolf/cSprite;II)V
+		ARG 0 cSprite
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderBobins renderBobins (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderEffects renderEffects (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderEnemies renderEnemies (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderFlag renderFlag (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderFlagEffects renderFlagEffects (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderPowerUpBoxes renderPowerUpBoxes (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderRings renderRings (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderRobotnik renderRobotnik (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderSpikeBalls renderSpikeBalls (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderSpikeChains renderSpikeChains (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderSprings renderSprings (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderSprite renderSprite (Ljavax/microedition/lcdui/Graphics;LSonicGolf/cSprite;Ljavax/microedition/lcdui/Image;II)V
+		ARG 0 graphics
+		ARG 1 cSprite
+		ARG 2 image
+		ARG 3 integer4
+		ARG 4 integer5
+	METHOD renderSprite renderSprite (Ljavax/microedition/lcdui/Graphics;LSonicGolf/cSprite;Ljavax/microedition/lcdui/Image;IIB)V
+		ARG 0 graphics
+		ARG 1 cSprite
+		ARG 2 image
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 byte6
+	METHOD reset reset ()V
+	METHOD resetBobins resetBobins ()V
+	METHOD resetEnemies resetEnemies ()V
+	METHOD resetHoleFlag resetHoleFlag ()V
+	METHOD resetPowerUpBoxes resetPowerUpBoxes ()V
+	METHOD resetRings resetRings ()V
+	METHOD resetSpikeThings resetSpikeThings ()V
+	METHOD resetSprings resetSprings ()V
+	METHOD updateBat updateBat (I)V
+		ARG 0 integer
+	METHOD updateBee updateBee (I)V
+		ARG 0 integer
+	METHOD updateEnemies updateEnemies ()V
+	METHOD updateEnemyBird updateEnemyBird (LSonicGolf/cSprite;I)V
+		ARG 0 cSprite
+		ARG 1 integer
+	METHOD updateFish updateFish (I)V
+		ARG 0 integer
+	METHOD updateFlag updateFlag ()V
+	METHOD updateHoleBird updateHoleBird ()V
+	METHOD updatePowerUpBoxes updatePowerUpBoxes ()V
+	METHOD updateRings updateRings ()V
+	METHOD updateRobotnik updateRobotnik ()V
+	METHOD updateSpikeBalls updateSpikeBalls ()V
+	METHOD updateSpikeChains updateSpikeChains ()V
+	METHOD updateSprings updateSprings ()V
+	METHOD updateSpriteEffect updateSpriteEffect (LSonicGolf/cSprite;)V
+		ARG 0 cSprite
+	CLASS cMarker cMarker
+		FIELD mActive mActive Z
+		FIELD mX mX I
+		FIELD mY mY I
+CLASS SonicGolf/cSonicGolfspng SonicGolf/cSonicGolfspng
+	FIELD BALLPOWERGLOW_PNG BALLPOWERGLOW_PNG J
+	FIELD BALLPOWERSHOT_PNG BALLPOWERSHOT_PNG J
+	FIELD BALL_PNG BALL_PNG J
+	FIELD BANG_WAV BANG_WAV J
+	FIELD BGUI_PNG BGUI_PNG J
+	FIELD BIRDGREENHILLR_PNG BIRDGREENHILLR_PNG J
+	FIELD BIRDMARBLER_PNG BIRDMARBLER_PNG J
+	FIELD BIRDSPRINGYARDR_PNG BIRDSPRINGYARDR_PNG J
+	FIELD BOBIN_PNG BOBIN_PNG J
+	FIELD BOUNCE_WAV BOUNCE_WAV J
+	FIELD BUNKER_WAV BUNKER_WAV J
+	FIELD CHARSELECT_PNG CHARSELECT_PNG J
+	FIELD CROSSHAIR_PNG CROSSHAIR_PNG J
+	FIELD DATA_DETAILS_CACHE DATA_DETAILS_CACHE I
+	FIELD DATA_DETAILS_FILENAME DATA_DETAILS_FILENAME Ljava/lang/String;
+	FIELD DATA_DETAILS_RESOURCE_COUNT DATA_DETAILS_RESOURCE_COUNT I
+	FIELD DATA_DETAILS_SCRATCH_SIZE DATA_DETAILS_SCRATCH_SIZE I
+	FIELD DATA_LEN DATA_LEN J
+	FIELD ENEMYGREENHILL_PNG ENEMYGREENHILL_PNG J
+	FIELD ENEMYMARBLEL_PNG ENEMYMARBLEL_PNG J
+	FIELD ENEMYSPRINGYARDL_PNG ENEMYSPRINGYARDL_PNG J
+	FIELD EXPLOSION_PNG EXPLOSION_PNG J
+	FIELD EXTRABALL_PNG EXTRABALL_PNG J
+	FIELD FLAG_PNG FLAG_PNG J
+	FIELD FONT10GREEN_IMP FONT10GREEN_IMP J
+	FIELD FONT10RED_IMP FONT10RED_IMP J
+	FIELD FONT10YELLOW_IMP FONT10YELLOW_IMP J
+	FIELD FONT10_IMP FONT10_IMP J
+	FIELD FONT16_IMP FONT16_IMP J
+	FIELD GHINTRO_MID GHINTRO_MID J
+	FIELD GHLOOP_MID GHLOOP_MID J
+	FIELD GHMAP1_BIN GHMAP1_BIN J
+	FIELD GHMAP2_BIN GHMAP2_BIN J
+	FIELD GHMAP3_BIN GHMAP3_BIN J
+	FIELD GHMAP4_BIN GHMAP4_BIN J
+	FIELD GHMAP5_BIN GHMAP5_BIN J
+	FIELD GHMAP6_BIN GHMAP6_BIN J
+	FIELD GHMAP7_BIN GHMAP7_BIN J
+	FIELD GHMAP8_BIN GHMAP8_BIN J
+	FIELD GHMAP9_BIN GHMAP9_BIN J
+	FIELD GHPARALLAX_PNG GHPARALLAX_PNG J
+	FIELD HITBALL_WAV HITBALL_WAV J
+	FIELD HOLEFAILURE_MID HOLEFAILURE_MID J
+	FIELD HOLESUCCESS_MID HOLESUCCESS_MID J
+	FIELD HUDBALLFLASH_PNG HUDBALLFLASH_PNG J
+	FIELD HUDBARBACK_PNG HUDBARBACK_PNG J
+	FIELD HUDBARFRONT_PNG HUDBARFRONT_PNG J
+	FIELD HUDDISCSMALL_PNG HUDDISCSMALL_PNG J
+	FIELD HUDDISC_PNG HUDDISC_PNG J
+	FIELD HUDICONS_PNG HUDICONS_PNG J
+	FIELD HUDTOP_PNG HUDTOP_PNG J
+	FIELD HUDWINDBAR_PNG HUDWINDBAR_PNG J
+	FIELD HUDWINDFLAG_PNG HUDWINDFLAG_PNG J
+	FIELD KNUCKLESBOREDR_PNG KNUCKLESBOREDR_PNG J
+	FIELD KNUCKLESEYESR_PNG KNUCKLESEYESR_PNG J
+	FIELD KNUCKLESJOYR_PNG KNUCKLESJOYR_PNG J
+	FIELD KNUCKLESSWINGL_PNG KNUCKLESSWINGL_PNG J
+	FIELD MAPGREENHILL_PNG MAPGREENHILL_PNG J
+	FIELD MAPMARBLE_PNG MAPMARBLE_PNG J
+	FIELD MAPSPRINGYARD_PNG MAPSPRINGYARD_PNG J
+	FIELD MARBLEINTRO_MID MARBLEINTRO_MID J
+	FIELD MARBLELOOP_MID MARBLELOOP_MID J
+	FIELD MMAP1_BIN MMAP1_BIN J
+	FIELD MMAP2_BIN MMAP2_BIN J
+	FIELD MMAP3_BIN MMAP3_BIN J
+	FIELD MMAP4_BIN MMAP4_BIN J
+	FIELD MMAP5_BIN MMAP5_BIN J
+	FIELD MMAP6_BIN MMAP6_BIN J
+	FIELD MMAP7_BIN MMAP7_BIN J
+	FIELD MMAP8_BIN MMAP8_BIN J
+	FIELD MMAP9_BIN MMAP9_BIN J
+	FIELD MPARALLAX_PNG MPARALLAX_PNG J
+	FIELD MUSICUI_MID MUSICUI_MID J
+	FIELD PACK_GAMEGENERIC PACK_GAMEGENERIC [J
+	FIELD PACK_GAMEGREENHILL PACK_GAMEGREENHILL [J
+	FIELD PACK_GAMEMARBLE PACK_GAMEMARBLE [J
+	FIELD PACK_GAMESPRINGYARD PACK_GAMESPRINGYARD [J
+	FIELD PACK_GLOBALS PACK_GLOBALS [J
+	FIELD PACK_SOUNDFX PACK_SOUNDFX [J
+	FIELD PACK_SOUNDGENERIC PACK_SOUNDGENERIC [J
+	FIELD PACK_SOUNDGREENHILL PACK_SOUNDGREENHILL [J
+	FIELD PACK_SOUNDMARBLE PACK_SOUNDMARBLE [J
+	FIELD PACK_SOUNDSPRINGYARD PACK_SOUNDSPRINGYARD [J
+	FIELD PACK_SOUNDUI PACK_SOUNDUI [J
+	FIELD PACK_SPLASHES PACK_SPLASHES [J
+	FIELD PACK_SPRITESKNUCKLES PACK_SPRITESKNUCKLES [J
+	FIELD PACK_SPRITESROBOTNIK PACK_SPRITESROBOTNIK [J
+	FIELD PACK_SPRITESSONIC PACK_SPRITESSONIC [J
+	FIELD PACK_SPRITESTAILS PACK_SPRITESTAILS [J
+	FIELD PACK_UI PACK_UI [J
+	FIELD PADLOCKUI_PNG PADLOCKUI_PNG J
+	FIELD RINGBOX_PNG RINGBOX_PNG J
+	FIELD RINGCHING_WAV RINGCHING_WAV J
+	FIELD RINGSMALL_PNG RINGSMALL_PNG J
+	FIELD RING_PNG RING_PNG J
+	FIELD ROBOTNIKL_PNG ROBOTNIKL_PNG J
+	FIELD SANDEFFECT_PNG SANDEFFECT_PNG J
+	FIELD SCORECHING_MID SCORECHING_MID J
+	FIELD SCORE_PNG SCORE_PNG J
+	FIELD SMALLEXPLOSION_PNG SMALLEXPLOSION_PNG J
+	FIELD SONICBOREDR_PNG SONICBOREDR_PNG J
+	FIELD SONICEYESR_PNG SONICEYESR_PNG J
+	FIELD SONICJOYR_PNG SONICJOYR_PNG J
+	FIELD SONICSWINGL_PNG SONICSWINGL_PNG J
+	FIELD SPIKEBALL_PNG SPIKEBALL_PNG J
+	FIELD SPIKECHAIN_PNG SPIKECHAIN_PNG J
+	FIELD SPLASHEFFECT_PNG SPLASHEFFECT_PNG J
+	FIELD SPLASHLOAD_PNG SPLASHLOAD_PNG J
+	FIELD SPLASHRP_PNG SPLASHRP_PNG J
+	FIELD SPLASHSEGA_PNG SPLASHSEGA_PNG J
+	FIELD SPRING45L_PNG SPRING45L_PNG J
+	FIELD SPRINGBOUNG_WAV SPRINGBOUNG_WAV J
+	FIELD SPRING_PNG SPRING_PNG J
+	FIELD SWINGUP_WAV SWINGUP_WAV J
+	FIELD SYINTRO_MID SYINTRO_MID J
+	FIELD SYLOOP_MID SYLOOP_MID J
+	FIELD SYMAP1_BIN SYMAP1_BIN J
+	FIELD SYMAP2_BIN SYMAP2_BIN J
+	FIELD SYMAP3_BIN SYMAP3_BIN J
+	FIELD SYMAP4_BIN SYMAP4_BIN J
+	FIELD SYMAP5_BIN SYMAP5_BIN J
+	FIELD SYMAP6_BIN SYMAP6_BIN J
+	FIELD SYMAP7_BIN SYMAP7_BIN J
+	FIELD SYMAP8_BIN SYMAP8_BIN J
+	FIELD SYMAP9_BIN SYMAP9_BIN J
+	FIELD SYPARALLAX_PNG SYPARALLAX_PNG J
+	FIELD TAILSBOREDR_PNG TAILSBOREDR_PNG J
+	FIELD TAILSEYESR_PNG TAILSEYESR_PNG J
+	FIELD TAILSJOYR_PNG TAILSJOYR_PNG J
+	FIELD TAILSSWINGL_PNG TAILSSWINGL_PNG J
+	FIELD TAILSTAILR_PNG TAILSTAILR_PNG J
+	FIELD _CORAL_SPONGE_COUNT _CORAL_SPONGE_COUNT I
+	FIELD gSpongeHeader gSpongeHeader Z
+	FIELD gSpongeLegacy gSpongeLegacy Z
+	FIELD resAMR resAMR I
+	FIELD resAPP resAPP I
+	FIELD resBIN resBIN I
+	FIELD resBMP resBMP I
+	FIELD resFIG resFIG I
+	FIELD resI2D resI2D I
+	FIELD resIMG resIMG I
+	FIELD resIMP resIMP I
+	FIELD resM3G resM3G I
+	FIELD resMID resMID I
+	FIELD resNDEF resNDEF I
+	FIELD resPAL resPAL I
+	FIELD resPNG resPNG I
+	FIELD resSPG resSPG I
+	FIELD resSTR resSTR I
+	FIELD resWAV resWAV I
+CLASS Coral/Debug/crlDebug Coral/Debug/crlDebug
+	METHOD print print (Ljava/lang/String;)V
+		ARG 0 string
+	METHOD print print (Ljava/lang/String;B)V
+		ARG 0 string
+		ARG 1 byte2
+	METHOD print print (Ljava/lang/String;I)V
+		ARG 0 string
+		ARG 1 integer
+	METHOD print print (Ljava/lang/String;J)V
+		ARG 0 string
+		ARG 1 long2
+	METHOD print print (Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 0 string
+		ARG 1 object
+	METHOD print print (Ljava/lang/String;Ljava/lang/Throwable;)V
+		ARG 0 string
+		ARG 1 throwable
+	METHOD print print (Ljava/lang/String;S)V
+		ARG 0 string
+		ARG 1 short2
+	METHOD print print (Ljava/lang/String;Z)V
+		ARG 0 string
+		ARG 1 boolean2
+	METHOD print print (Ljava/lang/Throwable;)V
+		ARG 0 throwable
+	METHOD printMatrix printMatrix ([F)V
+		ARG 0 arr
+CLASS Coral/Util/crlInt Coral/Util/crlInt
+	FIELD mValue mValue I
+	METHOD <init> (I)V
+		ARG 1 integer
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD getValue getValue ()I
+	METHOD setValue setValue (I)V
+		ARG 1 integer
+CLASS SonicGolf/cCourse SonicGolf/cCourse
+	FIELD CENTRE_BOT_MARGIN CENTRE_BOT_MARGIN B
+	FIELD CENTRE_TOP_MARGIN CENTRE_TOP_MARGIN B
+	FIELD CENTRE_X_MARGIN CENTRE_X_MARGIN B
+	FIELD EXTRA_BOTTOM_ROWS EXTRA_BOTTOM_ROWS B
+	FIELD EXTRA_TOP_ROWS EXTRA_TOP_ROWS B
+	FIELD GREEN_HILL GREEN_HILL B
+	FIELD HOLE_RADIUS HOLE_RADIUS B
+	FIELD MARBLE MARBLE B
+	FIELD MAX_COURSES MAX_COURSES B
+	FIELD MAX_HOLES MAX_HOLES B
+	FIELD MAX_PAN_MARKERS MAX_PAN_MARKERS B
+	FIELD MAX_SHOTS_ALLOWED MAX_SHOTS_ALLOWED B
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD SPRING_YARD SPRING_YARD B
+	FIELD TILE_BLOCK TILE_BLOCK B
+	FIELD TILE_BREAKABLE TILE_BREAKABLE B
+	FIELD TILE_BRIDGE TILE_BRIDGE B
+	FIELD TILE_BUNKER TILE_BUNKER B
+	FIELD TILE_CEIL_LEFT_SLOPE TILE_CEIL_LEFT_SLOPE B
+	FIELD TILE_CEIL_RIGHT_SLOPE TILE_CEIL_RIGHT_SLOPE B
+	FIELD TILE_EMPTY TILE_EMPTY B
+	FIELD TILE_GREEN TILE_GREEN B
+	FIELD TILE_HOLE TILE_HOLE B
+	FIELD TILE_ROLL_LEFT_1_1 TILE_ROLL_LEFT_1_1 B
+	FIELD TILE_ROLL_LEFT_1_2 TILE_ROLL_LEFT_1_2 B
+	FIELD TILE_ROLL_LEFT_1_3 TILE_ROLL_LEFT_1_3 B
+	FIELD TILE_ROLL_LEFT_2_2 TILE_ROLL_LEFT_2_2 B
+	FIELD TILE_ROLL_LEFT_2_3 TILE_ROLL_LEFT_2_3 B
+	FIELD TILE_ROLL_LEFT_3_3 TILE_ROLL_LEFT_3_3 B
+	FIELD TILE_ROLL_LEFT_STEEP_1 TILE_ROLL_LEFT_STEEP_1 B
+	FIELD TILE_ROLL_LEFT_STEEP_2 TILE_ROLL_LEFT_STEEP_2 B
+	FIELD TILE_ROLL_RIGHT_1_1 TILE_ROLL_RIGHT_1_1 B
+	FIELD TILE_ROLL_RIGHT_1_2 TILE_ROLL_RIGHT_1_2 B
+	FIELD TILE_ROLL_RIGHT_1_3 TILE_ROLL_RIGHT_1_3 B
+	FIELD TILE_ROLL_RIGHT_2_2 TILE_ROLL_RIGHT_2_2 B
+	FIELD TILE_ROLL_RIGHT_2_3 TILE_ROLL_RIGHT_2_3 B
+	FIELD TILE_ROLL_RIGHT_3_3 TILE_ROLL_RIGHT_3_3 B
+	FIELD TILE_ROLL_RIGHT_STEEP_1 TILE_ROLL_RIGHT_STEEP_1 B
+	FIELD TILE_ROLL_RIGHT_STEEP_2 TILE_ROLL_RIGHT_STEEP_2 B
+	FIELD TILE_SIZE TILE_SIZE B
+	FIELD TILE_SIZE_RBS TILE_SIZE_RBS B
+	FIELD TILE_SPIKES TILE_SPIKES B
+	FIELD TILE_WATER TILE_WATER B
+	FIELD _mCanvas _mCanvas LSonicGolf/cCanvas;
+	FIELD _mCloudMover _mCloudMover I
+	FIELD _mCourseID _mCourseID B
+	FIELD _mFPXLeftEnd _mFPXLeftEnd I
+	FIELD _mFPXLeft _mFPXLeft I
+	FIELD _mFPXRight _mFPXRight I
+	FIELD _mFPYBottom _mFPYBottom I
+	FIELD _mFPYTopEnd _mFPYTopEnd I
+	FIELD _mFPYTop _mFPYTop I
+	FIELD _mImgPTiles _mImgPTiles Ljavax/microedition/lcdui/Image;
+	FIELD _mImgTiles _mImgTiles Ljavax/microedition/lcdui/Image;
+	FIELD _mRates _mRates [[B
+	FIELD _mStartCol _mStartCol I
+	FIELD _mStartRow _mStartRow I
+	FIELD _mTotColsInImage _mTotColsInImage B
+	FIELD _mVisibleCols _mVisibleCols B
+	FIELD _mVisibleRows _mVisibleRows B
+	FIELD _mZoneBGColTable _mZoneBGColTable [I
+	FIELD _mZoneSets _mZoneSets [[[[B
+	FIELD mBallStartFPX mBallStartFPX I
+	FIELD mBallStartFPY mBallStartFPY I
+	FIELD mCollisionInfo mCollisionInfo [[B
+	FIELD mFPDX mFPDX I
+	FIELD mFPDY mFPDY I
+	FIELD mFPHoleX mFPHoleX I
+	FIELD mFPHoleY mFPHoleY I
+	FIELD mFPX mFPX I
+	FIELD mFPY mFPY I
+	FIELD mHeight mHeight I
+	FIELD mPanMarkers mPanMarkers [LSonicGolf/cObjects$cMarker;
+	FIELD mPar mPar [B
+	FIELD mScrHeight mScrHeight I
+	FIELD mScrWidth mScrWidth I
+	FIELD mTiles mTiles [[B
+	FIELD mTotCols mTotCols I
+	FIELD mTotRows mTotRows I
+	FIELD mWidth mWidth I
+	METHOD alignPlayer alignPlayer (IIB)Z
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 byte3
+	METHOD centreViewPoint centreViewPoint (IIIBB)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 byte4
+		ARG 4 byte5
+	METHOD close close ()V
+	METHOD initParallax initParallax ()V
+	METHOD loadGraphics loadGraphics (I)V
+		ARG 0 integer
+	METHOD loadMap loadMap (LCoral/Util/crlBinArray;)V
+		ARG 0 crlBinArray
+	METHOD loadParallaxGraphics loadParallaxGraphics (I)V
+		ARG 0 integer
+	METHOD moveViewPoint moveViewPoint ()V
+	METHOD open open (LSonicGolf/cCanvas;)V
+		ARG 0 cCanvas
+	METHOD removeBrokenBlocks removeBrokenBlocks ()V
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderParallax renderParallax (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+	METHOD renderParallax renderParallax (Ljavax/microedition/lcdui/Graphics;II[B)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 arr
+	METHOD renderParallaxSlices renderParallaxSlices (Ljavax/microedition/lcdui/Graphics;II[B)V
+		ARG 0 graphics
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 arr
+	METHOD replaceBGTile replaceBGTile (II)V
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD setPars setPars (I)V
+		ARG 0 integer
+	METHOD updateViewPoint updateViewPoint ()V
+CLASS SonicGolf/cCanvas SonicGolf/cCanvas
+	FIELD AUDIO_GENERIC AUDIO_GENERIC [J
+	FIELD AUDIO_GREEN_HILL AUDIO_GREEN_HILL [J
+	FIELD AUDIO_MARBLE AUDIO_MARBLE [J
+	FIELD AUDIO_SPRING_YARD AUDIO_SPRING_YARD [J
+	FIELD AUDIO_UI AUDIO_UI [J
+	FIELD BALL_BONUS BALL_BONUS I
+	FIELD CAMERA_PAN_OFFSET CAMERA_PAN_OFFSET I
+	FIELD DEMO DEMO Z
+	FIELD DIFF_AMATEUR DIFF_AMATEUR B
+	FIELD DIFF_NOVICE DIFF_NOVICE B
+	FIELD DIFF_PRO DIFF_PRO B
+	FIELD FALSE FALSE B
+	FIELD GAME_COURSE GAME_COURSE B
+	FIELD GAME_FULL GAME_FULL B
+	FIELD GAME_HOLE GAME_HOLE B
+	FIELD GL_ALIGN_PLAYER GL_ALIGN_PLAYER B
+	FIELD GL_BAD_HOLE_ENDING GL_BAD_HOLE_ENDING B
+	FIELD GL_BALL_LOST GL_BALL_LOST B
+	FIELD GL_COURSE_END GL_COURSE_END B
+	FIELD GL_GAME_OVER GL_GAME_OVER B
+	FIELD GL_HOLED_FINISH GL_HOLED_FINISH B
+	FIELD GL_HOLED_START GL_HOLED_START B
+	FIELD GL_HOLE_COMPLETE GL_HOLE_COMPLETE B
+	FIELD GL_INIT_HOLE GL_INIT_HOLE B
+	FIELD GL_INIT_STRIKE GL_INIT_STRIKE B
+	FIELD GL_MP_SCORES GL_MP_SCORES B
+	FIELD GL_PAN_HOLE GL_PAN_HOLE B
+	FIELD GL_SHOOT_BALL GL_SHOOT_BALL B
+	FIELD GL_VIEW_HOLE GL_VIEW_HOLE B
+	FIELD INITIAL_CHARS INITIAL_CHARS B
+	FIELD INTRO_TEXT_SPEED INTRO_TEXT_SPEED B
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD PAN_FAST_SPEED PAN_FAST_SPEED B
+	FIELD PAN_NORM_SPEED PAN_NORM_SPEED B
+	FIELD PAR_BONUS PAR_BONUS I
+	FIELD RING_BONUS RING_BONUS I
+	FIELD RMS_GAME RMS_GAME Ljava/lang/String;
+	FIELD RMS_OPTIONS RMS_OPTIONS Ljava/lang/String;
+	FIELD RMS_RECORDS RMS_RECORDS Ljava/lang/String;
+	FIELD SPLASH_DELAY SPLASH_DELAY B
+	FIELD TABLE_ENTRIES TABLE_ENTRIES B
+	FIELD TRUE TRUE B
+	FIELD VERSION_LANG_MASK VERSION_LANG_MASK I
+	FIELD _gmMdlt _gmMdlt LSonicGolf/SonicGolf;
+	FIELD _mCameraPanOffset _mCameraPanOffset I
+	FIELD _mCourseBackFPX _mCourseBackFPX I
+	FIELD _mCourseBackFPY _mCourseBackFPY I
+	FIELD _mCurrPanMarker _mCurrPanMarker B
+	FIELD _mEndFadeStarted _mEndFadeStarted Z
+	FIELD _mExitIn _mExitIn Z
+	FIELD _mGameInitialised _mGameInitialised Z
+	FIELD _mGraphicsBuffer _mGraphicsBuffer Ljavax/microedition/lcdui/Graphics;
+	FIELD _mImgBuffer _mImgBuffer Ljavax/microedition/lcdui/Image;
+	FIELD _mIntroTextMover1 _mIntroTextMover1 I
+	FIELD _mIntroTextMover2 _mIntroTextMover2 I
+	FIELD _mIntroTextMover3 _mIntroTextMover3 I
+	FIELD _mLoadStart _mLoadStart I
+	FIELD _mLogoY _mLogoY I
+	FIELD _mMaxShotPower _mMaxShotPower B
+	FIELD _mMoveBallSpeed _mMoveBallSpeed I
+	FIELD _mNextCourse _mNextCourse Z
+	FIELD _mPlayReplay _mPlayReplay Z
+	FIELD _mPowerInc _mPowerInc I
+	FIELD _mReplaceBall _mReplaceBall Z
+	FIELD _mScoreClocked _mScoreClocked Z
+	FIELD _mSpinDown _mSpinDown Z
+	FIELD _mSpinUp _mSpinUp Z
+	FIELD _mSplashCount _mSplashCount I
+	FIELD _mStrike _mStrike Z
+	FIELD _mUI _mUI LSonicGolf/cUI;
+	FIELD _mViewMode _mViewMode Z
+	FIELD mAudioFullyLoaded mAudioFullyLoaded Z
+	FIELD mAudioManager mAudioManager LCoral/Audio/crlAudioManager;
+	FIELD mBadHoleEnding mBadHoleEnding Z
+	FIELD mBestLongestDrive mBestLongestDrive I
+	FIELD mBestLongestPutt mBestLongestPutt I
+	FIELD mBestRingsShot mBestRingsShot B
+	FIELD mCheatsActive mCheatsActive Z
+	FIELD mCount mCount I
+	FIELD mCurrCourseID mCurrCourseID B
+	FIELD mCurrHoleID mCurrHoleID B
+	FIELD mCurrPlayerID mCurrPlayerID B
+	FIELD mDelay mDelay J
+	FIELD mDemoURL mDemoURL Ljava/lang/String;
+	FIELD mDifficulty mDifficulty B
+	FIELD mEndScoreCard mEndScoreCard Z
+	FIELD mExitMovingOut mExitMovingOut Z
+	FIELD mFrameCount mFrameCount I
+	FIELD mGameLoopState mGameLoopState B
+	FIELD mGameSettings mGameSettings [I
+	FIELD mGameType mGameType B
+	FIELD mHoleInitialTable mHoleInitialTable [[B
+	FIELD mHoleLocked mHoleLocked [Z
+	FIELD mHoleScoreTablePars mHoleScoreTablePars [I
+	FIELD mHoleScoreTable mHoleScoreTable [I
+	FIELD mInitialTable mInitialTable [[[B
+	FIELD mInterruptMode mInterruptMode I
+	FIELD mIntroIn mIntroIn Z
+	FIELD mIntroOut mIntroOut Z
+	FIELD mLoadBarInterrupt mLoadBarInterrupt Z
+	FIELD mLoadingGame mLoadingGame Z
+	FIELD mMoveBall mMoveBall Z
+	FIELD mPanBackFast mPanBackFast Z
+	FIELD mPaused mPaused Z
+	FIELD mPlayer mPlayer [LSonicGolf/cPlayer;
+	FIELD mPowerShot mPowerShot Z
+	FIELD mPowerUp mPowerUp Z
+	FIELD mRand mRand Ljava/util/Random;
+	FIELD mScoreTablePars mScoreTablePars [[I
+	FIELD mScoreTable mScoreTable [[I
+	FIELD mShotPower mShotPower B
+	FIELD mShowCoords mShowCoords Z
+	FIELD mTotBirdsFreed mTotBirdsFreed I
+	FIELD mTotChipIns mTotChipIns I
+	FIELD mTotHolesInOne mTotHolesInOne I
+	FIELD mTotPlayers mTotPlayers B
+	FIELD mUnlockMovingIn mUnlockMovingIn Z
+	FIELD mUpsellURL mUpsellURL Ljava/lang/String;
+	FIELD mUpsell mUpsell Z
+	METHOD <init> (LSonicGolf/SonicGolf;)V
+		ARG 1 sonicGolf
+	METHOD actionSFX actionSFX (I)V
+		ARG 0 integer
+	METHOD actionVibrate actionVibrate (I)V
+		ARG 0 integer
+	METHOD exitToURL exitToURL (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD initCanvas initCanvas ()V
+	METHOD initHoleComplete initHoleComplete ()V
+	METHOD initHoleStart initHoleStart ()V
+	METHOD initStrike initStrike ()V
+	METHOD isHighScore isHighScore (II)Z
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD isHoleHighScore isHoleHighScore (II)Z
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD isTooManyShots isTooManyShots ()Z
+	METHOD loadGameData loadGameData ()Z
+	METHOD loadObjectData loadObjectData (Ljava/io/DataInputStream;I[LSonicGolf/cSprite;)V
+		ARG 0 dataInputStream
+		ARG 1 integer
+		ARG 2 arr
+	METHOD loadOptionData loadOptionData ()V
+	METHOD loadResources loadResources ()V
+	METHOD loadScoresUnlocksData loadScoresUnlocksData ()V
+	METHOD moveHoleCompleteIn moveHoleCompleteIn ()V
+	METHOD moveHoleCompleteOut moveHoleCompleteOut ()V
+	METHOD moveIntroIn moveIntroIn ()V
+	METHOD moveIntroOut moveIntroOut ()I
+	METHOD nextCourse nextCourse ()V
+	METHOD nextShot nextShot ()V
+	METHOD playBadHoleEnding playBadHoleEnding ()V
+	METHOD renderDebugInfo renderDebugInfo (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderGame renderGame (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderGameSprites renderGameSprites (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderHoleEndText renderHoleEndText (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderImage renderImage (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIIIII)V
+		ARG 0 graphics
+		ARG 1 image
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 integer8
+	METHOD resetGameData resetGameData ()V
+	METHOD resetIntroState resetIntroState ()V
+	METHOD resetIntroText resetIntroText ()V
+	METHOD resetKeys resetKeys ()V
+	METHOD resetRecordsData resetRecordsData ()V
+	METHOD saveGameData saveGameData ()V
+	METHOD saveObjectData saveObjectData (Ljava/io/DataOutputStream;I[LSonicGolf/cSprite;Z)V
+		ARG 0 dataOutputStream
+		ARG 1 integer
+		ARG 2 arr
+		ARG 3 boolean4
+	METHOD saveOptionData saveOptionData ()V
+	METHOD saveScoreStatUnlockData saveScoreStatUnlockData ()V
+	METHOD setHighScore setHighScore (III[B)Z
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 arr
+	METHOD setHoleHighScore setHoleHighScore (III[B)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 arr
+	METHOD singleHoleOver singleHoleOver ()V
+	METHOD startGame startGame (Z)V
+		ARG 1 boolean1
+	METHOD startGameOver startGameOver ()V
+	METHOD startPan startPan ()V
+	METHOD strike strike ()V
+	METHOD tooManyShots tooManyShots ()V
+	METHOD unlockAll unlockAll ()V
+	METHOD updateGame updateGame ()V
+	METHOD updateGameKeys updateGameKeys ()V
+	METHOD updateHoledFinish updateHoledFinish ()V
+	METHOD updateHoledStart updateHoledStart ()V
+	METHOD updateMusic updateMusic ()V
+	METHOD updatePan updatePan ()V
+	METHOD updateStrike updateStrike ()V
+	CLASS gState gState
+		FIELD GAME_LOAD GAME_LOAD I
+		FIELD IN_GAME_SCORECARD IN_GAME_SCORECARD I
+		FIELD IN_GAME_STATS IN_GAME_STATS I
+	CLASS gameSettings gameSettings
+		FIELD TOTAL_SETTINGS TOTAL_SETTINGS B
+		FIELD VIBRATION_ENABLED VIBRATION_ENABLED B
+		FIELD VOLUME_MUSIC VOLUME_MUSIC B
+		FIELD VOLUME_SOUND VOLUME_SOUND B
+	CLASS soundChannels soundChannels
+		FIELD FAIL FAIL B
+		FIELD MUSIC_INTRO MUSIC_INTRO B
+		FIELD MUSIC_LOOP MUSIC_LOOP B
+		FIELD MUSIC_UI MUSIC_UI B
+		FIELD SCORE_CHING SCORE_CHING B
+		FIELD SFX_BANG SFX_BANG B
+		FIELD SFX_BOUNCE SFX_BOUNCE B
+		FIELD SFX_BUNKER SFX_BUNKER B
+		FIELD SFX_HITBALL SFX_HITBALL B
+		FIELD SFX_RINGCHING SFX_RINGCHING B
+		FIELD SFX_SPRINGBOUNG SFX_SPRINGBOUNG B
+		FIELD SFX_SWINGUP SFX_SWINGUP B
+		FIELD SUCCESS SUCCESS B
+	CLASS uiSoundChannels uiSoundChannels
+		FIELD MUSIC_UI MUSIC_UI B
+		FIELD SFX_RINGCHING SFX_RINGCHING B
+CLASS SonicGolf/cUItext SonicGolf/cUItext
+	FIELD TXT_ABOUT TXT_ABOUT I
+	FIELD TXT_ABOUT_INFO TXT_ABOUT_INFO I
+	FIELD TXT_ACED TXT_ACED I
+	FIELD TXT_AMATEUR TXT_AMATEUR I
+	FIELD TXT_ARE_YOU_SURE TXT_ARE_YOU_SURE I
+	FIELD TXT_AUDIO TXT_AUDIO I
+	FIELD TXT_AVERAGE_DRIVE TXT_AVERAGE_DRIVE I
+	FIELD TXT_BACK TXT_BACK I
+	FIELD TXT_BALLS_BONUS TXT_BALLS_BONUS I
+	FIELD TXT_BIRDIED TXT_BIRDIED I
+	FIELD TXT_BIRDS_FREED TXT_BIRDS_FREED I
+	FIELD TXT_BOGIED TXT_BOGIED I
+	FIELD TXT_CHIP_INS TXT_CHIP_INS I
+	FIELD TXT_CHOOSE_CHARACTER TXT_CHOOSE_CHARACTER I
+	FIELD TXT_CHOOSE_COURSE TXT_CHOOSE_COURSE I
+	FIELD TXT_CHOOSE_DIFFICULTY TXT_CHOOSE_DIFFICULTY I
+	FIELD TXT_CHOOSE_HOLE TXT_CHOOSE_HOLE I
+	FIELD TXT_CHOOSE_PLAYERS TXT_CHOOSE_PLAYERS I
+	FIELD TXT_COMPLETE TXT_COMPLETE I
+	FIELD TXT_CONDORED TXT_CONDORED I
+	FIELD TXT_CONTINUE TXT_CONTINUE I
+	FIELD TXT_CONTROL TXT_CONTROL I
+	FIELD TXT_CONTROLS TXT_CONTROLS I
+	FIELD TXT_COURSE TXT_COURSE I
+	FIELD TXT_DELETE TXT_DELETE I
+	FIELD TXT_DEMO TXT_DEMO I
+	FIELD TXT_DIFFICULTY TXT_DIFFICULTY I
+	FIELD TXT_DOUBLE TXT_DOUBLE I
+	FIELD TXT_EAGLED TXT_EAGLED I
+	FIELD TXT_EFFECTS_VOLUME TXT_EFFECTS_VOLUME I
+	FIELD TXT_ENTER_NAME TXT_ENTER_NAME I
+	FIELD TXT_EXIT TXT_EXIT I
+	FIELD TXT_FAIRWAYS_HIT TXT_FAIRWAYS_HIT I
+	FIELD TXT_GAME_MODES TXT_GAME_MODES I
+	FIELD TXT_GAME_OVER TXT_GAME_OVER I
+	FIELD TXT_GET_MORE_GAMES TXT_GET_MORE_GAMES I
+	FIELD TXT_GET_THE_GAME TXT_GET_THE_GAME I
+	FIELD TXT_GREEN_HILL TXT_GREEN_HILL I
+	FIELD TXT_HAS TXT_HAS I
+	FIELD TXT_HELP1 TXT_HELP1 I
+	FIELD TXT_HELP2 TXT_HELP2 I
+	FIELD TXT_HELP3 TXT_HELP3 I
+	FIELD TXT_HELP4 TXT_HELP4 I
+	FIELD TXT_HELP5 TXT_HELP5 I
+	FIELD TXT_HELP TXT_HELP I
+	FIELD TXT_HIGH_SCORE TXT_HIGH_SCORE I
+	FIELD TXT_HIGH_SCORES TXT_HIGH_SCORES I
+	FIELD TXT_HOLE TXT_HOLE I
+	FIELD TXT_HOLES_IN_ONE TXT_HOLES_IN_ONE I
+	FIELD TXT_HOLE_PAR TXT_HOLE_PAR I
+	FIELD TXT_HOW_TO_PLAY TXT_HOW_TO_PLAY I
+	FIELD TXT_KNUCKLES TXT_KNUCKLES I
+	FIELD TXT_LONGEST_DRIVE TXT_LONGEST_DRIVE I
+	FIELD TXT_LONGEST_PUTT TXT_LONGEST_PUTT I
+	FIELD TXT_LOSE_BALL TXT_LOSE_BALL I
+	FIELD TXT_MAIN_GAME TXT_MAIN_GAME I
+	FIELD TXT_MANY TXT_MANY I
+	FIELD TXT_MARBLE TXT_MARBLE I
+	FIELD TXT_MEGA TXT_MEGA I
+	FIELD TXT_MEMORY_ERROR TXT_MEMORY_ERROR I
+	FIELD TXT_MENU TXT_MENU I
+	FIELD TXT_MOST_RINGS_IN_A_SHOT TXT_MOST_RINGS_IN_A_SHOT I
+	FIELD TXT_MUSIC_LOUD TXT_MUSIC_LOUD I
+	FIELD TXT_MUSIC_MEDIUM TXT_MUSIC_MEDIUM I
+	FIELD TXT_MUSIC_OFF TXT_MUSIC_OFF I
+	FIELD TXT_MUSIC_ON TXT_MUSIC_ON I
+	FIELD TXT_MUSIC_SOFT TXT_MUSIC_SOFT I
+	FIELD TXT_MUSIC_VOLUME TXT_MUSIC_VOLUME I
+	FIELD TXT_NEW_GAME TXT_NEW_GAME I
+	FIELD TXT_NO TXT_NO I
+	FIELD TXT_NOVICE TXT_NOVICE I
+	FIELD TXT_NULL TXT_NULL I
+	FIELD TXT_ONE TXT_ONE I
+	FIELD TXT_OPTIONS TXT_OPTIONS I
+	FIELD TXT_OVERALL TXT_OVERALL I
+	FIELD TXT_PAR TXT_PAR I
+	FIELD TXT_PARRED TXT_PARRED I
+	FIELD TXT_PAR_BONUS TXT_PAR_BONUS I
+	FIELD TXT_PASSED TXT_PASSED I
+	FIELD TXT_PAUSED TXT_PAUSED I
+	FIELD TXT_PLAYER TXT_PLAYER I
+	FIELD TXT_POWER TXT_POWER I
+	FIELD TXT_PRO TXT_PRO I
+	FIELD TXT_PUTT_SUCCESS TXT_PUTT_SUCCESS I
+	FIELD TXT_RECORDS TXT_RECORDS I
+	FIELD TXT_RESET_RECORDS TXT_RESET_RECORDS I
+	FIELD TXT_RESET_SAVE_DATA TXT_RESET_SAVE_DATA I
+	FIELD TXT_RESTART_HOLE TXT_RESTART_HOLE I
+	FIELD TXT_RESUME TXT_RESUME I
+	FIELD TXT_RINGS TXT_RINGS I
+	FIELD TXT_RINGS_COLLECTED TXT_RINGS_COLLECTED I
+	FIELD TXT_RING_BONUS TXT_RING_BONUS I
+	FIELD TXT_SCORECARD TXT_SCORECARD I
+	FIELD TXT_SCORE TXT_SCORE I
+	FIELD TXT_SELECT TXT_SELECT I
+	FIELD TXT_SHOT TXT_SHOT I
+	FIELD TXT_SHOTS TXT_SHOTS I
+	FIELD TXT_SINGLE_COURSE TXT_SINGLE_COURSE I
+	FIELD TXT_SINGLE_HOLE TXT_SINGLE_HOLE I
+	FIELD TXT_SONIC TXT_SONIC I
+	FIELD TXT_SONIC_GOLF TXT_SONIC_GOLF I
+	FIELD TXT_SOUND_LOUD TXT_SOUND_LOUD I
+	FIELD TXT_SOUND_MEDIUM TXT_SOUND_MEDIUM I
+	FIELD TXT_SOUND_OFF TXT_SOUND_OFF I
+	FIELD TXT_SOUND_ON TXT_SOUND_ON I
+	FIELD TXT_SOUND_SOFT TXT_SOUND_SOFT I
+	FIELD TXT_SPIN TXT_SPIN I
+	FIELD TXT_SPRING_YARD TXT_SPRING_YARD I
+	FIELD TXT_STATS TXT_STATS I
+	FIELD TXT_TAILS TXT_TAILS I
+	FIELD TXT_THREE TXT_THREE I
+	FIELD TXT_TOO TXT_TOO I
+	FIELD TXT_TOP_TIPS TXT_TOP_TIPS I
+	FIELD TXT_TOTAL_PAR TXT_TOTAL_PAR I
+	FIELD TXT_TOTAL_STATS TXT_TOTAL_STATS I
+	FIELD TXT_TRIPLE TXT_TRIPLE I
+	FIELD TXT_TWO TXT_TWO I
+	FIELD TXT_UNLOCKED TXT_UNLOCKED I
+	FIELD TXT_VIBRATIONS_OFF TXT_VIBRATIONS_OFF I
+	FIELD TXT_VIBRATIONS_ON TXT_VIBRATIONS_ON I
+	FIELD TXT_YES TXT_YES I
+	FIELD _CORAL_BABELFISH_COUNT _CORAL_BABELFISH_COUNT I
+CLASS Coral/Util/cResProcessObj Coral/Util/cResProcessObj
+	METHOD process process (J)V
+		ARG 1 long1
+CLASS SonicGolf/cBall SonicGolf/cBall
+	FIELD BALL_PUTT_FP BALL_PUTT_FP I
+	FIELD BALL_STOP_FP BALL_STOP_FP I
+	FIELD BALL_TRACE_LENGTH BALL_TRACE_LENGTH B
+	FIELD BASE_SHOT_POWER BASE_SHOT_POWER B
+	FIELD BOUNCE_FP BOUNCE_FP I
+	FIELD COLL_DOWN COLL_DOWN B
+	FIELD COLL_LEFT COLL_LEFT B
+	FIELD COLL_RADIUS COLL_RADIUS B
+	FIELD COLL_RIGHT COLL_RIGHT B
+	FIELD COLL_TOP_LEFT COLL_TOP_LEFT B
+	FIELD COLL_TOP_RIGHT COLL_TOP_RIGHT B
+	FIELD COLL_UP COLL_UP B
+	FIELD CROSSHAIR_OFFSET CROSSHAIR_OFFSET B
+	FIELD DRAW_RADIUS DRAW_RADIUS B
+	FIELD E E B
+	FIELD FALSE FALSE B
+	FIELD FAST_ROLL FAST_ROLL B
+	FIELD GRAVITY_FP GRAVITY_FP I
+	FIELD INIT_ANGLE_FP INIT_ANGLE_FP I
+	FIELD KNUCKLES_CONTROL KNUCKLES_CONTROL B
+	FIELD KNUCKLES_MIN_POWER KNUCKLES_MIN_POWER B
+	FIELD KNUCKLES_POWER KNUCKLES_POWER B
+	FIELD KNUCKLES_SPIN KNUCKLES_SPIN B
+	FIELD MAX_ANGLE_FP MAX_ANGLE_FP I
+	FIELD MAX_SPIN_INCS MAX_SPIN_INCS B
+	FIELD M M B
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD MIN_ANGLE_FP MIN_ANGLE_FP I
+	FIELD N N B
+	FIELD NE NE B
+	FIELD NO_ROLL NO_ROLL B
+	FIELD NW NW B
+	FIELD ROLL_FP ROLL_FP I
+	FIELD S S B
+	FIELD SE SE B
+	FIELD SLOPE_BOUNCE_FP SLOPE_BOUNCE_FP I
+	FIELD SLOPE_ROLL_INC_FP SLOPE_ROLL_INC_FP I
+	FIELD SLOW_ROLL SLOW_ROLL B
+	FIELD SONIC_CONTROL SONIC_CONTROL B
+	FIELD SONIC_MIN_POWER SONIC_MIN_POWER B
+	FIELD SONIC_POWER SONIC_POWER B
+	FIELD SONIC_SPIN SONIC_SPIN B
+	FIELD SPIN_REDUCER SPIN_REDUCER B
+	FIELD SW SW B
+	FIELD TAILS_CONTROL TAILS_CONTROL B
+	FIELD TAILS_MIN_POWER TAILS_MIN_POWER B
+	FIELD TAILS_POWER TAILS_POWER B
+	FIELD TAILS_SPIN TAILS_SPIN B
+	FIELD TRUE TRUE B
+	FIELD VISCOSITY_FP VISCOSITY_FP I
+	FIELD W W B
+	FIELD WIND_FACTOR_FP WIND_FACTOR_FP I
+	FIELD _mBunkered _mBunkered Z
+	FIELD _mCanvas _mCanvas LSonicGolf/cCanvas;
+	FIELD _mCol _mCol I
+	FIELD _mCrossHairFPX _mCrossHairFPX I
+	FIELD _mCrossHairFPY _mCrossHairFPY I
+	FIELD _mCrossHairX _mCrossHairX I
+	FIELD _mCrossHairY _mCrossHairY I
+	FIELD _mImgBallGlow _mImgBallGlow Ljavax/microedition/lcdui/Image;
+	FIELD _mImgBall _mImgBall Ljavax/microedition/lcdui/Image;
+	FIELD _mImgBallPower _mImgBallPower Ljavax/microedition/lcdui/Image;
+	FIELD _mImgCrosshair _mImgCrosshair Ljavax/microedition/lcdui/Image;
+	FIELD _mReplayFLeft _mReplayFLeft Z
+	FIELD _mReplayPowerShot _mReplayPowerShot Z
+	FIELD _mReplayPutting _mReplayPutting Z
+	FIELD _mReplayShotDir _mReplayShotDir B
+	FIELD _mRow _mRow I
+	FIELD _mSprBallGlow _mSprBallGlow LSonicGolf/cSprite;
+	FIELD _mStopTimer _mStopTimer B
+	FIELD _mTraceCnt _mTraceCnt I
+	FIELD _mTracePrevX _mTracePrevX I
+	FIELD _mTracePrevY _mTracePrevY I
+	FIELD _mTraceX _mTraceX [I
+	FIELD _mTraceY _mTraceY [I
+	FIELD mAppliedSpin mAppliedSpin I
+	FIELD mApplyWind mApplyWind Z
+	FIELD mCheckFishSpikeDrop mCheckFishSpikeDrop Z
+	FIELD mCollided mCollided Z
+	FIELD mDropFPX mDropFPX I
+	FIELD mDropFPY mDropFPY I
+	FIELD mDrowned mDrowned Z
+	FIELD mExploded mExploded Z
+	FIELD mFPAngle mFPAngle I
+	FIELD mFPDX mFPDX I
+	FIELD mFPDY mFPDY I
+	FIELD mFPSpeedCoeff mFPSpeedCoeff I
+	FIELD mFPWind mFPWind I
+	FIELD mFPX mFPX I
+	FIELD mFPY mFPY I
+	FIELD mFairwayHit mFairwayHit Z
+	FIELD mHoled mHoled Z
+	FIELD mLost mLost Z
+	FIELD mNaturalSpin mNaturalSpin I
+	FIELD mNextFPX mNextFPX I
+	FIELD mNextFPY mNextFPY I
+	FIELD mNotMarkerDrop mNotMarkerDrop Z
+	FIELD mPutting mPutting Z
+	FIELD mReplayFPAngle mReplayFPAngle I
+	FIELD mReplayFPX mReplayFPX I
+	FIELD mReplayFPY mReplayFPY I
+	FIELD mReplayPower mReplayPower B
+	FIELD mReplaySpin mReplaySpin I
+	FIELD mRoll mRoll B
+	FIELD mShotDirection mShotDirection B
+	FIELD mStopped mStopped Z
+	FIELD mTraceDebug mTraceDebug Z
+	FIELD mWind mWind I
+	METHOD adjustWind adjustWind ()V
+	METHOD aim aim ()V
+	METHOD aim aim (Z)Z
+		ARG 0 boolean1
+	METHOD applyFrictionWind applyFrictionWind ()V
+	METHOD applyGravity applyGravity ()V
+	METHOD checkCeilingSlopeCollision checkCeilingSlopeCollision (IIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+	METHOD checkCollisions checkCollisions (II)V
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD checkCollisionsEast checkCollisionsEast (IIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+	METHOD checkCollisionsMiddle checkCollisionsMiddle (IIIIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+	METHOD checkCollisionsNorth checkCollisionsNorth (IIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+	METHOD checkCollisionsNorthEast checkCollisionsNorthEast (IIIIIB)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 byte6
+	METHOD checkCollisionsNorthWest checkCollisionsNorthWest (IIIIIB)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 byte6
+	METHOD checkCollisionsSouth checkCollisionsSouth (IIIIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+	METHOD checkCollisionsSouthEW checkCollisionsSouthEW (IIIIIIIBB)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+		ARG 6 integer7
+		ARG 7 byte8
+		ARG 8 byte9
+	METHOD checkCollisionsWest checkCollisionsWest (IIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+	METHOD checkHoleCollision checkHoleCollision (IIIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+	METHOD checkSlopeCollision checkSlopeCollision (IIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+	METHOD checkTerminalVelocity checkTerminalVelocity ()V
+	METHOD clearTrace clearTrace ()V
+	METHOD close close ()V
+	METHOD collided collided (IIIIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+		ARG 4 integer5
+		ARG 5 integer6
+	METHOD collidedBunker collidedBunker (I)V
+		ARG 0 integer
+	METHOD collidedDown collidedDown (IIII)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 integer3
+		ARG 3 integer4
+	METHOD collidedHole collidedHole ()V
+	METHOD collidedRightLeft collidedRightLeft (IB)V
+		ARG 0 integer
+		ARG 1 byte2
+	METHOD collidedSlope collidedSlope (IB)V
+		ARG 0 integer
+		ARG 1 byte2
+	METHOD collidedTopRightLeft collidedTopRightLeft (B)V
+		ARG 0 byte1
+	METHOD collidedUp collidedUp (I)V
+		ARG 0 integer
+	METHOD collidedWaterLava collidedWaterLava ()V
+	METHOD explode explode ()V
+	METHOD extraHoleCheck extraHoleCheck (II)V
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD fishCheck fishCheck ()Z
+	METHOD init init (IIZ)V
+		ARG 0 integer1
+		ARG 1 integer2
+		ARG 2 boolean3
+	METHOD initCollisionData initCollisionData (II)V
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD initShot initShot (I)Z
+		ARG 0 integer
+	METHOD loadGraphics loadGraphics ()V
+	METHOD move move ()V
+	METHOD open open (LSonicGolf/cCanvas;)V
+		ARG 0 cCanvas
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD renderCrosshair renderCrosshair (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD replaceBall replaceBall (I[LSonicGolf/cObjects$cMarker;)V
+		ARG 0 integer
+		ARG 1 arr
+	METHOD replayReset replayReset ()V
+	METHOD setAimDirection setAimDirection ()B
+	METHOD setCrossHairPos setCrossHairPos ()V
+	METHOD setTrace setTrace ()V
+	METHOD setWind setWind ()V
+	METHOD shoot shoot (I)V
+		ARG 0 integer
+	METHOD spikesDropCheck spikesDropCheck ()Z
+	METHOD update update ()V
+CLASS Coral/Util/cStringLoaderProcObj Coral/Util/cStringLoaderProcObj
+CLASS Coral/Util/crlUtil Coral/Util/crlUtil
+	METHOD findHSB findHSB (I)I
+		ARG 0 integer
+	METHOD findLSB findLSB (I)I
+		ARG 0 integer
+	METHOD garbageWait garbageWait ()V
+	METHOD isBitSet isBitSet (II)Z
+		ARG 0 integer1
+		ARG 1 integer2
+	METHOD toInt toInt ([BI)I
+		ARG 0 arr
+		ARG 1 integer
+	METHOD toShort toShort ([BI)S
+		ARG 0 arr
+		ARG 1 integer
+	METHOD toShortIntel toShortIntel ([BI)S
+		ARG 0 arr
+		ARG 1 integer
+CLASS Coral/Util/crlArrayList Coral/Util/crlArrayList
+CLASS Coral/Util/crlResourceManager Coral/Util/crlResourceManager
+	FIELD CACHE_BLOCK_SIZE CACHE_BLOCK_SIZE I
+	FIELD ENCRYPTED_DATA ENCRYPTED_DATA B
+	FIELD EXTERNAL_REFERENCE EXTERNAL_REFERENCE B
+	FIELD FNAME_BUFFER_LENGTH FNAME_BUFFER_LENGTH I
+	FIELD INITIAL_PROC_OBJS INITIAL_PROC_OBJS I
+	FIELD MAX_RETRIES MAX_RETRIES I
+	FIELD PROCOBJ_MARKER PROCOBJ_MARKER I
+	FIELD REMOVE_ENCRYPTED_DATA REMOVE_ENCRYPTED_DATA B
+	FIELD REMOVE_EXTERNAL_REFERENCE REMOVE_EXTERNAL_REFERENCE B
+	FIELD _binExtension _binExtension Ljava/lang/String;
+	FIELD _mFnameBuffer _mFnameBuffer Ljava/lang/StringBuffer;
+	FIELD _mKey _mKey B
+	FIELD _pngExtension _pngExtension Ljava/lang/String;
+	FIELD _resDirectory _resDirectory Ljava/lang/String;
+	FIELD _spgExtension _spgExtension Ljava/lang/String;
+	FIELD _tString _tString LCoral/Util/crlString;
+	FIELD _tempArray _tempArray [B
+	FIELD currentPackPos currentPackPos I
+	FIELD currentPack currentPack [J
+	FIELD iObj3DBaseID iObj3DBaseID I
+	FIELD iUserScratchSize iUserScratchSize I
+	FIELD locale locale I
+	FIELD mCacheBytesRead mCacheBytesRead I
+	FIELD mCacheProgress mCacheProgress I
+	FIELD mCacheReady mCacheReady Z
+	FIELD mCache mCache [B
+	FIELD mDataStream mDataStream Ljava/io/DataInputStream;
+	FIELD mEncrypted mEncrypted Z
+	FIELD mInputStream mInputStream Ljava/io/InputStream;
+	FIELD mIntObject mIntObject LCoral/Util/crlInt;
+	FIELD mLocaleText mLocaleText [LCoral/Util/crlString;
+	FIELD mNumStrings mNumStrings I
+	FIELD mPrevID mPrevID J
+	FIELD mProcObjMap mProcObjMap [LCoral/Util/cResProcessObj;
+	FIELD mResource mResource Ljava/util/Hashtable;
+	FIELD mRetry mRetry I
+	FIELD mScratchBuffer mScratchBuffer [B
+	FIELD mScratchSize mScratchSize I
+	FIELD mStrAboutID mStrAboutID I
+	FIELD mStrCreditEndID mStrCreditEndID I
+	FIELD mStrCreditStartID mStrCreditStartID I
+	FIELD sSpongeName sSpongeName Ljava/lang/String;
+	METHOD _updatePack _updatePack ()I
+	METHOD addResProcessObj addResProcessObj (ILCoral/Util/cResProcessObj;)V
+		ARG 1 integer
+		ARG 2 cResProcessObj
+	METHOD alreadyLoaded alreadyLoaded (J)Z
+		ARG 1 long1
+	METHOD cacheSponge cacheSponge ()V
+	METHOD createImageFromIDs createImageFromIDs (JJ)Ljavax/microedition/lcdui/Image;
+		ARG 1 long1
+		ARG 3 long2
+	METHOD createScratchBuffer createScratchBuffer (I)I
+		ARG 1 integer
+	METHOD decodeBuffer decodeBuffer ([B)V
+		ARG 1 arr
+	METHOD decodeBuffer decodeBuffer ([BII)V
+		ARG 1 arr
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD delResProcessObj delResProcessObj (I)V
+		ARG 1 integer
+	METHOD deleteSaveData deleteSaveData (Ljava/lang/String;)Z
+		ARG 1 string
+	METHOD destroyPack destroyPack ([J)I
+		ARG 1 arr
+	METHOD destroyScratchBuffer destroyScratchBuffer ()I
+	METHOD getBinBySpongeID getBinBySpongeID (J)LCoral/Util/crlBinArray;
+		ARG 1 long1
+	METHOD getCurrentPack getCurrentPack ()[J
+	METHOD getCurrentPackProgress getCurrentPackProgress ()I
+	METHOD getIMPByID getIMPByID (J)LCoral/Graphics2D/crlImagePacked;
+		ARG 1 long1
+	METHOD getImageByID getImageByID (J)Ljavax/microedition/lcdui/Image;
+		ARG 1 long1
+	METHOD init init (IIILjava/lang/String;)I
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 string
+	METHOD initStrings initStrings (IIII)V
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 integer4
+	METHOD insertPack insertPack ([J)V
+		ARG 1 arr
+	METHOD loadData loadData (Ljava/lang/String;)[B
+		ARG 1 string
+	METHOD loadObject loadObject (J)B
+		ARG 1 long1
+	METHOD loadObjectBIN loadObjectBIN (Ljava/io/DataInputStream;IJ)I
+		ARG 1 dataInputStream
+		ARG 2 integer
+		ARG 3 long3
+	METHOD loadObjectBINmemory loadObjectBINmemory (IIJ)I
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 long3
+	METHOD loadObjectFromFile loadObjectFromFile (BLjava/lang/String;II)V
+		ARG 1 byte1
+		ARG 2 string
+		ARG 3 integer3
+		ARG 4 integer4
+	METHOD loadObjectFromMemory loadObjectFromMemory (BIIJ)V
+		ARG 1 byte1
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 long4
+	METHOD loadObjectFromStream loadObjectFromStream (BLjava/io/DataInputStream;IJ)V
+		ARG 1 byte1
+		ARG 2 dataInputStream
+		ARG 3 integer
+		ARG 4 long4
+	METHOD loadObjectIMP loadObjectIMP (Ljava/io/DataInputStream;IJ)I
+		ARG 1 dataInputStream
+		ARG 2 integer
+		ARG 3 long3
+	METHOD loadObjectIMPmemory loadObjectIMPmemory (IIJ)I
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 long3
+	METHOD loadObjectPNG loadObjectPNG (Ljava/io/DataInputStream;IJ)I
+		ARG 1 dataInputStream
+		ARG 2 integer
+		ARG 3 long3
+	METHOD loadObjectPNGmemory loadObjectPNGmemory (IIJ)I
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 long3
+	METHOD loadObjectSPG loadObjectSPG (Ljava/io/DataInputStream;IJ)I
+		ARG 1 dataInputStream
+		ARG 2 integer
+		ARG 3 long3
+	METHOD loadObjectSPGmemory loadObjectSPGmemory (IIJ)I
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 long3
+	METHOD loadPack loadPack ([J)I
+		ARG 1 arr
+	METHOD loadStrings loadStrings ()V
+	METHOD open open (I)I
+		ARG 1 integer
+	METHOD open open (II)I
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD open open (III)I
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 integer3
+	METHOD open open (IIILjava/lang/String;)I
+		ARG 1 integer1
+		ARG 2 integer2
+		ARG 3 integer3
+		ARG 4 string
+	METHOD processObject processObject (JI)V
+		ARG 1 long1
+		ARG 3 integer
+	METHOD resourceLoad resourceLoad ([BLjava/lang/String;)I
+		ARG 1 arr
+		ARG 2 string
+	METHOD saveData saveData (Ljava/lang/String;[B)Z
+		ARG 1 string
+		ARG 2 arr
+	METHOD saveDataExists saveDataExists (Ljava/lang/String;)Z
+		ARG 1 string
+	METHOD setKey setKey (B)V
+		ARG 1 byte1
+	METHOD setLocale setLocale (I)V
+		ARG 1 integer
+	METHOD setNumProcessObjs setNumProcessObjs (I)V
+		ARG 1 integer
+	METHOD unloadObject unloadObject (J)I
+		ARG 1 long1
+	CLASS procObj procObj
+		FIELD BASE_ID BASE_ID J
+		FIELD PO_CACHE PO_CACHE J
+		FIELD PO_LOAD_STRINGS PO_LOAD_STRINGS J
+	CLASS resType resType
+		FIELD AMR AMR I
+		FIELD APP APP I
+		FIELD BIN BIN I
+		FIELD BMP BMP I
+		FIELD FIG FIG I
+		FIELD I2D I2D I
+		FIELD IMG IMG I
+		FIELD IMP IMP I
+		FIELD M3G M3G I
+		FIELD MID MID I
+		FIELD NDEF NDEF I
+		FIELD PAL PAL I
+		FIELD PNG PNG I
+		FIELD SPG SPG I
+		FIELD STR STR I
+		FIELD TRA TRA I
+		FIELD WAV WAV I
