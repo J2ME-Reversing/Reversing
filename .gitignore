@@ -1,5 +1,6 @@
 Tools/
 OriginalDumps/
+build/
 
 /Games/*/*/*.jar 
 /Games/*/*/src
