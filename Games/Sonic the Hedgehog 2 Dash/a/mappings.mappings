@@ -1,0 +1,1484 @@
+CLASS STH2P1/GameState STH2P1/GameState
+	FIELD ACCEPT_DONTTOUCH ACCEPT_DONTTOUCH I
+	FIELD ACCEPT_NONE ACCEPT_NONE I
+	FIELD ACCEPT_NORMAL ACCEPT_NORMAL I
+	FIELD ACCEPT_TITLE ACCEPT_TITLE I
+	FIELD APP1_PROGRESS APP1_PROGRESS [I
+	FIELD APP2_PROGRESS APP2_PROGRESS [I
+	FIELD APP_NUMBER APP_NUMBER I
+	FIELD APP_WHEN_END APP_WHEN_END I
+	FIELD BGBLK BGBLK [[[B
+	FIELD BGCOLOR BGCOLOR [[I
+	FIELD DIFFICULTY_TABLE DIFFICULTY_TABLE [[I
+	FIELD FULL_GAME FULL_GAME [[Ljava/lang/String;
+	FIELD LOCALSTATE_CONFIRM LOCALSTATE_CONFIRM I
+	FIELD LOCALSTATE_DEMO_SPLASH LOCALSTATE_DEMO_SPLASH I
+	FIELD LOCALSTATE_PAUSE LOCALSTATE_PAUSE I
+	FIELD PARAM_ACT PARAM_ACT I
+	FIELD PARAM_EME PARAM_EME I
+	FIELD PARAM_IS_INIT PARAM_IS_INIT I
+	FIELD PARAM_NUM PARAM_NUM I
+	FIELD PARAM_PL_LIVES PARAM_PL_LIVES I
+	FIELD PARAM_SCORE PARAM_SCORE I
+	FIELD PARAM_ZONE PARAM_ZONE I
+	FIELD PLAYER_START_POS_TBL PLAYER_START_POS_TBL [[I
+	FIELD PRIORITY_MAP_BACKGROUND PRIORITY_MAP_BACKGROUND I
+	FIELD PRIORITY_MAP_FOREGROUND PRIORITY_MAP_FOREGROUND I
+	FIELD STRINGS_LOADING STRINGS_LOADING [Ljava/lang/String;
+	FIELD STRINGS_PAUSE_MENU STRINGS_PAUSE_MENU [[Ljava/lang/String;
+	FIELD STRING_FIRST_LEVEL STRING_FIRST_LEVEL B
+	FIELD STRING_FREE_TRIAL STRING_FREE_TRIAL B
+	FIELD STRING_PAUSE STRING_PAUSE I
+	FIELD STRING_SELECT STRING_SELECT I
+	FIELD WATERCOLOR WATERCOLOR [[I
+	FIELD _mMapData _mMapData [B
+	FIELD _mZoneMapData _mZoneMapData [B
+	FIELD _quitDemo _quitDemo Z
+	FIELD actNumber actNumber I
+	FIELD d STRINGS_VOLUME [[Ljava/lang/String;
+	FIELD e STRINGS_PLEASE_WAIT [Ljava/lang/String;
+	FIELD foregroundScreenMap foregroundScreenMap [[I
+	FIELD h h Ljavax/microedition/lcdui/Image;
+	FIELD loading_cont loading_cont Z
+	FIELD mMasterRing mMasterRing LSTH2P1/Action;
+	FIELD mSonicPlawaAction mSonicPlawaAction LSTH2P1/Action;
+	FIELD m_Accept_Softkey m_Accept_Softkey I
+	FIELD m_ActionData m_ActionData [[I
+	FIELD m_ActionWorkCnt m_ActionWorkCnt [Z
+	FIELD m_BossFlag m_BossFlag I
+	FIELD m_BossStart m_BossStart I
+	FIELD m_BossState m_BossState I
+	FIELD m_ChaosCnt m_ChaosCnt I
+	FIELD m_ClChgCntSS m_ClChgCntSS I
+	FIELD m_ClChgFlagSS m_ClChgFlagSS I
+	FIELD m_ClChgTimSS m_ClChgTimSS I
+	FIELD m_D0_Tmp m_D0_Tmp I
+	FIELD m_D4_Tmp m_D4_Tmp I
+	FIELD m_D6_Tmp m_D6_Tmp I
+	FIELD m_EmyScoreCnt m_EmyScoreCnt I
+	FIELD m_FlagWorkCnt m_FlagWorkCnt [I
+	FIELD m_ForceAtariY m_ForceAtariY Z
+	FIELD m_GameFlag m_GameFlag I
+	FIELD m_GameTimer m_GameTimer I
+	FIELD m_Ita0cwk m_Ita0cwk [I
+	FIELD m_LeverTimer m_LeverTimer I
+	FIELD m_LimOverFlag m_LimOverFlag I
+	FIELD m_LocalState m_LocalState I
+	FIELD m_LocalState_Backup m_LocalState_Backup I
+	FIELD m_MoveScrMode m_MoveScrMode I
+	FIELD m_MoveScrTimer m_MoveScrTimer I
+	FIELD m_PAUSE_Cursor m_PAUSE_Cursor I
+	FIELD m_Pl2AddSpdWk m_Pl2AddSpdWk I
+	FIELD m_Pl2MaxSpdWk m_Pl2MaxSpdWk I
+	FIELD m_Pl2RetSpdWk m_Pl2RetSpdWk I
+	FIELD m_PlAddSpdWk m_PlAddSpdWk I
+	FIELD m_PlFlag m_PlFlag I
+	FIELD m_PlItem m_PlItem I
+	FIELD m_PlMaxSpdWk m_PlMaxSpdWk I
+	FIELD m_PlRetSpdWk m_PlRetSpdWk I
+	FIELD m_PlRing m_PlRing I
+	FIELD m_PlRing_F2 m_PlRing_F2 I
+	FIELD m_PlRing_F m_PlRing_F I
+	FIELD m_PlRing_T m_PlRing_T I
+	FIELD m_PlScore m_PlScore I
+	FIELD m_PlScore_F m_PlScore_F I
+	FIELD m_PlTime m_PlTime I
+	FIELD m_PlTimeOver_F m_PlTimeOver_F Z
+	FIELD m_PlTime_F m_PlTime_F I
+	FIELD m_Pl_Suu m_Pl_Suu I
+	FIELD m_RingData m_RingData [[I
+	FIELD m_SCDAData m_SCDAData [B
+	FIELD m_SCDBData m_SCDBData [B
+	FIELD m_SLOTWK_EVN_LEV m_SLOTWK_EVN_LEV I
+	FIELD m_SLOTWK_HIT_VAL m_SLOTWK_HIT_VAL I
+	FIELD m_SSonicFlag m_SSonicFlag I
+	FIELD m_SSonicTimer m_SSonicTimer I
+	FIELD m_ScdTblWk2 m_ScdTblWk2 [B
+	FIELD m_ScdTblWk m_ScdTblWk [B
+	FIELD m_ScdTbl m_ScdTbl [B
+	FIELD m_ScrALim2_Up m_ScrALim2_Up I
+	FIELD m_ScrALim_Down m_ScrALim_Down I
+	FIELD m_ScrALim_Left m_ScrALim_Left I
+	FIELD m_ScrALim_N_Down m_ScrALim_N_Down I
+	FIELD m_ScrALim_N_Left m_ScrALim_N_Left I
+	FIELD m_ScrALim_N_Right m_ScrALim_N_Right I
+	FIELD m_ScrALim_N_Up m_ScrALim_N_Up I
+	FIELD m_ScrALim_Right m_ScrALim_Right I
+	FIELD m_ScrALim_Up m_ScrALim_Up I
+	FIELD m_ScrA_HZ m_ScrA_HZ I
+	FIELD m_ScrA_VLine m_ScrA_VLine I
+	FIELD m_ScrA_VZ m_ScrA_VZ I
+	FIELD m_ScrB_HZ m_ScrB_HZ I
+	FIELD m_ScrB_H_Offset m_ScrB_H_Offset I
+	FIELD m_ScrB_VZ m_ScrB_VZ I
+	FIELD m_ScrB_V_Offset m_ScrB_V_Offset I
+	FIELD m_ScrChkWork m_ScrChkWork I
+	FIELD m_ScrollA_LeftOffset m_ScrollA_LeftOffset I
+	FIELD m_ScrollA_LeftOffset_dist m_ScrollA_LeftOffset_dist I
+	FIELD m_ScrollA_RightOffset m_ScrollA_RightOffset I
+	FIELD m_ScrollA_RightOffset_dist m_ScrollA_RightOffset_dist I
+	FIELD m_ScrollMode m_ScrollMode Z
+	FIELD m_ScrollShake m_ScrollShake Z
+	FIELD m_ScrollStop m_ScrollStop Z
+	FIELD m_ScrollWait m_ScrollWait I
+	FIELD m_Scroll_Start m_Scroll_Start I
+	FIELD m_Slot_sts m_Slot_sts I
+	FIELD m_SwData m_SwData I
+	FIELD m_SwitchFlag m_SwitchFlag [I
+	FIELD m_SysdirFlag m_SysdirFlag I
+	FIELD m_SysdirSpd m_SysdirSpd [I
+	FIELD m_Sysdirec m_Sysdirec [I
+	FIELD m_WaterColiFlag m_WaterColiFlag I
+	FIELD m_WaterFlag m_WaterFlag Z
+	FIELD m_WaterMode m_WaterMode Z
+	FIELD m_WaterMovePosi m_WaterMovePosi I
+	FIELD m_WaterPosi m_WaterPosi I
+	FIELD m_WaterPosi_m m_WaterPosi_m I
+	FIELD m_WaterSpeed m_WaterSpeed I
+	FIELD m_Zone_Flag m_Zone_Flag I
+	FIELD m_dircolm m_dircolm I
+	FIELD m_player2EffectAction m_player2EffectAction LSTH2P1/Action;
+	FIELD m_playerEffectAction m_playerEffectAction LSTH2P1/Action;
+	FIELD scdtbl_bin scdtbl_bin I
+	FIELD scdtblwk2_bin scdtblwk2_bin I
+	FIELD scdtblwk_bin scdtblwk_bin I
+	FIELD stageClearExtraLifeAudioRequired stageClearExtraLifeAudioRequired I
+	FIELD stageClearNextStage stageClearNextStage Z
+	FIELD stageClear stageClear Z
+	FIELD tilesAcross tilesAcross I
+	FIELD tilesHigh tilesHigh I
+	FIELD waterData waterData [I
+	FIELD waterImage waterImage Ljavax/microedition/lcdui/Image;
+	FIELD zoneNumber zoneNumber I
+	METHOD a (IIIILSTH2P1/Action;)I
+		ARG 5 action
+	METHOD a (Ljavax/microedition/lcdui/Graphics;IIII)V
+		ARG 1 graphics
+	METHOD absLT absLT (III)Z
+	METHOD actionSetCheck actionSetCheck ()V
+	METHOD addRanking addRanking ()V
+	METHOD atariRideChk atariRideChk (IIILSTH2P1/Action;LSTH2P1/Action;I)I
+	METHOD atariRideSub atariRideSub (IIIIIILSTH2P1/Action;)I
+	METHOD atariRideSub2 atariRideSub2 (IIIIIILSTH2P1/Action;LSTH2P1/Action;)V
+	METHOD atariRideSub3 atariRideSub3 (IIIIILSTH2P1/Action;LSTH2P1/Action;)I
+	METHOD atariRideSub_t atariRideSub_t (IIIILSTH2P1/Action;LSTH2P1/Action;[I)V
+	METHOD atariRideSub_t2 atariRideSub_t2 (IIIIIILSTH2P1/Action;LSTH2P1/Action;[I)I
+	METHOD chkPlDir chkPlDir (LSTH2P1/Action;)I
+	METHOD cleanSpriteBuffer cleanSpriteBuffer ()V
+	METHOD clearGame clearGame ()V
+	METHOD continueGame continueGame ()V
+	METHOD continuemd_disposeImages continuemd_disposeImages ()V
+	METHOD decodePlTime decodePlTime (I)I
+	METHOD dirColJ dirColJ (IIIILSTH2P1/Action;)I
+		ARG 5 action
+	METHOD dirColM dirColM (IIILSTH2P1/Action;)I
+		ARG 4 action
+	METHOD dirCol_D dirCol_D (IIILSTH2P1/Action;)I
+		ARG 4 action
+	METHOD dirCol_DD dirCol_DD (IIILSTH2P1/Action;)I
+		ARG 4 action
+	METHOD dirCol_L2 dirCol_L2 (III)I
+	METHOD dirCol_R2 dirCol_R2 (III)I
+	METHOD dirCol_U dirCol_U (IIILSTH2P1/Action;)I
+		ARG 4 action
+	METHOD dirCol_UD dirCol_UD (IIILSTH2P1/Action;)I
+		ARG 4 action
+	METHOD drawActions drawActions (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD drawBGImage drawBGImage (Ljavax/microedition/lcdui/Graphics;I)V
+		ARG 1 graphics
+	METHOD drawBlock drawBlock (Ljavax/microedition/lcdui/Graphics;III)V
+		ARG 1 graphics
+	METHOD drawGMGSplash drawGMGSplash (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;)V
+		ARG 0 graphics
+		ARG 1 string
+	METHOD drawHud drawHud (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD drawPostSprite drawPostSprite (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD drawSpecialActions drawSpecialActions (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD drawTextWrapped drawTextWrapped (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;III)I
+		ARG 0 graphics
+		ARG 1 string
+	METHOD emyCol_D emyCol_D (III)I
+	METHOD emyCol_D3 emyCol_D3 (III)I
+	METHOD emyCol_L emyCol_L (III)I
+	METHOD emyCol_R emyCol_R (III)I
+	METHOD emyCol_U emyCol_U (III)I
+	METHOD encodePlTime encodePlTime (I)I
+	METHOD fCol fCol (IIILSTH2P1/Action;)[I
+		ARG 4 action
+	METHOD fColRideChk fColRideChk (LSTH2P1/Action;)I
+		ARG 1 action
+	METHOD gameInit gameInit (Ljava/lang/Object;)V
+	METHOD getBlockNumber getBlockNumber (II[B[B)I
+	METHOD getGameTimer getGameTimer ()I
+	METHOD getLargeTileNumber getLargeTileNumber (II[B)I
+	METHOD getScrB_H_Posit getScrB_H_Posit ()I
+	METHOD getScrB_V_Posit getScrB_V_Posit ()I
+	METHOD initHud initHud ()V
+	METHOD initSpriteBuffer initSpriteBuffer ()V
+	METHOD intoSPGame intoSPGame ()V
+	METHOD jumpColSub jumpColSub (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD loadMapData loadMapData (ZZ)V
+	METHOD mapAddressSets mapAddressSets (II[B)I
+	METHOD playDamageSet playDamageSet (LSTH2P1/Action;LSTH2P1/Action;)I
+	METHOD playDieSet playDieSet (LSTH2P1/Action;)I
+		ARG 1 action
+	METHOD playSaves playSaves (LSTH2P1/Action;)V
+	METHOD plyCol_D plyCol_D (IIILSTH2P1/Action;)I
+		ARG 4 action
+	METHOD plyCol_D plyCol_D (LSTH2P1/Action;)I
+		ARG 1 action
+	METHOD renderBorder renderBorder (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD rideChkSub rideChkSub (IIIIIILSTH2P1/Action;)V
+	METHOD rideChkSubR rideChkSubR (IIIILSTH2P1/Action;)V
+		ARG 5 action
+	METHOD rideChkSub_h rideChkSub_h (IIIIIILSTH2P1/Action;)V
+		ARG 7 action
+	METHOD rideChkSub_t rideChkSub_t (IIIIIILSTH2P1/Action;[I)I
+		ARG 7 action
+	METHOD ridePlaySet2 ridePlaySet2 (IIILSTH2P1/Action;LSTH2P1/Action;)V
+	METHOD ridePlaySet_t ridePlaySet_t (IIIILSTH2P1/Action;LSTH2P1/Action;[I)V
+	METHOD rideonChk rideonChk (IIIIILSTH2P1/Action;LSTH2P1/Action;)V
+	METHOD rideonChk2 rideonChk2 (IIIIIILSTH2P1/Action;LSTH2P1/Action;)V
+	METHOD rideonSet rideonSet (ILSTH2P1/Action;LSTH2P1/Action;)V
+	METHOD scdChk_R scdChk_R (IIIII)I
+	METHOD scoreUp scoreUp (IZ)V
+	METHOD scrLimSet scrLimSet (II)V
+	METHOD scroll scroll ()V
+	METHOD setScrB_H_Posit setScrB_H_Posit (I)V
+	METHOD setScrB_V_Posit setScrB_V_Posit (I)V
+	METHOD softkeySet_Pause softkeySet_Pause ()V
+	METHOD sysdirCnt sysdirCnt ()V
+	METHOD sysdirInit sysdirInit ()V
+	METHOD updateActions updateActions ()V
+	METHOD updateCamera updateCamera ()V
+	METHOD updateConfirm updateConfirm ()V
+	METHOD updatePauseMenu updatePauseMenu ()V
+CLASS STH2P1/CommonAction STH2P1/CommonAction
+	FIELD ACT_MAX ACT_MAX I
+	METHOD a (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD a (LSTH2P1/Action;I)V
+		ARG 1 action
+		ARG 2 integer
+	METHOD a (LSTH2P1/Action;II)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD a (LSTH2P1/State;I)V
+		ARG 1 state
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;I)V
+		ARG 1 state
+		ARG 2 action
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;IIIIII)V
+		ARG 1 state
+		ARG 2 action
+	METHOD a (LSTH2P1/State;[[I[II)V
+		ARG 1 state
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/Action;I)V
+		ARG 1 action
+		ARG 2 integer
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD b (LSTH2P1/State;I)V
+		ARG 1 state
+	METHOD b (LSTH2P1/State;LSTH2P1/Action;I)V
+		ARG 1 state
+		ARG 2 action
+	METHOD c (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD c (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD d (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD d (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD e (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD e (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD f (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD f (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD g (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD g (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD getAppImages getAppImages (I)[Ljavax/microedition/lcdui/Image;
+	METHOD h (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD i (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD j (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD loadImages loadImages (I)V
+	METHOD prepareImages prepareImages ()V
+	METHOD rollcmove_sub rollcmove_sub (LSTH2P1/Action;II)V
+		ARG 1 action
+	METHOD shimafoutchk shimafoutchk (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD tensuusetsub tensuusetsub (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 0 state
+		ARG 1 action
+	METHOD togedamagesub togedamagesub (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 1 state
+		ARG 2 action
+	METHOD unloadImage unloadImage (I)V
+CLASS STH2P1/AquaticRuinAction STH2P1/AquaticRuinAction
+	METHOD a (LSTH2P1/Action;I)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;I)LSTH2P1/Action;
+		ARG 1 state
+		ARG 2 action
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD c (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD d (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD prepareImages prepareImages ()V
+CLASS STH2P1/Filenames STH2P1/Filenames
+	FIELD ACTION_FILENAME ACTION_FILENAME [[Ljava/lang/String;
+	FIELD BLK_FILENAME BLK_FILENAME [Ljava/lang/String;
+	FIELD CONTINUEMD_Filename CONTINUEMD_Filename [Ljava/lang/String;
+	FIELD FILENAMES FILENAMES [Ljava/lang/String;
+	FIELD IMAGE_PLAYER2_ACT_INTRO_RED IMAGE_PLAYER2_ACT_INTRO_RED I
+	FIELD IMAGE_PLAYER2_ACT_INTRO_YELLOW IMAGE_PLAYER2_ACT_INTRO_YELLOW I
+	FIELD IMAGE_PLAYER2_ANIMALS IMAGE_PLAYER2_ANIMALS I
+	FIELD IMAGE_PLAYER2_DROWN_COUNT IMAGE_PLAYER2_DROWN_COUNT I
+	FIELD IMAGE_PLAYER2_FONT0 IMAGE_PLAYER2_FONT0 I
+	FIELD IMAGE_PLAYER2_FONT1 IMAGE_PLAYER2_FONT1 I
+	FIELD IMAGE_PLAYER2_PLEFFECT IMAGE_PLAYER2_PLEFFECT I
+	FIELD IMAGE_PLAYER2_RING IMAGE_PLAYER2_RING I
+	FIELD IMAGE_PLAYER_SONIC1 IMAGE_PLAYER_SONIC1 I
+	FIELD IMAGE_PLAYER_SONIC2 IMAGE_PLAYER_SONIC2 I
+	FIELD IMAGE_PLAYER_SUPER_SONIC1 IMAGE_PLAYER_SUPER_SONIC1 I
+	FIELD IMAGE_PLAYER_SUPER_SONIC2 IMAGE_PLAYER_SUPER_SONIC2 I
+	FIELD IMAGE_PLAYER_TAILS IMAGE_PLAYER_TAILS I
+	FIELD ImgFileNames ImgFileNames [[Ljava/lang/String;
+	FIELD MAP_FILENAME MAP_FILENAME [Ljava/lang/String;
+	FIELD PRI_FILENAME PRI_FILENAME [Ljava/lang/String;
+	FIELD PlayerAction1ImgName PlayerAction1ImgName [Ljava/lang/String;
+	FIELD PlayerAction2FileName PlayerAction2FileName [Ljava/lang/String;
+	FIELD PlayerActionImgName PlayerActionImgName [Ljava/lang/String;
+	FIELD RING_FILENAME RING_FILENAME [[Ljava/lang/String;
+	FIELD SC_FILENAME SC_FILENAME [[Ljava/lang/String;
+	FIELD TILEMAP_FILENAME TILEMAP_FILENAME [Ljava/lang/String;
+	FIELD ZONEMAP_FILENAME ZONEMAP_FILENAME [[Ljava/lang/String;
+CLASS STH2P1/Utilities STH2P1/Utilities
+	FIELD AFFINE_TRANS AFFINE_TRANS [[I
+	METHOD a (Ljava/io/DataInputStream;)[Ljava/lang/String;
+		ARG 0 dataInputStream
+	METHOD a (Ljava/io/InputStream;)V
+		ARG 0 inputStream
+	METHOD a (Ljava/lang/String;)Ljava/io/DataInputStream;
+		ARG 0 string
+	METHOD arrayInputDataByte1 arrayInputDataByte1 (Ljava/lang/String;)[B
+		ARG 0 string
+	METHOD arrayInputDataInt1 arrayInputDataInt1 (Ljava/lang/String;)[I
+		ARG 0 string
+	METHOD arrayInputDataInt2 arrayInputDataInt2 (Ljava/lang/String;)[[I
+		ARG 0 string
+	METHOD arrayInputDataInt3 arrayInputDataInt3 (Ljava/io/DataInputStream;)[[[I
+		ARG 0 dataInputStream
+	METHOD arrayInputDataInt3 arrayInputDataInt3 (Ljava/lang/String;)[[[I
+	METHOD arrayInputDataString1 arrayInputDataString1 (Ljava/lang/String;)[Ljava/lang/String;
+		ARG 0 string
+	METHOD arrayInputDataString2 arrayInputDataString2 (Ljava/lang/String;)[[Ljava/lang/String;
+		ARG 0 string
+	METHOD atan atan (II)I
+	METHOD b (Ljava/io/DataInputStream;)[I
+		ARG 0 dataInputStream
+	METHOD c (Ljava/io/DataInputStream;)[[I
+		ARG 0 dataInputStream
+	METHOD cosset cosset (I)I
+	METHOD drawImage drawImage (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIIIIIII)V
+		ARG 0 graphics
+		ARG 1 image
+		ARG 2 x_dest
+		ARG 3 y_dest
+		ARG 4 x_src
+		ARG 5 y_src
+		ARG 6 width
+		ARG 7 height
+	METHOD drawImage drawImage (Ljavax/microedition/lcdui/Graphics;[Ljavax/microedition/lcdui/Image;[[IIIIIII)V
+		ARG 0 graphics
+	METHOD ext ext (I)I
+	METHOD getRandom getRandom ()I
+	METHOD getStringWidth getStringWidth (Ljava/lang/String;)I
+		ARG 0 string
+	METHOD loadImages loadImages ([Ljava/lang/String;[Ljavax/microedition/lcdui/Image;)V
+	METHOD readBinaryFromArchive readBinaryFromArchive (Ljava/lang/String;)[B
+	METHOD reportFreeMemory reportFreeMemory (Ljava/lang/String;)V
+		ARG 0 string
+	METHOD reset1DIntArray reset1DIntArray ([I)V
+		ARG 0 arr
+	METHOD reset1DIntArray reset1DIntArray ([III)V
+	METHOD resizeRGB resizeRGB ([IIIII)[I
+	METHOD scale scale (I)I
+		ARG 0 integer
+	METHOD scale2 scale2 (I)I
+		ARG 0 integer
+	METHOD sinset sinset (I)I
+CLASS STH2P1/EmeraldHillAction STH2P1/EmeraldHillAction
+	FIELD HASHI_WORKMAX HASHI_WORKMAX I
+	METHOD a (LSTH2P1/State;IIIII)I
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD prepareImages prepareImages ()V
+CLASS STH2P1/EndingState STH2P1/EndingState
+	FIELD ENDING_SEQUENCE_MAP_DEF ENDING_SEQUENCE_MAP_DEF [B
+	FIELD frank frank I
+CLASS STH2P1/BossAction STH2P1/BossAction
+	FIELD BBOSS1_WORKMAX BBOSS1_WORKMAX I
+	FIELD m_BossWorking m_BossWorking Z
+	METHOD A (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD BBOSS4_init BBOSS4_init ()V
+	METHOD BBOSS4_move BBOSS4_move (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD BBOSS6_init BBOSS6_init ()V
+	METHOD a (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 1 state
+		ARG 2 action
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD bboss2Init (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD c (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD d (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD e (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD f (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD g (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD getChemical_bboss1 getChemical_bboss1 (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD i (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD j (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD k (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD l (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD m (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD n (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD o (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD p (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD prepareImages prepareImages ()V
+	METHOD q (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD r (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD s (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD t (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD u (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD v (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD w (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD x (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD y (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD z (LSTH2P1/State;)V
+		ARG 1 state
+CLASS Coral/Audio/crlAudioManager Coral/Audio/crlAudioManager
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD _gGlobalVolume _gGlobalVolume I
+	FIELD _mNumPlayers _mNumPlayers I
+	FIELD _mPlayerVolume _mPlayerVolume [I
+	FIELD _mPlayer _mPlayer [Ljavax/microedition/media/Player;
+	METHOD loadAudioBank loadAudioBank ([Ljava/lang/String;[I)I
+	METHOD open open (LCoral/Audio/iAudioLoader;I)I
+	METHOD playAudio playAudio (II)V
+	METHOD resetFades resetFades ()V
+	METHOD setGlobalVolume setGlobalVolume (I)V
+	METHOD stopAllAudio stopAllAudio ()V
+CLASS Coral/crlVersion Coral/crlVersion
+	FIELD NUMBER NUMBER I
+	FIELD STRING STRING Ljava/lang/String;
+CLASS STH2P1/Sonic2AudioManager STH2P1/Sonic2AudioManager
+	FIELD AUDIO_BOSS AUDIO_BOSS I
+	FIELD AUDIO_CONTINUE AUDIO_CONTINUE I
+	FIELD AUDIO_DROWN AUDIO_DROWN I
+	FIELD AUDIO_DROWN_PANIC AUDIO_DROWN_PANIC I
+	FIELD AUDIO_EXTRA_LIFE AUDIO_EXTRA_LIFE I
+	FIELD AUDIO_GAME_OVER AUDIO_GAME_OVER I
+	FIELD AUDIO_INVINCIBLE AUDIO_INVINCIBLE I
+	FIELD AUDIO_RING AUDIO_RING I
+	FIELD AUDIO_SCORE AUDIO_SCORE I
+	FIELD AUDIO_SEGA_SPLASH AUDIO_SEGA_SPLASH I
+	FIELD AUDIO_STAGE_CLEAR AUDIO_STAGE_CLEAR I
+	FIELD AUDIO_SUPER_SONIC AUDIO_SUPER_SONIC I
+	FIELD AUDIO_TITLE AUDIO_TITLE I
+	FIELD AUDIO_ZONE_TRACK AUDIO_ZONE_TRACK I
+	FIELD AUDIO_ZONE_TRACK_INTRO AUDIO_ZONE_TRACK_INTRO I
+	FIELD NUM_OF_PLAYERS NUM_OF_PLAYERS I
+	FIELD VOLUME_HALF VOLUME_HALF I
+	FIELD VOLUME_LEVELS VOLUME_LEVELS [I
+	FIELD VOLUME_QUART VOLUME_QUART I
+	FIELD audioBankAudioTypes audioBankAudioTypes [I
+	FIELD audioBankLoopStates audioBankLoopStates [I
+	FIELD audioBank audioBank [Ljava/lang/String;
+	METHOD activeAudioBankListener activeAudioBankListener ()V
+	METHOD audioPlaying audioPlaying ()Z
+	METHOD bgmRestart bgmRestart ()V
+	METHOD bgmset bgmset (I)V
+	METHOD loadCurrentAudioBank loadCurrentAudioBank ()I
+	METHOD playerUpdate playerUpdate (Ljavax/microedition/media/Player;Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 1 player
+	METHOD setAudioBank setAudioBank (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD setGlobalVolume setGlobalVolume (IZ)V
+CLASS STH2P1/Console STH2P1/Console
+	FIELD buffer buffer [Ljava/lang/String;
+	FIELD consoleFont consoleFont Ljavax/microedition/lcdui/Font;
+	FIELD g g Ljavax/microedition/lcdui/Graphics;
+	FIELD lineCounter lineCounter I
+	FIELD lineHeight lineHeight I
+	FIELD lines lines I
+	FIELD show show Z
+	METHOD add add (Ljava/lang/String;)V
+		ARG 0 string
+	METHOD draw draw ()V
+	METHOD draw draw (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD flipShow flipShow ()V
+CLASS STH2P1/GameSprite STH2P1/GameSprite
+	FIELD m_Sproffset m_Sproffset I
+	FIELD m_Sprpri m_Sprpri I
+	METHOD draw draw (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD setData setData (Ljavax/microedition/lcdui/Image;IIIIIIIIII)V
+		ARG 1 image
+CLASS STH2P1/HillTopAction STH2P1/HillTopAction
+	METHOD a (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD a (LSTH2P1/Action;II)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD a (LSTH2P1/State;I)V
+		ARG 1 state
+	METHOD a (LSTH2P1/State;[[I[I)V
+		ARG 1 state
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD c (LSTH2P1/State;)I
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD prepareImages prepareImages ()V
+CLASS STH2P1/PlayerAction STH2P1/PlayerAction
+	FIELD PLAY00_Table PLAY00_Table [[I
+	FIELD PLAY20_Table PLAY20_Table [[I
+	FIELD SONIC_DIE SONIC_DIE I
+	FIELD game_over_mid game_over_mid Z
+	FIELD m_PLAY20_Automode m_PLAY20_Automode I
+	FIELD m_PlPosiWkAdr m_PlPosiWkAdr I
+	FIELD m_PlPosiWk m_PlPosiWk [[I
+	FIELD m_PlayMoveWk m_PlayMoveWk [[I
+	FIELD p playerSprite [Ljavax/microedition/lcdui/Image;
+	METHOD PLAY00_JumpColSub PLAY00_JumpColSub (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD PLAY00_PlAirSet PLAY00_PlAirSet (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 0 state
+		ARG 1 action
+	METHOD a (LSTH2P1/State;)[I
+		ARG 1 state
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 1 state
+		ARG 2 action
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;IIIIIII)V
+		ARG 1 state
+		ARG 2 action
+	METHOD b (LSTH2P1/State;)[I
+		ARG 1 state
+	METHOD b (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 1 state
+		ARG 2 action
+	METHOD c (LSTH2P1/State;)[I
+		ARG 1 state
+	METHOD d (LSTH2P1/State;)[I
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD e (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD f (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD g (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD getPlayerSprites getPlayerSprites ()[Ljavax/microedition/lcdui/Image;
+	METHOD h (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD i (LSTH2P1/State;)Z
+		ARG 1 state
+	METHOD j (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD k (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD l (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD m (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD n (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD o (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD p (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD pColPlay pColPlay (LSTH2P1/State;LSTH2P1/Action;)V
+	METHOD pColPlay pColPlay (LSTH2P1/State;LSTH2P1/Action;LSTH2P1/Action;)V
+		ARG 0 state
+	METHOD prepareImages prepareImages ()V
+	METHOD q (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD r (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD s (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD t (LSTH2P1/State;)V
+		ARG 1 state
+CLASS STH2P1/ChemicalPlantAction STH2P1/ChemicalPlantAction
+	METHOD a (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD a (LSTH2P1/Action;I)V
+		ARG 1 action
+	METHOD a (LSTH2P1/Action;IIII)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD prepareImages prepareImages ()V
+CLASS STH2P1/Action STH2P1/Action
+	FIELD AF_LRREV AF_LRREV I
+	FIELD AF_MANYSPR AF_MANYSPR I
+	FIELD AF_NOMAL AF_NOMAL I
+	FIELD AF_ONESPR AF_ONESPR I
+	FIELD AF_ONESPR_D AF_ONESPR_D I
+	FIELD AF_SCRA AF_SCRA I
+	FIELD AF_SCRB AF_SCRB I
+	FIELD AF_SCREEN AF_SCREEN I
+	FIELD AF_SCRZ AF_SCRZ I
+	FIELD AF_SPRVSIZE AF_SPRVSIZE I
+	FIELD AF_UDREV AF_UDREV I
+	FIELD AIR_MAX AIR_MAX I
+	FIELD AIR_THRESHOLD AIR_THRESHOLD I
+	FIELD ALLACTION ALLACTION I
+	FIELD AQUATIC_RUIN_ACTION AQUATIC_RUIN_ACTION I
+	FIELD AWA_ACT AWA_ACT I
+	FIELD BAKUHATU_ACT BAKUHATU_ACT I
+	FIELD BAMPER_ACT BAMPER_ACT I
+	FIELD BANE_ACT BANE_ACT I
+	FIELD BARIA_ACT BARIA_ACT I
+	FIELD BB7BUDDY_ACT BB7BUDDY_ACT I
+	FIELD BBOSS1_ACT BBOSS1_ACT I
+	FIELD BBOSS2_ACT BBOSS2_ACT I
+	FIELD BBOSS3_ACT BBOSS3_ACT I
+	FIELD BBOSS4_ACT BBOSS4_ACT I
+	FIELD BBOSS5_ACT BBOSS5_ACT I
+	FIELD BBOSS6_ACT BBOSS6_ACT I
+	FIELD BBOSS7_ACT BBOSS7_ACT I
+	FIELD BBOSS8_ACT BBOSS8_ACT I
+	FIELD BBOSS_P1_END_ACT BBOSS_P1_END_ACT I
+	FIELD BELT_ACT BELT_ACT I
+	FIELD BGSPRP_ACT BGSPRP_ACT I
+	FIELD BGSPR_ACT BGSPR_ACT I
+	FIELD BILLBOMB_ACT BILLBOMB_ACT I
+	FIELD BJUMP_ACT BJUMP_ACT I
+	FIELD BOBIN_ACT BOBIN_ACT I
+	FIELD BOSS_ACTION BOSS_ACTION I
+	FIELD BOX0C_ACT BOX0C_ACT I
+	FIELD BREAK2_ACT BREAK2_ACT I
+	FIELD BRKABE_ACT BRKABE_ACT I
+	FIELD BRYUKA_ACT BRYUKA_ACT I
+	FIELD BURANKO_ACT BURANKO_ACT I
+	FIELD BWALL_ACT BWALL_ACT I
+	FIELD CABLECAR_ACT CABLECAR_ACT I
+	FIELD CASINO_NIGHT_ACTION CASINO_NIGHT_ACTION I
+	FIELD CD_BALL CD_BALL I
+	FIELD CD_BALLJ CD_BALLJ I
+	FIELD CD_DIE CD_DIE I
+	FIELD CD_DOWN CD_DOWN I
+	FIELD CD_JUMP CD_JUMP I
+	FIELD CD_LEFT CD_LEFT I
+	FIELD CD_PUSH2 CD_PUSH2 I
+	FIELD CD_PUSH CD_PUSH I
+	FIELD CD_RIDEON2 CD_RIDEON2 I
+	FIELD CD_RIDEON CD_RIDEON I
+	FIELD CD_RIGHT CD_RIGHT I
+	FIELD CD_UP CD_UP I
+	FIELD CD_WALK CD_WALK I
+	FIELD CD_WATER CD_WATER I
+	FIELD CHAOS_EMERALD_ACT CHAOS_EMERALD_ACT I
+	FIELD CHEMICAL_PLANT_ACTION CHEMICAL_PLANT_ACTION I
+	FIELD CLSELECT_ACT CLSELECT_ACT I
+	FIELD COLICHG_ACT COLICHG_ACT I
+	FIELD COMMON_ACTION COMMON_ACTION I
+	FIELD CORK_ACT CORK_ACT I
+	FIELD CRANK_ACT CRANK_ACT I
+	FIELD DAI2_ACT DAI2_ACT I
+	FIELD DAI3_ACT DAI3_ACT I
+	FIELD DAI_ACT DAI_ACT I
+	FIELD DASH_ACT DASH_ACT I
+	FIELD DOOR07_ACT DOOR07_ACT I
+	FIELD DOOR_ACT DOOR_ACT I
+	FIELD DOWNDOTMAX DOWNDOTMAX I
+	FIELD DOWNDOTMAX_LR DOWNDOTMAX_LR I
+	FIELD ELE0C_ACT ELE0C_ACT I
+	FIELD EMERALD_HILL_ACTION EMERALD_HILL_ACTION I
+	FIELD FIXPOLE_ACT FIXPOLE_ACT I
+	FIELD FJUMP_ACT FJUMP_ACT I
+	FIELD FLIPPER_ACT FLIPPER_ACT I
+	FIELD FLYRING_ACT FLYRING_ACT I
+	FIELD FUN_ACT FUN_ACT I
+	FIELD GAMEOVER_ACT GAMEOVER_ACT I
+	FIELD GOLE_ACT GOLE_ACT I
+	FIELD HAGURUMA_ACT HAGURUMA_ACT I
+	FIELD HAMMAR_ACT HAMMAR_ACT I
+	FIELD HASHIRA_ACT HASHIRA_ACT I
+	FIELD HASHI_ACT HASHI_ACT I
+	FIELD HASI0C_ACT HASI0C_ACT I
+	FIELD HILL_TOP_ACTION HILL_TOP_ACTION I
+	FIELD HITCOLFLAGB HITCOLFLAGB I
+	FIELD HITCOLFLAG HITCOLFLAG I
+	FIELD ITA0C_ACT ITA0C_ACT I
+	FIELD ITEM2_ACT ITEM2_ACT I
+	FIELD ITEM_ACT ITEM_ACT I
+	FIELD JUMPDOTMAX JUMPDOTMAX I
+	FIELD KAITEN_ACT KAITEN_ACT I
+	FIELD KASSYA_ACT KASSYA_ACT I
+	FIELD KDAI_ACT KDAI_ACT I
+	FIELD KUMOFOOT_IA KUMOFOOT_IA I
+	FIELD KUMOITO_IA KUMOITO_IA I
+	FIELD KUMOSHOT_IA KUMOSHOT_IA I
+	FIELD KUMOTIRE_IA KUMOTIRE_IA I
+	FIELD LDAI_ACT LDAI_ACT I
+	FIELD LEAF_ACT LEAF_ACT I
+	FIELD LRREVERS LRREVERS I
+	FIELD MASIN_ACT MASIN_ACT I
+	FIELD MASTER_RING_ACT MASTER_RING_ACT I
+	FIELD MEGA_ACT MEGA_ACT I
+	FIELD MIRROR_LR MIRROR_LR I
+	FIELD MIRROR_NONE MIRROR_NONE I
+	FIELD MIRROR_QUAD MIRROR_QUAD I
+	FIELD MIRROR_UD MIRROR_UD I
+	FIELD MOVEDAI_ACT MOVEDAI_ACT I
+	FIELD MOVESCR_ACT MOVESCR_ACT I
+	FIELD MUTEKI_ACT MUTEKI_ACT I
+	FIELD NOBI_ACT NOBI_ACT I
+	FIELD NUT_ACT NUT_ACT I
+	FIELD OCHI_ACT OCHI_ACT I
+	FIELD OCT_ACT OCT_ACT I
+	FIELD OILG_ACT OILG_ACT I
+	FIELD PADJET_ACT PADJET_ACT I
+	FIELD PATA_ACT PATA_ACT I
+	FIELD PATBASETABLE_H PATBASETABLE_H I
+	FIELD PATBASETABLE_IMAGE PATBASETABLE_IMAGE I
+	FIELD PATBASETABLE_OFFSET_X PATBASETABLE_OFFSET_X I
+	FIELD PATBASETABLE_OFFSET_Y PATBASETABLE_OFFSET_Y I
+	FIELD PATBASETABLE_W PATBASETABLE_W I
+	FIELD PATBASETABLE_X PATBASETABLE_X I
+	FIELD PATBASETABLE_Y PATBASETABLE_Y I
+	FIELD PIVOT_ACT PIVOT_ACT I
+	FIELD PLADDSPD PLADDSPD I
+	FIELD PLADDSPDS PLADDSPDS I
+	FIELD PLAWA_ACT PLAWA_ACT I
+	FIELD PLAYER2_ACTION PLAYER2_ACTION I
+	FIELD PLAYER_ACTION PLAYER_ACTION I
+	FIELD PLEFECT_ACT PLEFECT_ACT I
+	FIELD PLJUMP PLJUMP I
+	FIELD PLJUMPS PLJUMPS I
+	FIELD PLJUMP_W PLJUMP_W I
+	FIELD PLMAXSPD PLMAXSPD I
+	FIELD PLMAXSPDS PLMAXSPDS I
+	FIELD PLPOWER_AB PLPOWER_AB I
+	FIELD PLPOWER_BB PLPOWER_BB I
+	FIELD PLPOWER_MB PLPOWER_MB I
+	FIELD PLPOWER_SB PLPOWER_SB I
+	FIELD PLRETSPD PLRETSPD I
+	FIELD PLRETSPDS PLRETSPDS I
+	FIELD PLSTASPD PLSTASPD I
+	FIELD PRIORITY_NUM PRIORITY_NUM I
+	FIELD PROSHOT_IA PROSHOT_IA I
+	FIELD RDAI_ACT RDAI_ACT I
+	FIELD RENGA_IA RENGA_IA I
+	FIELD RIDEONFLAGB RIDEONFLAGB I
+	FIELD RIDEONFLAG RIDEONFLAG I
+	FIELD RING_ACT RING_ACT I
+	FIELD ROLLC_ACT ROLLC_ACT I
+	FIELD SARUSHOT_IA SARUSHOT_IA I
+	FIELD SAVE_ACT SAVE_ACT I
+	FIELD SCOLI_ACT SCOLI_ACT I
+	FIELD SCOPEC_ACT SCOPEC_ACT I
+	FIELD SDOOR_ACT SDOOR_ACT I
+	FIELD SEAHORSE_ACT SEAHORSE_ACT I
+	FIELD SHIMA_ACT SHIMA_ACT I
+	FIELD SHOOTER_ACT SHOOTER_ACT I
+	FIELD SIKAKEYA_ACT SIKAKEYA_ACT I
+	FIELD SISOO_ACT SISOO_ACT I
+	FIELD SJUMP_ACT SJUMP_ACT I
+	FIELD SLOOP_ACT SLOOP_ACT I
+	FIELD SLOT_RING_ACT SLOT_RING_ACT I
+	FIELD SONIC_ACT SONIC_ACT I
+	FIELD SPBALL_ACT SPBALL_ACT I
+	FIELD SPIKEBLK_ACT SPIKEBLK_ACT I
+	FIELD SPIKE_ACT SPIKE_ACT I
+	FIELD SPIKRING_ACT SPIKRING_ACT I
+	FIELD SPRING_ACT SPRING_ACT I
+	FIELD SPRPOSITBL_NUM SPRPOSITBL_NUM I
+	FIELD SPRPOSITBL_PATNO SPRPOSITBL_PATNO I
+	FIELD SPRPOSITBL_XPOSI SPRPOSITBL_XPOSI I
+	FIELD SPRPOSITBL_YPOSI SPRPOSITBL_YPOSI I
+	FIELD SPTAIL_ACT SPTAIL_ACT I
+	FIELD SSFX_ACT SSFX_ACT I
+	FIELD SSHADOW_ACT SSHADOW_ACT I
+	FIELD STCLEAR_ACT STCLEAR_ACT I
+	FIELD STEAM_ACT STEAM_ACT I
+	FIELD STEP_ACT STEP_ACT I
+	FIELD STONE_ACT STONE_ACT I
+	FIELD SWITCH_ACT SWITCH_ACT I
+	FIELD TAILS_ACT TAILS_ACT I
+	FIELD TAILS_TAIL_ACT TAILS_TAIL_ACT I
+	FIELD TAKI_ACT TAKI_ACT I
+	FIELD TEKYU_ACT TEKYU_ACT I
+	FIELD TENSUU_ACT TENSUU_ACT I
+	FIELD TERMINAL_ACT TERMINAL_ACT I
+	FIELD TOBIRA_ACT TOBIRA_ACT I
+	FIELD TOGE0C_ACT TOGE0C_ACT I
+	FIELD TOGE_ACT TOGE_ACT I
+	FIELD TO_BE_CONTINUED_ACT TO_BE_CONTINUED_ACT I
+	FIELD TSWITCH_ACT TSWITCH_ACT I
+	FIELD TUBO0C_ACT TUBO0C_ACT I
+	FIELD TUBOSHOT_IA TUBOSHOT_IA I
+	FIELD TUTA_ACT TUTA_ACT I
+	FIELD UDREVERS UDREVERS I
+	FIELD UNKNOWN UNKNOWN I
+	FIELD UPDOTMAX UPDOTMAX I
+	FIELD USAGI_ACT USAGI_ACT I
+	FIELD WASP_ACT WASP_ACT I
+	FIELD WATER_ACT WATER_ACT I
+	FIELD WFISH2_ACT WFISH2_ACT I
+	FIELD YTAMA_ACT YTAMA_ACT I
+	FIELD Y_AIRPLAN_ACT Y_AIRPLAN_ACT I
+	FIELD Y_BALL_ACT Y_BALL_ACT I
+	FIELD Y_BEEM_ACT Y_BEEM_ACT I
+	FIELD Y_BLOCK_ACT Y_BLOCK_ACT I
+	FIELD Y_BOSS10_ACT Y_BOSS10_ACT I
+	FIELD Y_B_FIRE_ACT Y_B_FIRE_ACT I
+	FIELD Y_CANNON_ACT Y_CANNON_ACT I
+	FIELD Y_CATAPALT_ACT Y_CATAPALT_ACT I
+	FIELD Y_COOCKDAI_ACT Y_COOCKDAI_ACT I
+	FIELD Y_COOCK_ACT Y_COOCK_ACT I
+	FIELD Y_CUP_ACT Y_CUP_ACT I
+	FIELD Y_DAI_ACT Y_DAI_ACT I
+	FIELD Y_EGGMAN_ACT Y_EGGMAN_ACT I
+	FIELD Y_ELEVATOR_ACT Y_ELEVATOR_ACT I
+	FIELD Y_FAN_ACT Y_FAN_ACT I
+	FIELD Y_FBALL_ACT Y_FBALL_ACT I
+	FIELD Y_FIRE_ACT Y_FIRE_ACT I
+	FIELD Y_FLY_ACT Y_FLY_ACT I
+	FIELD Y_GAMERA_ACT Y_GAMERA_ACT I
+	FIELD Y_HAGARE_ACT Y_HAGARE_ACT I
+	FIELD Y_HITODE_ACT Y_HITODE_ACT I
+	FIELD Y_HOTAL_ACT Y_HOTAL_ACT I
+	FIELD Y_ITACAN_ACT Y_ITACAN_ACT I
+	FIELD Y_ITA_ACT Y_ITA_ACT I
+	FIELD Y_JET_ACT Y_JET_ACT I
+	FIELD Y_KAMAKIRI_ACT Y_KAMAKIRI_ACT I
+	FIELD Y_KAMASHOT_ACT Y_KAMASHOT_ACT I
+	FIELD Y_KANITUME_ACT Y_KANITUME_ACT I
+	FIELD Y_KANI_ACT Y_KANI_ACT I
+	FIELD Y_KEMURI_ACT Y_KEMURI_ACT I
+	FIELD Y_KOGAME_ACT Y_KOGAME_ACT I
+	FIELD Y_KUMOBODY_ACT Y_KUMOBODY_ACT I
+	FIELD Y_KUMOFOOT_ACT Y_KUMOFOOT_ACT I
+	FIELD Y_KUMOITO_ACT Y_KUMOITO_ACT I
+	FIELD Y_KUMOSHOT_ACT Y_KUMOSHOT_ACT I
+	FIELD Y_KUMOTIRE_ACT Y_KUMOTIRE_ACT I
+	FIELD Y_LASTBOSS_ACT Y_LASTBOSS_ACT I
+	FIELD Y_MOLE0_ACT Y_MOLE0_ACT I
+	FIELD Y_MOLE_ACT Y_MOLE_ACT I
+	FIELD Y_MSONIC_ACT Y_MSONIC_ACT I
+	FIELD Y_MUKADE_ACT Y_MUKADE_ACT I
+	FIELD Y_PIRANIA_ACT Y_PIRANIA_ACT I
+	FIELD Y_PRONECK_ACT Y_PRONECK_ACT I
+	FIELD Y_PROPERA_ACT Y_PROPERA_ACT I
+	FIELD Y_PROSIO_ACT Y_PROSIO_ACT I
+	FIELD Y_RENGA_ACT Y_RENGA_ACT I
+	FIELD Y_ROCK_ACT Y_ROCK_ACT I
+	FIELD Y_ROLL_ACT Y_ROLL_ACT I
+	FIELD Y_SANDCRAB_ACT Y_SANDCRAB_ACT I
+	FIELD Y_SARU_ACT Y_SARU_ACT I
+	FIELD Y_SHOT_ACT Y_SHOT_ACT I
+	FIELD Y_SORAKUMO_ACT Y_SORAKUMO_ACT I
+	FIELD Y_TUBOH_ACT Y_TUBOH_ACT I
+	FIELD Y_TUBOV_ACT Y_TUBOV_ACT I
+	FIELD Y_VALKRIE_ACT Y_VALKRIE_ACT I
+	FIELD Y_YADOHD_ACT Y_YADOHD_ACT I
+	FIELD Y_YADO_ACT Y_YADO_ACT I
+	FIELD ZONE_ACT ZONE_ACT I
+	FIELD classType classType I
+	FIELD mBlink mBlink Z
+	FIELD m_Actflg m_Actflg I
+	FIELD m_ActionWorkCntNo m_ActionWorkCntNo I
+	FIELD m_Actno m_Actno I
+	FIELD m_AirCnt m_AirCnt I
+	FIELD m_AutoFrameout m_AutoFrameout Z
+	FIELD m_BallMode m_BallMode I
+	FIELD m_Cddat m_Cddat I
+	FIELD m_Cdsts m_Cdsts I
+	FIELD m_Colicnt m_Colicnt I
+	FIELD m_Colicnt_Ms m_Colicnt_Ms I
+	FIELD m_Colino m_Colino I
+	FIELD m_DashMode m_DashMode Z
+	FIELD m_Direc1 m_Direc1 I
+	FIELD m_DirecCnt m_DirecCnt I
+	FIELD m_Direc m_Direc I
+	FIELD m_DirecSpd m_DirecSpd I
+	FIELD m_FColFlag m_FColFlag I
+	FIELD m_FallTimer m_FallTimer I
+	FIELD m_Hitcolwk m_Hitcolwk I
+	FIELD m_IsDrawPatno m_IsDrawPatno Z
+	FIELD m_JumpFlag m_JumpFlag I
+	FIELD m_Manysprcnt m_Manysprcnt I
+	FIELD m_Mspeed m_Mspeed I
+	FIELD m_Mstno m_Mstno I
+	FIELD m_Mstno_1 m_Mstno_1 I
+	FIELD m_MutekiTimer m_MutekiTimer I
+	FIELD m_NoColiTimer m_NoColiTimer I
+	FIELD m_Patbase m_Patbase I
+	FIELD m_Patbase_Image m_Patbase_Image [Ljavax/microedition/lcdui/Image;
+	FIELD m_Patbase_Table m_Patbase_Table [[I
+	FIELD m_Patcnt m_Patcnt I
+	FIELD m_Patno m_Patno I
+	FIELD m_Patno_Ms m_Patno_Ms I
+	FIELD m_Pattim m_Pattim I
+	FIELD m_PlPower m_PlPower I
+	FIELD m_PlayerFlag m_PlayerFlag I
+	FIELD m_R_No0 m_R_No0 I
+	FIELD m_R_No0_Ms m_R_No0_Ms I
+	FIELD m_R_No1 m_R_No1 I
+	FIELD m_R_No2 m_R_No2 I
+	FIELD m_ReserveObj m_ReserveObj Ljava/lang/Object;
+	FIELD m_Reserve m_Reserve [I
+	FIELD m_RideActWk m_RideActWk LSTH2P1/Action;
+	FIELD m_Rideonwk m_Rideonwk I
+	FIELD m_RotateMode m_RotateMode I
+	FIELD m_SLoopFlag m_SLoopFlag I
+	FIELD m_SpeedUpTimer m_SpeedUpTimer I
+	FIELD m_Sprhs m_Sprhs I
+	FIELD m_Sprhsize m_Sprhsize I
+	FIELD m_Sprhsize_Ms m_Sprhsize_Ms I
+	FIELD m_Sproffset m_Sproffset I
+	FIELD m_Sprpositbl m_Sprpositbl [[I
+	FIELD m_Sprpri m_Sprpri I
+	FIELD m_Sprvs m_Sprvs I
+	FIELD m_Sprvsize m_Sprvsize I
+	FIELD m_Sprvsize_Ms m_Sprvsize_Ms I
+	FIELD m_Userflag m_Userflag I
+	FIELD m_Xposi m_Xposi I
+	FIELD m_Xposi_2 m_Xposi_2 I
+	FIELD m_Xspeed m_Xspeed I
+	FIELD m_Yposi m_Yposi I
+	FIELD m_Yposi_2 m_Yposi_2 I
+	FIELD m_Yspeed m_Yspeed I
+	FIELD m_airClock m_airClock I
+	FIELD pldir_d0 pldir_d0 I
+	FIELD pldir_d1 pldir_d1 I
+	FIELD pldir_d2 pldir_d2 I
+	FIELD pldir_d3 pldir_d3 I
+	METHOD _chk_pl_dir _chk_pl_dir (LSTH2P1/State;)LSTH2P1/Action;
+		ARG 1 state
+	METHOD autoDraw autoDraw (Ljavax/microedition/lcdui/Graphics;LSTH2P1/State;)V
+		ARG 1 graphics
+		ARG 2 state
+	METHOD dispose dispose ()V
+	METHOD disposeImages disposeImages (I)V
+	METHOD disposePreviousImages disposePreviousImages (I)V
+	METHOD frameOut frameOut (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD frameOutCheck frameOutCheck (LSTH2P1/State;)Z
+		ARG 1 state
+	METHOD frameOutCheckD frameOutCheckD (LSTH2P1/State;)Z
+		ARG 1 state
+	METHOD frameOutCheckN frameOutCheckN (LSTH2P1/State;)Z
+		ARG 1 state
+	METHOD frameOutCheckX frameOutCheckX (LSTH2P1/State;I)Z
+		ARG 1 state
+	METHOD getInstance getInstance (II)LSTH2P1/Action;
+	METHOD getXposi getXposi ()I
+	METHOD getYposi getYposi ()I
+	METHOD patchg patchg ([[I)V
+	METHOD patset patset (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD prepareBossImages prepareBossImages (I)V
+	METHOD prepareCommonImages prepareCommonImages ()V
+	METHOD prepareImages prepareImages (I)V
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD reset reset ()V
+	METHOD setType setType (II)V
+	METHOD setXposi setXposi (I)V
+	METHOD setYposi setYposi (I)V
+	METHOD speedSet speedSet ()V
+	METHOD speedSet2 speedSet2 ()V
+	METHOD update update (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD y_Emy_Init y_Emy_Init ([I)V
+CLASS STH2P1/State STH2P1/State
+	FIELD ADVAMD ADVAMD I
+	FIELD CONTINUEMD CONTINUEMD I
+	FIELD DEMOMD DEMOMD I
+	FIELD ENDINGMD ENDINGMD I
+	FIELD GAMEMD GAMEMD I
+	FIELD LOADMD LOADMD I
+	FIELD LOGOMD LOGOMD I
+	FIELD MAX_ACTIONS MAX_ACTIONS I
+	FIELD MAX_WORKMAX MAX_WORKMAX I
+	FIELD OPTIONMD OPTIONMD I
+	FIELD RDSELECTMD RDSELECTMD I
+	FIELD RESULTMD RESULTMD I
+	FIELD SCALE_FACTOR SCALE_FACTOR I
+	FIELD SELECTMD SELECTMD I
+	FIELD SPGAMEMD SPGAMEMD I
+	FIELD SPRITE_NUM SPRITE_NUM I
+	FIELD SUSPENDMD SUSPENDMD I
+	FIELD TILE_SIZE TILE_SIZE I
+	FIELD drawLoadingText drawLoadingText Z
+	FIELD fT font Ljavax/microedition/lcdui/Font;
+	FIELD fontHeight fontHeight I
+	FIELD loadStage loadStage Z
+	FIELD mActions mActions [LSTH2P1/Action;
+	FIELD mMode mMode I
+	FIELD mReserves mReserves [[I
+	FIELD mSonicAction mSonicAction LSTH2P1/Action;
+	FIELD mSpriteBufferSize mSpriteBufferSize I
+	FIELD mSpriteBuffer mSpriteBuffer [LSTH2P1/GameSprite;
+	FIELD mTailsAction mTailsAction LSTH2P1/Action;
+	FIELD m_PlFlag_s m_PlFlag_s I
+	FIELD m_PlHitcolwk_s m_PlHitcolwk_s I
+	FIELD m_PlRideonwk_s m_PlRideonwk_s I
+	FIELD m_PlSprOffset_s m_PlSprOffset_s I
+	FIELD m_PlTime_s m_PlTime_s I
+	FIELD m_PlXPosi_s m_PlXPosi_s I
+	FIELD m_PlYPosi_s m_PlYPosi_s I
+	FIELD m_Player2Index m_Player2Index I
+	FIELD m_PlayerIndex m_PlayerIndex I
+	FIELD m_ScrALim2_Down_s m_ScrALim2_Down_s I
+	FIELD m_ScrALim_Down_s m_ScrALim_Down_s I
+	FIELD m_ScrA_H_Posit m_ScrA_H_Posit I
+	FIELD m_ScrA_H_Posit_s m_ScrA_H_Posit_s I
+	FIELD m_ScrA_V_Posit m_ScrA_V_Posit I
+	FIELD m_ScrA_V_Posit_s m_ScrA_V_Posit_s I
+	FIELD m_ScrB_H_Posit m_ScrB_H_Posit I
+	FIELD m_ScrB_H_Posit_2 m_ScrB_H_Posit_2 I
+	FIELD m_ScrB_H_Posit_s m_ScrB_H_Posit_s I
+	FIELD m_ScrB_V_Posit m_ScrB_V_Posit I
+	FIELD m_ScrB_V_Posit_2 m_ScrB_V_Posit_2 I
+	FIELD m_ScrB_V_Posit_s m_ScrB_V_Posit_s I
+	FIELD m_ScrC_H_Posit m_ScrC_H_Posit I
+	FIELD m_ScrC_H_Posit_s m_ScrC_H_Posit_s I
+	FIELD m_ScrC_V_Posit m_ScrC_V_Posit I
+	FIELD m_ScrC_V_Posit_s m_ScrC_V_Posit_s I
+	FIELD m_ScrZ_H_Posit m_ScrZ_H_Posit I
+	FIELD m_ScrZ_H_Posit_s m_ScrZ_H_Posit_s I
+	FIELD m_ScrZ_V_Posit m_ScrZ_V_Posit I
+	FIELD m_ScrZ_V_Posit_s m_ScrZ_V_Posit_s I
+	FIELD m_WaterFlag_s m_WaterFlag_s Z
+	FIELD m_WaterPosi_m_s m_WaterPosi_m_s I
+	FIELD m_Water_Flag_s m_Water_Flag_s I
+	FIELD m_Zone_Flag_s m_Zone_Flag_s I
+	FIELD reserveActions reserveActions [LSTH2P1/Action;
+	METHOD a (Ljavax/microedition/lcdui/Image;IIIIIIIIII)V
+		ARG 1 image
+	METHOD addSpriteToBuffer addSpriteToBuffer ([Ljavax/microedition/lcdui/Image;[[IIIIIIII)V
+	METHOD checkPlayerIndex checkPlayerIndex ()I
+	METHOD countAction countAction (I)I
+	METHOD deleteAction deleteAction (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD deleteActionType deleteActionType (I)V
+	METHOD disposeResources disposeResources ()V
+	METHOD getActionIndex getActionIndex (LSTH2P1/Action;)I
+	METHOD getActionType getActionType (I)[LSTH2P1/Action;
+	METHOD getAquaticRuinAction getAquaticRuinAction (II)LSTH2P1/Action;
+	METHOD getBossAction getBossAction (II)LSTH2P1/Action;
+	METHOD getCasinoNightAction getCasinoNightAction (II)LSTH2P1/Action;
+	METHOD getChemicalPlantAction getChemicalPlantAction (II)LSTH2P1/Action;
+	METHOD getCommonAction getCommonAction (II)LSTH2P1/Action;
+	METHOD getEmeraldHillAction getEmeraldHillAction (II)LSTH2P1/Action;
+	METHOD getHillTopAction getHillTopAction (II)LSTH2P1/Action;
+	METHOD getInstance getInstance (ILjava/lang/Object;)LSTH2P1/State;
+	METHOD getPlayerAction getPlayerAction (II)LSTH2P1/Action;
+	METHOD getPlayerAction2 getPlayerAction2 (II)LSTH2P1/Action;
+	METHOD getSonicAction getSonicAction ()LSTH2P1/Action;
+	METHOD getTailsAction getTailsAction ()LSTH2P1/Action;
+	METHOD init init ()V
+	METHOD insertAction insertAction (I)LSTH2P1/Action;
+	METHOD insertAction insertAction (LSTH2P1/Action;I)LSTH2P1/Action;
+		ARG 1 action
+	METHOD insertAction insertAction (LSTH2P1/Action;II)LSTH2P1/Action;
+		ARG 1 action
+	METHOD insertAction insertAction (LSTH2P1/Action;[I)LSTH2P1/Action;
+		ARG 1 action
+	METHOD pause pause ()V
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD resume resume ()V
+	METHOD rotatePaint rotatePaint (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD setActions setActions ([LSTH2P1/Action;)V
+	METHOD setSoftKey setSoftKey (ILjava/lang/String;)V
+	METHOD update update ()V
+CLASS Coral/crlCanvas Coral/crlCanvas
+	FIELD _mLastFrameTime _mLastFrameTime J
+	FIELD _mPaintFinished _mPaintFinished Z
+	FIELD _mPaintReady _mPaintReady Z
+	FIELD _mQuitApp _mQuitApp Z
+	FIELD _mStartTime _mStartTime J
+	FIELD _mTriggerPaintUI _mTriggerPaintUI Z
+	FIELD currentState currentState LSTH2P1/State;
+	FIELD mCounter mCounter J
+	FIELD mPad mPad I
+	METHOD close close ()V
+	METHOD cnvsUpdate cnvsUpdate ()V
+	METHOD getGameHeight getGameHeight ()I
+	METHOD getGameWidth getGameWidth ()I
+	METHOD keyPressed keyPressed (I)V
+	METHOD keyReleased keyReleased (I)V
+	METHOD open open (Ljavax/microedition/midlet/MIDlet;)V
+	METHOD pause pause ()V
+	METHOD quitApp quitApp ()V
+	METHOD render render (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD reset reset ()V
+	METHOD resume resume ()V
+	METHOD startThread startThread ()V
+	METHOD triggerPaint triggerPaint ()V
+CLASS Coral/Debug/crlDebug Coral/Debug/crlDebug
+	METHOD print print (Ljava/lang/String;J)V
+CLASS STH2P1/TitleState STH2P1/TitleState
+	FIELD ADVAMD_LOCALSTATE_ANIME_STAR ADVAMD_LOCALSTATE_ANIME_STAR I
+	FIELD ADVAMD_MENU_STRINGS ADVAMD_MENU_STRINGS [Ljava/lang/String;
+	FIELD ARROW_HEIGHT ARROW_HEIGHT I
+	FIELD ARROW_WIDTH ARROW_WIDTH I
+	FIELD mDemo mDemo I
+	FIELD mDemoURL mDemoURL Ljava/lang/String;
+	FIELD mDevCreditDisable mDevCreditDisable Z
+	FIELD mUpsell mUpsell I
+	FIELD mUpsellURL mUpsellURL Ljava/lang/String;
+	FIELD progressCode progressCode Ljava/lang/String;
+	FIELD smov_x smov_x I
+	METHOD a (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;III)I
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;IIII)V
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;Ljava/lang/String;ZZ)V
+		ARG 0 graphics
+	METHOD b (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD drawAudioSplash drawAudioSplash (Ljavax/microedition/lcdui/Graphics;)V
+	METHOD drawBar drawBar (Ljavax/microedition/lcdui/Graphics;IIZLjava/lang/String;I)V
+	METHOD drawConfirmation drawConfirmation (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;Ljava/lang/String;Z)V
+	METHOD drawConfirmationMenu drawConfirmationMenu (Ljavax/microedition/lcdui/Graphics;)V
+	METHOD drawPauseMenu drawPauseMenu (Ljavax/microedition/lcdui/Graphics;I)V
+	METHOD drawString drawString (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;IIII)V
+		ARG 0 graphics
+	METHOD loadLanguage loadLanguage (I)V
+	METHOD updateConfirmationMenu updateConfirmationMenu ()V
+	METHOD updatePauseMenu updatePauseMenu ()V
+CLASS Coral/Audio/iAudio
+	METHOD isStarted isStarted (I)Z
+CLASS STH2P1/cCanvas STH2P1/cCanvas
+	FIELD APP_ENDING APP_ENDING I
+	FIELD APP_NEXTAPP APP_NEXTAPP I
+	FIELD COLOUR_BLACK COLOUR_BLACK I
+	FIELD COLOUR_GREEN_BORDER COLOUR_GREEN_BORDER I
+	FIELD COLOUR_RED COLOUR_RED I
+	FIELD COLOUR_WHITE COLOUR_WHITE I
+	FIELD FPS FPS I
+	FIELD FRAMETIME FRAMETIME I
+	FIELD MAX_FRAMESKIP MAX_FRAMESKIP I
+	FIELD OPTION_AUDIO OPTION_AUDIO I
+	FIELD OPTION_DIFFICULTY OPTION_DIFFICULTY I
+	FIELD OPTION_EMERALDS OPTION_EMERALDS I
+	FIELD OPTION_LANGUAGE OPTION_LANGUAGE I
+	FIELD OPTION_LIVES OPTION_LIVES I
+	FIELD OPTION_SCORE1 OPTION_SCORE1 I
+	FIELD OPTION_SCORE2 OPTION_SCORE2 I
+	FIELD OPTION_STAGE_PART1 OPTION_STAGE_PART1 I
+	FIELD OPTION_STAGE_PART2 OPTION_STAGE_PART2 I
+	FIELD OPTION_STAGE_PART3 OPTION_STAGE_PART3 I
+	FIELD OPTION_STAGE_PART4 OPTION_STAGE_PART4 I
+	FIELD OPTION_STAGE_PART5 OPTION_STAGE_PART5 I
+	FIELD OPTION_VIBRATION OPTION_VIBRATION I
+	FIELD SW_A SW_A I
+	FIELD SW_B SW_B I
+	FIELD SW_C SW_C I
+	FIELD SW_DOWN SW_DOWN I
+	FIELD SW_LEFT SW_LEFT I
+	FIELD SW_RIGHT SW_RIGHT I
+	FIELD SW_START SW_START I
+	FIELD SW_T_A SW_T_A I
+	FIELD SW_T_B SW_T_B I
+	FIELD SW_T_C SW_T_C I
+	FIELD SW_T_DOWN SW_T_DOWN I
+	FIELD SW_T_LEFT SW_T_LEFT I
+	FIELD SW_T_RIGHT SW_T_RIGHT I
+	FIELD SW_T_START SW_T_START I
+	FIELD SW_T_UP SW_T_UP I
+	FIELD SW_UP SW_UP I
+	FIELD am audio_manager LSTH2P1/Sonic2AudioManager;
+	FIELD lastLoopCounter lastLoopCounter I
+	FIELD lastLoopTime lastLoopTime [J
+	FIELD m_Key m_Key I
+	FIELD m_NowOnTKeyBuf m_NowOnTKeyBuf I
+	FIELD m_OnTKey m_OnTKey I
+	FIELD m_Option m_Option [I
+	FIELD m_Ranking m_Ranking [[I
+	FIELD m_ScreenFrame m_ScreenFrame I
+	FIELD m_ScreenFrame_Prev m_ScreenFrame_Prev I
+	FIELD newHeight newHeight I
+	FIELD newWidth newWidth I
+	FIELD screenRotatedString screenRotatedString [Ljava/lang/String;
+	FIELD screenRotated screenRotated Z
+	FIELD softkeyBarHeight softkeyBarHeight I
+	FIELD softkeyLabels softkeyLabels [Ljava/lang/String;
+	FIELD tickTime tickTime I
+	FIELD viewPortHeight viewPortHeight I
+	FIELD viewPortOffset viewPortOffset I
+	FIELD viewPortWidth viewPortWidth I
+	METHOD a (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD deleteSaveData deleteSaveData (Ljava/lang/String;)Z
+		ARG 1 string
+	METHOD doVibration doVibration (I)V
+	METHOD drawFade drawFade (Ljavax/microedition/lcdui/Graphics;Z)V
+		ARG 0 graphics
+	METHOD drawString drawString (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;IIIII)V
+		ARG 0 graphics
+		ARG 1 string
+	METHOD fillShade fillShade (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 0 graphics
+	METHOD getFPS getFPS ()I
+	METHOD getNowKeyBuf getNowKeyBuf ()I
+	METHOD getNowOnTKeyBuf getNowOnTKeyBuf ()I
+	METHOD initAudio initAudio ()V
+	METHOD initViewPort initViewPort ()V
+	METHOD loadData loadData (Ljava/lang/String;)[B
+		ARG 0 string
+	METHOD rotatePaint rotatePaint (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD saveData saveData (Ljava/lang/String;[B)V
+		ARG 0 string
+	METHOD saveDataExists saveDataExists (Ljava/lang/String;)Z
+		ARG 0 string
+	METHOD saveOption saveOption ()V
+	METHOD saveRanking saveRanking ()V
+	METHOD setFade setFade (II)V
+	METHOD setShade setShade (III)V
+	METHOD setSoftLabel setSoftLabel (ILjava/lang/String;)V
+	METHOD setState setState (ILjava/lang/Object;)V
+	METHOD setSwRead setSwRead (II)V
+	METHOD sizeChanged sizeChanged (II)V
+	METHOD swRead swRead ()I
+	METHOD updateFade updateFade ()V
+CLASS STH2P1/MenuStrings STH2P1/MenuStrings
+	FIELD ABOUT_CONVERSION ABOUT_CONVERSION I
+	FIELD ABOUT_VERSION ABOUT_VERSION I
+	FIELD ARE_YOU_SURE2 ARE_YOU_SURE2 I
+	FIELD BY_NAKAMURA BY_NAKAMURA I
+	FIELD CLEAR_HISCORES CLEAR_HISCORES I
+	FIELD ENABLE_AUDIO ENABLE_AUDIO I
+	FIELD HELP_TITLE_CHECKPOINT HELP_TITLE_CHECKPOINT I
+	FIELD HELP_TITLE_CONTROLS_DPAD HELP_TITLE_CONTROLS_DPAD I
+	FIELD HELP_TITLE_CONTROLS_KEYPAD HELP_TITLE_CONTROLS_KEYPAD I
+	FIELD HELP_TITLE_DAMAGE HELP_TITLE_DAMAGE I
+	FIELD HELP_TITLE_END HELP_TITLE_END I
+	FIELD HELP_TITLE_GAME_OVER HELP_TITLE_GAME_OVER I
+	FIELD HELP_TITLE_ITEMS HELP_TITLE_ITEMS I
+	FIELD HELP_TITLE_MISSION HELP_TITLE_MISSION I
+	FIELD HELP_TITLE_PROGRESS_CODE HELP_TITLE_PROGRESS_CODE I
+	FIELD HELP_TITLE_RINGS HELP_TITLE_RINGS I
+	FIELD HELP_TITLE_SPIN_DASH HELP_TITLE_SPIN_DASH I
+	FIELD HELP_TITLE_TAILS HELP_TITLE_TAILS I
+	FIELD HELP_TITLE_UNDERWATER HELP_TITLE_UNDERWATER I
+	FIELD HISCORES_CLEARED HISCORES_CLEARED I
+	FIELD LOADING LOADING I
+	FIELD MUSIC_COMPOSED MUSIC_COMPOSED I
+	FIELD NOT_USED5 NOT_USED5 I
+	FIELD NOT_USED7 NOT_USED7 I
+	FIELD NOT_USED8 NOT_USED8 I
+	FIELD PAUSE_MENU PAUSE_MENU I
+	FIELD PAUSE_QUIT PAUSE_QUIT I
+	FIELD PAUSE_RESUME PAUSE_RESUME I
+	FIELD PRESS_OK_KEY PRESS_OK_KEY I
+	FIELD PROGRESS_CURRENT_CODE PROGRESS_CURRENT_CODE I
+	FIELD PROGRESS_EDIT PROGRESS_EDIT I
+	FIELD PROGRESS_EDIT_CODE PROGRESS_EDIT_CODE I
+	FIELD PROGRESS_TITLE PROGRESS_TITLE I
+	FIELD PROGRESS_USE PROGRESS_USE I
+	FIELD PROGRESS_USE_CODE PROGRESS_USE_CODE I
+	FIELD SELECT_LANG SELECT_LANG I
+	FIELD SETTING_AUDIO_OFF SETTING_AUDIO_OFF I
+	FIELD SETTING_AUDIO_ONE SETTING_AUDIO_ONE I
+	FIELD SETTING_AUDIO_THREE SETTING_AUDIO_THREE I
+	FIELD SETTING_AUDIO_TWO SETTING_AUDIO_TWO I
+	FIELD SETTING_DIFF_EASY SETTING_DIFF_EASY I
+	FIELD SETTING_DIFF_HARD SETTING_DIFF_HARD I
+	FIELD SETTING_DIFF_NORMAL SETTING_DIFF_NORMAL I
+	FIELD SETTING_LANG_ENGLISH SETTING_LANG_ENGLISH I
+	FIELD SETTING_LANG_FRENCH SETTING_LANG_FRENCH I
+	FIELD SETTING_LANG_GERMAN SETTING_LANG_GERMAN I
+	FIELD SETTING_LANG_ITALIAN SETTING_LANG_ITALIAN I
+	FIELD SETTING_LANG_SPANISH SETTING_LANG_SPANISH I
+	FIELD SETTING_VIBRA_OFF SETTING_VIBRA_OFF I
+	FIELD SETTING_VIBRA_ON SETTING_VIBRA_ON I
+	FIELD SET_DIFFICULTY SET_DIFFICULTY I
+	FIELD SET_LANGUAGE SET_LANGUAGE I
+	FIELD SET_VIBRATION SET_VIBRATION I
+	FIELD SET_VOLUME SET_VOLUME I
+	FIELD SOFTKEY_BACK SOFTKEY_BACK I
+	FIELD SOFTKEY_EXIT SOFTKEY_EXIT I
+	FIELD SOFTKEY_PAUSE SOFTKEY_PAUSE I
+	FIELD SOFTKEY_SELECT SOFTKEY_SELECT I
+	FIELD STRING_ABOUT STRING_ABOUT I
+	FIELD STRING_ARE_YOU_SURE STRING_ARE_YOU_SURE I
+	FIELD STRING_BUY_MORE_GAMES STRING_BUY_MORE_GAMES I
+	FIELD STRING_CHANGE_SETTINGS STRING_CHANGE_SETTINGS I
+	FIELD STRING_CLEAR_HISCORES_WITH_HASH STRING_CLEAR_HISCORES_WITH_HASH I
+	FIELD STRING_CREDITS STRING_CREDITS I
+	FIELD STRING_DIFFICULTY STRING_DIFFICULTY I
+	FIELD STRING_END_CONFORMATION STRING_END_CONFORMATION I
+	FIELD STRING_EXIT_CONFIRM STRING_EXIT_CONFIRM I
+	FIELD STRING_GAME_START STRING_GAME_START I
+	FIELD STRING_GET_MORE_GAMES STRING_GET_MORE_GAMES I
+	FIELD STRING_HOW_TO_PLAY STRING_HOW_TO_PLAY I
+	FIELD STRING_LANGUAGE STRING_LANGUAGE I
+	FIELD STRING_NO STRING_NO I
+	FIELD STRING_OPTIONS STRING_OPTIONS I
+	FIELD STRING_RANKINGS STRING_RANKINGS I
+	FIELD STRING_RESUME_GAME2 STRING_RESUME_GAME2 I
+	FIELD STRING_RESUME_GAME STRING_RESUME_GAME I
+	FIELD STRING_SELECT_A_STAGE STRING_SELECT_A_STAGE I
+	FIELD STRING_SELECT_STAGE STRING_SELECT_STAGE I
+	FIELD STRING_SOUND STRING_SOUND I
+	FIELD STRING_START_BEGINNING STRING_START_BEGINNING I
+	FIELD STRING_START_GAME STRING_START_GAME I
+	FIELD STRING_START_NEW_GAME STRING_START_NEW_GAME I
+	FIELD STRING_VIBRATION STRING_VIBRATION I
+	FIELD STRING_VIEW_HELP STRING_VIEW_HELP I
+	FIELD STRING_VIEW_HISCORES STRING_VIEW_HISCORES I
+	FIELD STRING_YES STRING_YES I
+	FIELD languageFiles languageFiles [Ljava/lang/String;
+CLASS STH2P1/PlayerAction2 STH2P1/PlayerAction2
+	FIELD PLEFFECTMOVE2 PLEFFECTMOVE2 I
+	FIELD PLEFFECT_PLORFOX PLEFFECT_PLORFOX I
+	FIELD PLEFFECT_SPIN_DASH PLEFFECT_SPIN_DASH I
+	FIELD PLEFFECT_WATER PLEFFECT_WATER I
+	FIELD USAGI_friend_no USAGI_friend_no I
+	FIELD USAGI_friendflag USAGI_friendflag I
+	FIELD USAGI_runaway_tm USAGI_runaway_tm I
+	FIELD USAGI_xspeed_m USAGI_xspeed_m I
+	FIELD stclearAudioOver stclearAudioOver Z
+	METHOD RING_RingGetSub0 RING_RingGetSub0 (LSTH2P1/Action;)V
+		ARG 0 action
+	METHOD a (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD a (Ljavax/microedition/lcdui/Graphics;III)V
+		ARG 1 graphics
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD c (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD getPlayerSprites getPlayerSprites ()[Ljavax/microedition/lcdui/Image;
+	METHOD prepareImages prepareImages ()V
+CLASS Coral/Util/crlUtil Coral/Util/crlUtil
+	METHOD garbageWait garbageWait ()V
+	METHOD loadByteArray loadByteArray ([III[BI)V
+	METHOD loadIntArray loadIntArray ([BII)[I
+CLASS STH2P1/STH2P1 STH2P1/STH2P1
+	FIELD _gmMIDlet _gmMIDlet LSTH2P1/STH2P1;
+	FIELD a canvas LSTH2P1/cCanvas;
+	METHOD destroyApp destroyApp (Z)V
+		ARG 1 unconditional
+	METHOD getProperty getProperty (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 name
+	METHOD isActive isActive ()Z
+	METHOD pauseApp pauseApp ()V
+	METHOD platRequest platRequest (Ljava/lang/String;)Z
+		ARG 0 url
+	METHOD quitApp quitApp ()V
+	METHOD startApp startApp ()V
+CLASS STH2P1/CasinoNightAction STH2P1/CasinoNightAction
+	METHOD a (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD a (LSTH2P1/Action;III)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 1 state
+		ARG 2 action
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;I)V
+		ARG 1 state
+		ARG 2 action
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;IIIIIII)V
+		ARG 1 state
+		ARG 2 action
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/Action;III)V
+		ARG 1 action
+	METHOD b (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 1 state
+		ARG 2 action
+	METHOD b (LSTH2P1/State;LSTH2P1/Action;IIIIIII)V
+		ARG 1 state
+		ARG 2 action
+	METHOD c (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD c (LSTH2P1/State;LSTH2P1/Action;IIIIIII)V
+		ARG 1 state
+		ARG 2 action
+	METHOD disposeImages disposeImages ()V
+	METHOD prepareImages prepareImages ()V
