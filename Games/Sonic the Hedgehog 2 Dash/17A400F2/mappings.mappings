@@ -333,105 +333,6 @@ CLASS STH2P1/CommonAction STH2P1/CommonAction
 		ARG 1 state
 		ARG 2 action
 	METHOD unloadImage unloadImage (I)V
-CLASS STH2P1/AquaticRuinAction STH2P1/AquaticRuinAction
-	METHOD a (LSTH2P1/Action;I)V
-		ARG 1 action
-	METHOD a (LSTH2P1/State;LSTH2P1/Action;I)LSTH2P1/Action;
-		ARG 1 state
-		ARG 2 action
-	METHOD b (LSTH2P1/Action;)V
-		ARG 1 action
-	METHOD b (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD c (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD d (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD disposeImages disposeImages ()V
-	METHOD prepareImages prepareImages ()V
-CLASS STH2P1/Filenames STH2P1/Filenames
-	FIELD ACTION_FILENAME ACTION_FILENAME [[Ljava/lang/String;
-	FIELD BLK_FILENAME BLK_FILENAME [Ljava/lang/String;
-	FIELD CONTINUEMD_Filename CONTINUEMD_Filename [Ljava/lang/String;
-	FIELD FILENAMES FILENAMES [Ljava/lang/String;
-	FIELD IMAGE_PLAYER2_ACT_INTRO_RED IMAGE_PLAYER2_ACT_INTRO_RED I
-	FIELD IMAGE_PLAYER2_ACT_INTRO_YELLOW IMAGE_PLAYER2_ACT_INTRO_YELLOW I
-	FIELD IMAGE_PLAYER2_ANIMALS IMAGE_PLAYER2_ANIMALS I
-	FIELD IMAGE_PLAYER2_DROWN_COUNT IMAGE_PLAYER2_DROWN_COUNT I
-	FIELD IMAGE_PLAYER2_FONT0 IMAGE_PLAYER2_FONT0 I
-	FIELD IMAGE_PLAYER2_FONT1 IMAGE_PLAYER2_FONT1 I
-	FIELD IMAGE_PLAYER2_PLEFFECT IMAGE_PLAYER2_PLEFFECT I
-	FIELD IMAGE_PLAYER2_RING IMAGE_PLAYER2_RING I
-	FIELD IMAGE_PLAYER_SONIC1 IMAGE_PLAYER_SONIC1 I
-	FIELD IMAGE_PLAYER_SONIC2 IMAGE_PLAYER_SONIC2 I
-	FIELD IMAGE_PLAYER_SUPER_SONIC1 IMAGE_PLAYER_SUPER_SONIC1 I
-	FIELD IMAGE_PLAYER_SUPER_SONIC2 IMAGE_PLAYER_SUPER_SONIC2 I
-	FIELD IMAGE_PLAYER_TAILS IMAGE_PLAYER_TAILS I
-	FIELD ImgFileNames ImgFileNames [[Ljava/lang/String;
-	FIELD MAP_FILENAME MAP_FILENAME [Ljava/lang/String;
-	FIELD PRI_FILENAME PRI_FILENAME [Ljava/lang/String;
-	FIELD PlayerAction1ImgName PlayerAction1ImgName [Ljava/lang/String;
-	FIELD PlayerAction2FileName PlayerAction2FileName [Ljava/lang/String;
-	FIELD PlayerActionImgName PlayerActionImgName [Ljava/lang/String;
-	FIELD RING_FILENAME RING_FILENAME [[Ljava/lang/String;
-	FIELD SC_FILENAME SC_FILENAME [[Ljava/lang/String;
-	FIELD TILEMAP_FILENAME TILEMAP_FILENAME [Ljava/lang/String;
-	FIELD ZONEMAP_FILENAME ZONEMAP_FILENAME [[Ljava/lang/String;
-CLASS STH2P1/Utilities STH2P1/Utilities
-	FIELD AFFINE_TRANS AFFINE_TRANS [[I
-	METHOD a (Ljava/io/DataInputStream;)[Ljava/lang/String;
-		ARG 0 dataInputStream
-	METHOD a (Ljava/io/InputStream;)V
-		ARG 0 inputStream
-	METHOD a (Ljava/lang/String;)Ljava/io/DataInputStream;
-		ARG 0 string
-	METHOD arrayInputDataByte1 arrayInputDataByte1 (Ljava/lang/String;)[B
-		ARG 0 string
-	METHOD arrayInputDataInt1 arrayInputDataInt1 (Ljava/lang/String;)[I
-		ARG 0 string
-	METHOD arrayInputDataInt2 arrayInputDataInt2 (Ljava/lang/String;)[[I
-		ARG 0 string
-	METHOD arrayInputDataInt3 arrayInputDataInt3 (Ljava/io/DataInputStream;)[[[I
-		ARG 0 dataInputStream
-	METHOD arrayInputDataInt3 arrayInputDataInt3 (Ljava/lang/String;)[[[I
-	METHOD arrayInputDataString1 arrayInputDataString1 (Ljava/lang/String;)[Ljava/lang/String;
-		ARG 0 string
-	METHOD arrayInputDataString2 arrayInputDataString2 (Ljava/lang/String;)[[Ljava/lang/String;
-		ARG 0 string
-	METHOD atan atan (II)I
-	METHOD b (Ljava/io/DataInputStream;)[I
-		ARG 0 dataInputStream
-	METHOD c (Ljava/io/DataInputStream;)[[I
-		ARG 0 dataInputStream
-	METHOD cosset cosset (I)I
-	METHOD drawImage drawImage (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIIIIIII)V
-		ARG 0 graphics
-		ARG 1 image
-		ARG 2 x_dest
-		ARG 3 y_dest
-		ARG 4 x_src
-		ARG 5 y_src
-		ARG 6 width
-		ARG 7 height
-	METHOD drawImage drawImage (Ljavax/microedition/lcdui/Graphics;[Ljavax/microedition/lcdui/Image;[[IIIIIII)V
-		ARG 0 graphics
-	METHOD ext ext (I)I
-	METHOD getRandom getRandom ()I
-	METHOD getStringWidth getStringWidth (Ljava/lang/String;)I
-		ARG 0 string
-	METHOD loadImages loadImages ([Ljava/lang/String;[Ljavax/microedition/lcdui/Image;)V
-	METHOD readBinaryFromArchive readBinaryFromArchive (Ljava/lang/String;)[B
-	METHOD reportFreeMemory reportFreeMemory (Ljava/lang/String;)V
-		ARG 0 string
-	METHOD reset1DIntArray reset1DIntArray ([I)V
-		ARG 0 arr
-	METHOD reset1DIntArray reset1DIntArray ([III)V
-	METHOD resizeRGB resizeRGB ([IIIII)[I
-	METHOD scale scale (I)I
-		ARG 0 integer
-	METHOD scale2 scale2 (I)I
-		ARG 0 integer
-	METHOD sinset sinset (I)I
 CLASS STH2P1/EmeraldHillAction STH2P1/EmeraldHillAction
 	FIELD HASHI_WORKMAX HASHI_WORKMAX I
 	METHOD a (LSTH2P1/State;IIIII)I
@@ -441,80 +342,9 @@ CLASS STH2P1/EmeraldHillAction STH2P1/EmeraldHillAction
 CLASS STH2P1/EndingState STH2P1/EndingState
 	FIELD ENDING_SEQUENCE_MAP_DEF ENDING_SEQUENCE_MAP_DEF [B
 	FIELD frank frank I
-CLASS STH2P1/BossAction STH2P1/BossAction
-	FIELD BBOSS1_WORKMAX BBOSS1_WORKMAX I
-	FIELD m_BossWorking m_BossWorking Z
-	METHOD A (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD BBOSS4_init BBOSS4_init ()V
-	METHOD BBOSS4_move BBOSS4_move (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD BBOSS6_init BBOSS6_init ()V
-	METHOD a (LSTH2P1/Action;)V
-		ARG 1 action
-	METHOD a (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD a (LSTH2P1/State;LSTH2P1/Action;)V
-		ARG 1 state
-		ARG 2 action
-	METHOD b (LSTH2P1/Action;)V
-		ARG 1 action
-	METHOD b (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD bboss2Init (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD c (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD d (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD disposeImages disposeImages ()V
-	METHOD e (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD f (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD g (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD getChemical_bboss1 getChemical_bboss1 (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD i (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD j (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD k (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD l (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD m (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD n (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD o (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD p (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD prepareImages prepareImages ()V
-	METHOD q (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD r (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD s (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD t (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD u (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD v (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD w (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD x (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD y (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD z (LSTH2P1/State;)V
-		ARG 1 state
 CLASS Coral/Audio/crlAudioManager Coral/Audio/crlAudioManager
 	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+	FIELD VOLUME_FULL VOLUME_FULL I
 	FIELD _gGlobalVolume _gGlobalVolume I
 	FIELD _mNumPlayers _mNumPlayers I
 	FIELD _mPlayerVolume _mPlayerVolume [I
@@ -525,42 +355,6 @@ CLASS Coral/Audio/crlAudioManager Coral/Audio/crlAudioManager
 	METHOD resetFades resetFades ()V
 	METHOD setGlobalVolume setGlobalVolume (I)V
 	METHOD stopAllAudio stopAllAudio ()V
-CLASS Coral/crlVersion Coral/crlVersion
-	FIELD NUMBER NUMBER I
-	FIELD STRING STRING Ljava/lang/String;
-CLASS STH2P1/Sonic2AudioManager STH2P1/Sonic2AudioManager
-	FIELD AUDIO_BOSS AUDIO_BOSS I
-	FIELD AUDIO_CONTINUE AUDIO_CONTINUE I
-	FIELD AUDIO_DROWN AUDIO_DROWN I
-	FIELD AUDIO_DROWN_PANIC AUDIO_DROWN_PANIC I
-	FIELD AUDIO_EXTRA_LIFE AUDIO_EXTRA_LIFE I
-	FIELD AUDIO_GAME_OVER AUDIO_GAME_OVER I
-	FIELD AUDIO_INVINCIBLE AUDIO_INVINCIBLE I
-	FIELD AUDIO_RING AUDIO_RING I
-	FIELD AUDIO_SCORE AUDIO_SCORE I
-	FIELD AUDIO_SEGA_SPLASH AUDIO_SEGA_SPLASH I
-	FIELD AUDIO_STAGE_CLEAR AUDIO_STAGE_CLEAR I
-	FIELD AUDIO_SUPER_SONIC AUDIO_SUPER_SONIC I
-	FIELD AUDIO_TITLE AUDIO_TITLE I
-	FIELD AUDIO_ZONE_TRACK AUDIO_ZONE_TRACK I
-	FIELD AUDIO_ZONE_TRACK_INTRO AUDIO_ZONE_TRACK_INTRO I
-	FIELD NUM_OF_PLAYERS NUM_OF_PLAYERS I
-	FIELD VOLUME_HALF VOLUME_HALF I
-	FIELD VOLUME_LEVELS VOLUME_LEVELS [I
-	FIELD VOLUME_QUART VOLUME_QUART I
-	FIELD audioBankAudioTypes audioBankAudioTypes [I
-	FIELD audioBankLoopStates audioBankLoopStates [I
-	FIELD audioBank audioBank [Ljava/lang/String;
-	METHOD activeAudioBankListener activeAudioBankListener ()V
-	METHOD audioPlaying audioPlaying ()Z
-	METHOD bgmRestart bgmRestart ()V
-	METHOD bgmset bgmset (I)V
-	METHOD loadCurrentAudioBank loadCurrentAudioBank ()I
-	METHOD playerUpdate playerUpdate (Ljavax/microedition/media/Player;Ljava/lang/String;Ljava/lang/Object;)V
-		ARG 1 player
-	METHOD setAudioBank setAudioBank (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD setGlobalVolume setGlobalVolume (IZ)V
 CLASS STH2P1/Console STH2P1/Console
 	FIELD buffer buffer [Ljava/lang/String;
 	FIELD consoleFont consoleFont Ljavax/microedition/lcdui/Font;
@@ -575,13 +369,6 @@ CLASS STH2P1/Console STH2P1/Console
 	METHOD draw draw (Ljavax/microedition/lcdui/Graphics;)V
 		ARG 0 graphics
 	METHOD flipShow flipShow ()V
-CLASS STH2P1/GameSprite STH2P1/GameSprite
-	FIELD m_Sproffset m_Sproffset I
-	FIELD m_Sprpri m_Sprpri I
-	METHOD draw draw (Ljavax/microedition/lcdui/Graphics;)V
-		ARG 1 graphics
-	METHOD setData setData (Ljavax/microedition/lcdui/Image;IIIIIIIIII)V
-		ARG 1 image
 CLASS STH2P1/HillTopAction STH2P1/HillTopAction
 	METHOD a (LSTH2P1/Action;)V
 		ARG 1 action
@@ -671,6 +458,7 @@ CLASS STH2P1/PlayerAction STH2P1/PlayerAction
 		ARG 1 state
 	METHOD t (LSTH2P1/State;)V
 		ARG 1 state
+CLASS Coral/Graphics2D/crlFont Coral/Graphics2D/crlFont
 CLASS STH2P1/ChemicalPlantAction STH2P1/ChemicalPlantAction
 	METHOD a (LSTH2P1/Action;)V
 		ARG 1 action
@@ -686,6 +474,532 @@ CLASS STH2P1/ChemicalPlantAction STH2P1/ChemicalPlantAction
 		ARG 1 state
 	METHOD disposeImages disposeImages ()V
 	METHOD prepareImages prepareImages ()V
+CLASS Coral/Game/crlCircle Coral/Game/crlCircle
+	FIELD mCentreX mCentreX F
+	FIELD mCentreY mCentreY F
+	FIELD mCentreZ mCentreZ F
+	FIELD mRadius mRadius F
+	METHOD <init> (FFF)V
+		ARG 1 float1
+		ARG 2 float2
+		ARG 3 float3
+	METHOD setCentre setCentre (FF)V
+		ARG 1 float1
+		ARG 2 float2
+	METHOD setCircle setCircle (LCoral/Game/crlCircle;)V
+		ARG 1 crlCircle
+	METHOD setRadius setRadius (F)V
+		ARG 1 float1
+CLASS STH2P1/TitleState STH2P1/TitleState
+	FIELD ADVAMD_LOCALSTATE_ANIME_STAR ADVAMD_LOCALSTATE_ANIME_STAR I
+	FIELD ADVAMD_MENU_STRINGS ADVAMD_MENU_STRINGS [Ljava/lang/String;
+	FIELD ARROW_HEIGHT ARROW_HEIGHT I
+	FIELD ARROW_WIDTH ARROW_WIDTH I
+	FIELD mDemo mDemo I
+	FIELD mDemoURL mDemoURL Ljava/lang/String;
+	FIELD mDevCreditDisable mDevCreditDisable Z
+	FIELD mUpsell mUpsell I
+	FIELD mUpsellURL mUpsellURL Ljava/lang/String;
+	FIELD progressCode progressCode Ljava/lang/String;
+	FIELD smov_x smov_x I
+	METHOD a (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;II)V
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;III)I
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;IIII)V
+		ARG 1 graphics
+	METHOD a (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;Ljava/lang/String;ZZ)V
+		ARG 0 graphics
+	METHOD b (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD drawAudioSplash drawAudioSplash (Ljavax/microedition/lcdui/Graphics;)V
+	METHOD drawBar drawBar (Ljavax/microedition/lcdui/Graphics;IIZLjava/lang/String;I)V
+	METHOD drawConfirmation drawConfirmation (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;Ljava/lang/String;Z)V
+	METHOD drawConfirmationMenu drawConfirmationMenu (Ljavax/microedition/lcdui/Graphics;)V
+	METHOD drawPauseMenu drawPauseMenu (Ljavax/microedition/lcdui/Graphics;I)V
+	METHOD drawString drawString (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;IIII)V
+		ARG 0 graphics
+	METHOD loadLanguage loadLanguage (I)V
+	METHOD updateConfirmationMenu updateConfirmationMenu ()V
+	METHOD updatePauseMenu updatePauseMenu ()V
+CLASS Coral/Math/FP/crlFP64 Coral/Math/FP/crlFP64
+CLASS STH2P1/MenuStrings STH2P1/MenuStrings
+	FIELD ABOUT_CONVERSION ABOUT_CONVERSION I
+	FIELD ABOUT_VERSION ABOUT_VERSION I
+	FIELD ARE_YOU_SURE2 ARE_YOU_SURE2 I
+	FIELD BY_NAKAMURA BY_NAKAMURA I
+	FIELD CLEAR_HISCORES CLEAR_HISCORES I
+	FIELD ENABLE_AUDIO ENABLE_AUDIO I
+	FIELD HELP_TITLE_CHECKPOINT HELP_TITLE_CHECKPOINT I
+	FIELD HELP_TITLE_CONTROLS_DPAD HELP_TITLE_CONTROLS_DPAD I
+	FIELD HELP_TITLE_CONTROLS_KEYPAD HELP_TITLE_CONTROLS_KEYPAD I
+	FIELD HELP_TITLE_DAMAGE HELP_TITLE_DAMAGE I
+	FIELD HELP_TITLE_END HELP_TITLE_END I
+	FIELD HELP_TITLE_GAME_OVER HELP_TITLE_GAME_OVER I
+	FIELD HELP_TITLE_ITEMS HELP_TITLE_ITEMS I
+	FIELD HELP_TITLE_MISSION HELP_TITLE_MISSION I
+	FIELD HELP_TITLE_PROGRESS_CODE HELP_TITLE_PROGRESS_CODE I
+	FIELD HELP_TITLE_RINGS HELP_TITLE_RINGS I
+	FIELD HELP_TITLE_SPIN_DASH HELP_TITLE_SPIN_DASH I
+	FIELD HELP_TITLE_TAILS HELP_TITLE_TAILS I
+	FIELD HELP_TITLE_UNDERWATER HELP_TITLE_UNDERWATER I
+	FIELD HISCORES_CLEARED HISCORES_CLEARED I
+	FIELD LOADING LOADING I
+	FIELD MUSIC_COMPOSED MUSIC_COMPOSED I
+	FIELD NOT_USED5 NOT_USED5 I
+	FIELD NOT_USED7 NOT_USED7 I
+	FIELD NOT_USED8 NOT_USED8 I
+	FIELD PAUSE_MENU PAUSE_MENU I
+	FIELD PAUSE_QUIT PAUSE_QUIT I
+	FIELD PAUSE_RESUME PAUSE_RESUME I
+	FIELD PRESS_OK_KEY PRESS_OK_KEY I
+	FIELD PROGRESS_CURRENT_CODE PROGRESS_CURRENT_CODE I
+	FIELD PROGRESS_EDIT PROGRESS_EDIT I
+	FIELD PROGRESS_EDIT_CODE PROGRESS_EDIT_CODE I
+	FIELD PROGRESS_TITLE PROGRESS_TITLE I
+	FIELD PROGRESS_USE PROGRESS_USE I
+	FIELD PROGRESS_USE_CODE PROGRESS_USE_CODE I
+	FIELD SELECT_LANG SELECT_LANG I
+	FIELD SETTING_AUDIO_OFF SETTING_AUDIO_OFF I
+	FIELD SETTING_AUDIO_ONE SETTING_AUDIO_ONE I
+	FIELD SETTING_AUDIO_THREE SETTING_AUDIO_THREE I
+	FIELD SETTING_AUDIO_TWO SETTING_AUDIO_TWO I
+	FIELD SETTING_DIFF_EASY SETTING_DIFF_EASY I
+	FIELD SETTING_DIFF_HARD SETTING_DIFF_HARD I
+	FIELD SETTING_DIFF_NORMAL SETTING_DIFF_NORMAL I
+	FIELD SETTING_LANG_ENGLISH SETTING_LANG_ENGLISH I
+	FIELD SETTING_LANG_FRENCH SETTING_LANG_FRENCH I
+	FIELD SETTING_LANG_GERMAN SETTING_LANG_GERMAN I
+	FIELD SETTING_LANG_ITALIAN SETTING_LANG_ITALIAN I
+	FIELD SETTING_LANG_SPANISH SETTING_LANG_SPANISH I
+	FIELD SETTING_VIBRA_OFF SETTING_VIBRA_OFF I
+	FIELD SETTING_VIBRA_ON SETTING_VIBRA_ON I
+	FIELD SET_DIFFICULTY SET_DIFFICULTY I
+	FIELD SET_LANGUAGE SET_LANGUAGE I
+	FIELD SET_VIBRATION SET_VIBRATION I
+	FIELD SET_VOLUME SET_VOLUME I
+	FIELD SOFTKEY_BACK SOFTKEY_BACK I
+	FIELD SOFTKEY_EXIT SOFTKEY_EXIT I
+	FIELD SOFTKEY_PAUSE SOFTKEY_PAUSE I
+	FIELD SOFTKEY_SELECT SOFTKEY_SELECT I
+	FIELD STRING_ABOUT STRING_ABOUT I
+	FIELD STRING_ARE_YOU_SURE STRING_ARE_YOU_SURE I
+	FIELD STRING_BUY_MORE_GAMES STRING_BUY_MORE_GAMES I
+	FIELD STRING_CHANGE_SETTINGS STRING_CHANGE_SETTINGS I
+	FIELD STRING_CLEAR_HISCORES_WITH_HASH STRING_CLEAR_HISCORES_WITH_HASH I
+	FIELD STRING_CREDITS STRING_CREDITS I
+	FIELD STRING_DIFFICULTY STRING_DIFFICULTY I
+	FIELD STRING_END_CONFORMATION STRING_END_CONFORMATION I
+	FIELD STRING_EXIT_CONFIRM STRING_EXIT_CONFIRM I
+	FIELD STRING_GAME_START STRING_GAME_START I
+	FIELD STRING_GET_MORE_GAMES STRING_GET_MORE_GAMES I
+	FIELD STRING_HOW_TO_PLAY STRING_HOW_TO_PLAY I
+	FIELD STRING_LANGUAGE STRING_LANGUAGE I
+	FIELD STRING_NO STRING_NO I
+	FIELD STRING_OPTIONS STRING_OPTIONS I
+	FIELD STRING_RANKINGS STRING_RANKINGS I
+	FIELD STRING_RESUME_GAME2 STRING_RESUME_GAME2 I
+	FIELD STRING_RESUME_GAME STRING_RESUME_GAME I
+	FIELD STRING_SELECT_A_STAGE STRING_SELECT_A_STAGE I
+	FIELD STRING_SELECT_STAGE STRING_SELECT_STAGE I
+	FIELD STRING_SOUND STRING_SOUND I
+	FIELD STRING_START_BEGINNING STRING_START_BEGINNING I
+	FIELD STRING_START_GAME STRING_START_GAME I
+	FIELD STRING_START_NEW_GAME STRING_START_NEW_GAME I
+	FIELD STRING_VIBRATION STRING_VIBRATION I
+	FIELD STRING_VIEW_HELP STRING_VIEW_HELP I
+	FIELD STRING_VIEW_HISCORES STRING_VIEW_HISCORES I
+	FIELD STRING_YES STRING_YES I
+	FIELD languageFiles languageFiles [Ljava/lang/String;
+CLASS Coral/Util/cResProcessObj Coral/Util/cResProcessObj
+	METHOD process process (J)V
+		ARG 1 long1
+CLASS Coral/Math/Float/crlMath Coral/Math/Float/crlMath
+CLASS STH2P1/PlayerAction2 STH2P1/PlayerAction2
+	FIELD PLEFFECTMOVE2 PLEFFECTMOVE2 I
+	FIELD PLEFFECT_PLORFOX PLEFFECT_PLORFOX I
+	FIELD PLEFFECT_SPIN_DASH PLEFFECT_SPIN_DASH I
+	FIELD PLEFFECT_WATER PLEFFECT_WATER I
+	FIELD USAGI_friend_no USAGI_friend_no I
+	FIELD USAGI_friendflag USAGI_friendflag I
+	FIELD USAGI_runaway_tm USAGI_runaway_tm I
+	FIELD USAGI_xspeed_m USAGI_xspeed_m I
+	FIELD stclearAudioOver stclearAudioOver Z
+	METHOD RING_RingGetSub0 RING_RingGetSub0 (LSTH2P1/Action;)V
+		ARG 0 action
+	METHOD a (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD a (Ljavax/microedition/lcdui/Graphics;III)V
+		ARG 1 graphics
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD c (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD getPlayerSprites getPlayerSprites ()[Ljavax/microedition/lcdui/Image;
+	METHOD prepareImages prepareImages ()V
+CLASS Coral/Util/crlArrayList Coral/Util/crlArrayList
+	FIELD a a [Ljava/lang/Object;
+	FIELD b b I
+	FIELD c size I
+	METHOD <init> (II)V
+		ARG 1 integer1
+		ARG 2 integer2
+	METHOD a a ()V
+	METHOD add add (ILjava/lang/Object;)V
+		ARG 1 integer
+		ARG 2 object
+	METHOD add add (Ljava/lang/Object;)V
+		ARG 1 object
+	METHOD clear clear ()V
+	METHOD contains contains (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD get get (I)Ljava/lang/Object;
+		ARG 1 integer
+	METHOD indexOf indexOf (Ljava/lang/Object;)I
+		ARG 1 object
+	METHOD remove remove (I)Ljava/lang/Object;
+		ARG 1 integer
+	METHOD remove remove (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD set set (ILjava/lang/Object;)Ljava/lang/Object;
+		ARG 1 integer
+		ARG 2 object
+	METHOD size size ()I
+	METHOD toArray toArray ()[Ljava/lang/Object;
+	METHOD toArray toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+		ARG 1 arr
+	METHOD trimToSize trimToSize ()V
+CLASS Coral/IO/crlResourceLoader Coral/IO/crlResourceLoader
+	FIELD MBOOSTER_MAX_INSTANCES MBOOSTER_MAX_INSTANCES I
+CLASS Coral/Game/crlPlane Coral/Game/crlPlane
+	FIELD mDot mDot F
+	FIELD mNormalX mNormalX F
+	FIELD mNormalY mNormalY F
+	FIELD mNormalZ mNormalZ F
+CLASS Coral/Math/FP/crlFP32 Coral/Math/FP/crlFP32
+CLASS STH2P1/AquaticRuinAction STH2P1/AquaticRuinAction
+	METHOD a (LSTH2P1/Action;I)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;I)LSTH2P1/Action;
+		ARG 1 state
+		ARG 2 action
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD c (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD d (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD prepareImages prepareImages ()V
+CLASS Coral/Math/Float/crlV4 Coral/Math/Float/crlV4
+	FIELD x x F
+	FIELD y y F
+	FIELD z z F
+	METHOD addEq addEq (LCoral/Math/Float/crlV4;)V
+	METHOD mul mul (F)V
+	METHOD sub sub (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)V
+CLASS STH2P1/Filenames STH2P1/Filenames
+	FIELD ACTION_FILENAME ACTION_FILENAME [[Ljava/lang/String;
+	FIELD BLK_FILENAME BLK_FILENAME [Ljava/lang/String;
+	FIELD CONTINUEMD_Filename CONTINUEMD_Filename [Ljava/lang/String;
+	FIELD FILENAMES FILENAMES [Ljava/lang/String;
+	FIELD IMAGE_PLAYER2_ACT_INTRO_RED IMAGE_PLAYER2_ACT_INTRO_RED I
+	FIELD IMAGE_PLAYER2_ACT_INTRO_YELLOW IMAGE_PLAYER2_ACT_INTRO_YELLOW I
+	FIELD IMAGE_PLAYER2_ANIMALS IMAGE_PLAYER2_ANIMALS I
+	FIELD IMAGE_PLAYER2_DROWN_COUNT IMAGE_PLAYER2_DROWN_COUNT I
+	FIELD IMAGE_PLAYER2_FONT0 IMAGE_PLAYER2_FONT0 I
+	FIELD IMAGE_PLAYER2_FONT1 IMAGE_PLAYER2_FONT1 I
+	FIELD IMAGE_PLAYER2_PLEFFECT IMAGE_PLAYER2_PLEFFECT I
+	FIELD IMAGE_PLAYER2_RING IMAGE_PLAYER2_RING I
+	FIELD IMAGE_PLAYER_SONIC1 IMAGE_PLAYER_SONIC1 I
+	FIELD IMAGE_PLAYER_SONIC2 IMAGE_PLAYER_SONIC2 I
+	FIELD IMAGE_PLAYER_SUPER_SONIC1 IMAGE_PLAYER_SUPER_SONIC1 I
+	FIELD IMAGE_PLAYER_SUPER_SONIC2 IMAGE_PLAYER_SUPER_SONIC2 I
+	FIELD IMAGE_PLAYER_TAILS IMAGE_PLAYER_TAILS I
+	FIELD ImgFileNames ImgFileNames [[Ljava/lang/String;
+	FIELD MAP_FILENAME MAP_FILENAME [Ljava/lang/String;
+	FIELD PRI_FILENAME PRI_FILENAME [Ljava/lang/String;
+	FIELD PlayerAction1ImgName PlayerAction1ImgName [Ljava/lang/String;
+	FIELD PlayerAction2FileName PlayerAction2FileName [Ljava/lang/String;
+	FIELD PlayerActionImgName PlayerActionImgName [Ljava/lang/String;
+	FIELD RING_FILENAME RING_FILENAME [[Ljava/lang/String;
+	FIELD SC_FILENAME SC_FILENAME [[Ljava/lang/String;
+	FIELD TILEMAP_FILENAME TILEMAP_FILENAME [Ljava/lang/String;
+	FIELD ZONEMAP_FILENAME ZONEMAP_FILENAME [[Ljava/lang/String;
+CLASS Coral/UI/crlUI
+	FIELD _AYS_NO _AYS_NO I
+	FIELD _AYS_YES _AYS_YES I
+	FIELD _mBackgroundColour _mBackgroundColour I
+	FIELD _mCanvas _mCanvas LCoral/crlCanvas;
+	FIELD _mCreatedString _mCreatedString [B
+	FIELD _mSaveFont _mSaveFont I
+	FIELD _mSplashTimer _mSplashTimer I
+	FIELD _mUIdefs _mUIdefs [I
+	FIELD _mUIdown _mUIdown Z
+	FIELD _mUIdsgnCT _mUIdsgnCT [I
+	FIELD _mUIdsgnCTm _mUIdsgnCTm [B
+	FIELD _mUIdsgnFlash _mUIdsgnFlash I
+	FIELD _mUIdsgn _mUIdsgn I
+	FIELD _mUIdsgnLayout _mUIdsgnLayout [[I
+	FIELD _mUIdsgnSave _mUIdsgnSave I
+	FIELD _mUIdsgnXc _mUIdsgnXc [B
+	FIELD _mUIdsgnXo _mUIdsgnXo [I
+	FIELD _mUIheightCent _mUIheightCent I
+	FIELD _mUIheight _mUIheight I
+	FIELD _mUIiLine _mUIiLine I
+	FIELD _mUIimagesH _mUIimagesH [I
+	FIELD _mUIimagesN _mUIimagesN I
+	FIELD _mUIimages _mUIimages [Ljavax/microedition/lcdui/Image;
+	FIELD _mUIlastOption _mUIlastOption I
+	FIELD _mUImenuback _mUImenuback Ljavax/microedition/lcdui/Image;
+	FIELD _mUIoption _mUIoption I
+	FIELD _mUIoptionSave _mUIoptionSave I
+	FIELD _mUIoptionStore _mUIoptionStore [I
+	FIELD _mUItransDir _mUItransDir I
+	FIELD _mUItransProgress _mUItransProgress F
+	FIELD _mUIup _mUIup Z
+	FIELD _mUIwidthCent _mUIwidthCent I
+	FIELD _mUIwidth _mUIwidth I
+	FIELD _mWorkBuffer _mWorkBuffer [B
+	FIELD a a [B
+	FIELD b b I
+	FIELD c c [Ljava/lang/String;
+	FIELD d d [Ljava/lang/String;
+	FIELD e e [Ljava/lang/String;
+	FIELD f f [Ljava/lang/String;
+	FIELD gCreditScrollSpeed gCreditScrollSpeed I
+	FIELD gDefaultWrappedTextWidth gDefaultWrappedTextWidth I
+	FIELD gUIfontLarge gUIfontLarge I
+	FIELD gUIfontMedium gUIfontMedium I
+	FIELD gUIfontSmall gUIfontSmall I
+	FIELD gUIfooter gUIfooter I
+	FIELD gUIheader gUIheader I
+	FIELD gUImiddle gUImiddle I
+	FIELD gUInullImage gUInullImage I
+	FIELD g g [Ljava/lang/String;
+	FIELD h h [Ljava/lang/String;
+	FIELD mCurrentFont mCurrentFont I
+	FIELD mFont mFont [LCoral/Graphics2D/crlFont;
+	FIELD mLocale mLocale I
+	FIELD mUImaxOpt mUImaxOpt I
+	FIELD sin_table sin_table [S
+	FIELD tsin tsin [S
+CLASS Coral/IO/iLoader Coral/IO/iLoader
+CLASS STH2P1/Utilities STH2P1/Utilities
+	FIELD AFFINE_TRANS AFFINE_TRANS [[I
+	METHOD a (Ljava/io/DataInputStream;)[Ljava/lang/String;
+		ARG 0 dataInputStream
+	METHOD a (Ljava/io/InputStream;)V
+		ARG 0 inputStream
+	METHOD a (Ljava/lang/String;)Ljava/io/DataInputStream;
+		ARG 0 string
+	METHOD arrayInputDataByte1 arrayInputDataByte1 (Ljava/lang/String;)[B
+		ARG 0 string
+	METHOD arrayInputDataInt1 arrayInputDataInt1 (Ljava/lang/String;)[I
+		ARG 0 string
+	METHOD arrayInputDataInt2 arrayInputDataInt2 (Ljava/lang/String;)[[I
+		ARG 0 string
+	METHOD arrayInputDataInt3 arrayInputDataInt3 (Ljava/io/DataInputStream;)[[[I
+		ARG 0 dataInputStream
+	METHOD arrayInputDataInt3 arrayInputDataInt3 (Ljava/lang/String;)[[[I
+	METHOD arrayInputDataString1 arrayInputDataString1 (Ljava/lang/String;)[Ljava/lang/String;
+		ARG 0 string
+	METHOD arrayInputDataString2 arrayInputDataString2 (Ljava/lang/String;)[[Ljava/lang/String;
+		ARG 0 string
+	METHOD atan atan (II)I
+	METHOD b (Ljava/io/DataInputStream;)[I
+		ARG 0 dataInputStream
+	METHOD c (Ljava/io/DataInputStream;)[[I
+		ARG 0 dataInputStream
+	METHOD cosset cosset (I)I
+	METHOD drawImage drawImage (Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIIIIIII)V
+		ARG 0 graphics
+		ARG 1 image
+		ARG 2 x_dest
+		ARG 3 y_dest
+		ARG 4 x_src
+		ARG 5 y_src
+		ARG 6 width
+		ARG 7 height
+	METHOD drawImage drawImage (Ljavax/microedition/lcdui/Graphics;[Ljavax/microedition/lcdui/Image;[[IIIIIII)V
+		ARG 0 graphics
+	METHOD ext ext (I)I
+	METHOD getRandom getRandom ()I
+	METHOD getStringWidth getStringWidth (Ljava/lang/String;)I
+		ARG 0 string
+	METHOD loadImages loadImages ([Ljava/lang/String;[Ljavax/microedition/lcdui/Image;)V
+	METHOD readBinaryFromArchive readBinaryFromArchive (Ljava/lang/String;)[B
+	METHOD reportFreeMemory reportFreeMemory (Ljava/lang/String;)V
+		ARG 0 string
+	METHOD reset1DIntArray reset1DIntArray ([I)V
+		ARG 0 arr
+	METHOD reset1DIntArray reset1DIntArray ([III)V
+	METHOD resizeRGB resizeRGB ([IIIII)[I
+	METHOD scale scale (I)I
+		ARG 0 integer
+	METHOD scale2 scale2 (I)I
+		ARG 0 integer
+	METHOD sinset sinset (I)I
+CLASS Coral/Math/Float/crlM44 Coral/Math/Float/crlM44
+CLASS STH2P1/BossAction STH2P1/BossAction
+	FIELD BBOSS1_WORKMAX BBOSS1_WORKMAX I
+	FIELD m_BossWorking m_BossWorking Z
+	METHOD A (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD BBOSS4_init BBOSS4_init ()V
+	METHOD BBOSS4_move BBOSS4_move (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD BBOSS6_init BBOSS6_init ()V
+	METHOD a (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD a (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD a (LSTH2P1/State;LSTH2P1/Action;)V
+		ARG 1 state
+		ARG 2 action
+	METHOD b (LSTH2P1/Action;)V
+		ARG 1 action
+	METHOD b (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD bboss2Init (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD c (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD d (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD disposeImages disposeImages ()V
+	METHOD e (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD f (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD g (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD getChemical_bboss1 getChemical_bboss1 (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD i (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD j (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD k (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD l (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD m (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD n (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD o (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD p (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD prepareImages prepareImages ()V
+	METHOD q (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD r (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD s (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD t (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD u (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD v (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD w (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD x (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD y (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD z (LSTH2P1/State;)V
+		ARG 1 state
+CLASS Coral/crlVersion Coral/crlVersion
+	FIELD NUMBER NUMBER I
+	FIELD STRING STRING Ljava/lang/String;
+CLASS STH2P1/Sonic2AudioManager STH2P1/Sonic2AudioManager
+	FIELD AUDIO_BOSS AUDIO_BOSS I
+	FIELD AUDIO_CONTINUE AUDIO_CONTINUE I
+	FIELD AUDIO_DROWN AUDIO_DROWN I
+	FIELD AUDIO_DROWN_PANIC AUDIO_DROWN_PANIC I
+	FIELD AUDIO_EXTRA_LIFE AUDIO_EXTRA_LIFE I
+	FIELD AUDIO_GAME_OVER AUDIO_GAME_OVER I
+	FIELD AUDIO_INVINCIBLE AUDIO_INVINCIBLE I
+	FIELD AUDIO_RING AUDIO_RING I
+	FIELD AUDIO_SCORE AUDIO_SCORE I
+	FIELD AUDIO_SEGA_SPLASH AUDIO_SEGA_SPLASH I
+	FIELD AUDIO_STAGE_CLEAR AUDIO_STAGE_CLEAR I
+	FIELD AUDIO_SUPER_SONIC AUDIO_SUPER_SONIC I
+	FIELD AUDIO_TITLE AUDIO_TITLE I
+	FIELD AUDIO_ZONE_TRACK AUDIO_ZONE_TRACK I
+	FIELD AUDIO_ZONE_TRACK_INTRO AUDIO_ZONE_TRACK_INTRO I
+	FIELD NUM_OF_PLAYERS NUM_OF_PLAYERS I
+	FIELD VOLUME_HALF VOLUME_HALF I
+	FIELD VOLUME_LEVELS VOLUME_LEVELS [I
+	FIELD VOLUME_QUART VOLUME_QUART I
+	FIELD audioBankAudioTypes audioBankAudioTypes [I
+	FIELD audioBankLoopStates audioBankLoopStates [I
+	FIELD audioBank audioBank [Ljava/lang/String;
+	METHOD activeAudioBankListener activeAudioBankListener ()V
+	METHOD audioPlaying audioPlaying ()Z
+	METHOD bgmRestart bgmRestart ()V
+	METHOD bgmset bgmset (I)V
+	METHOD loadCurrentAudioBank loadCurrentAudioBank ()I
+	METHOD playerUpdate playerUpdate (Ljavax/microedition/media/Player;Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 1 player
+	METHOD setAudioBank setAudioBank (LSTH2P1/State;)V
+		ARG 1 state
+	METHOD setGlobalVolume setGlobalVolume (IZ)V
+CLASS Coral/Game/crlOBB Coral/Game/crlOBB
+	FIELD mCentreX mCentreX F
+	FIELD mCentreY mCentreY F
+	FIELD mCentreZ mCentreZ F
+	FIELD mDimensionsX mDimensionsX F
+	FIELD mDimensionsY mDimensionsY F
+	FIELD mDimensionsZ mDimensionsZ F
+	FIELD mOrientation0X mOrientation0X F
+	FIELD mOrientation0Y mOrientation0Y F
+	FIELD mOrientation0Z mOrientation0Z F
+	FIELD mOrientation1X mOrientation1X F
+	FIELD mOrientation1Y mOrientation1Y F
+	FIELD mOrientation1Z mOrientation1Z F
+	FIELD mOrientation2X mOrientation2X F
+	FIELD mOrientation2Y mOrientation2Y F
+	FIELD mOrientation2Z mOrientation2Z F
+CLASS STH2P1/GameSprite STH2P1/GameSprite
+	FIELD m_Sproffset m_Sproffset I
+	FIELD m_Sprpri m_Sprpri I
+	METHOD draw draw (Ljavax/microedition/lcdui/Graphics;)V
+		ARG 1 graphics
+	METHOD setData setData (Ljavax/microedition/lcdui/Image;IIIIIIIIII)V
+		ARG 1 image
+CLASS Coral/Util/cCacheProcObj Coral/Util/cCacheProcObj
+CLASS Coral/Util/crlManagerBase Coral/Util/crlManagerBase
+CLASS Coral/Game/crlBody Coral/Game/crlBody
+	FIELD fMass fMass F
+	FIELD fRadius fRadius F
+	FIELD fSpeed fSpeed F
+	FIELD mIeInverse mIeInverse LCoral/Math/Float/crlM44;
+	FIELD mInertiaInverse mInertiaInverse LCoral/Math/Float/crlM44;
+	FIELD mInertia mInertia LCoral/Math/Float/crlM44;
+	FIELD qOrientation qOrientation LCoral/Math/Float/crlQ4;
+	FIELD vAcceleration vAcceleration LCoral/Math/Float/crlV4;
+	FIELD vAngularAccelerationGlobal vAngularAccelerationGlobal LCoral/Math/Float/crlV4;
+	FIELD vAngularAcceleration vAngularAcceleration LCoral/Math/Float/crlV4;
+	FIELD vAngularVelocityGlobal vAngularVelocityGlobal LCoral/Math/Float/crlV4;
+	FIELD vAngularVelocity vAngularVelocity LCoral/Math/Float/crlV4;
+	FIELD vEulerAngles vEulerAngles LCoral/Math/Float/crlV4;
+	FIELD vForces vForces LCoral/Math/Float/crlV4;
+	FIELD vMoments vMoments LCoral/Math/Float/crlV4;
+	FIELD vPosition vPosition LCoral/Math/Float/crlV4;
+	FIELD vVelocityBody vVelocityBody LCoral/Math/Float/crlV4;
+	FIELD vVelocity vVelocity LCoral/Math/Float/crlV4;
+	FIELD vVertexList vVertexList [LCoral/Math/Float/crlV4;
+CLASS Coral/IO/iLoadEvent Coral/IO/iLoadEvent
 CLASS STH2P1/Action STH2P1/Action
 	FIELD AF_LRREV AF_LRREV I
 	FIELD AF_MANYSPR AF_MANYSPR I
@@ -1062,6 +1376,165 @@ CLASS STH2P1/Action STH2P1/Action
 	METHOD update update (LSTH2P1/State;)V
 		ARG 1 state
 	METHOD y_Emy_Init y_Emy_Init ([I)V
+CLASS Coral/Game/crlCollision Coral/Game/crlCollision
+	METHOD CircleCircle CircleCircle (LCoral/Game/crlCircle;LCoral/Game/crlCircle;)Z
+		ARG 0 crlCircle1
+		ARG 1 crlCircle2
+		ARG 5 var5
+	METHOD ClosestPtPointSegment ClosestPtPointSegment (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)F
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 8 var8
+		ARG 9 var9
+		ARG 10 var10
+		ARG 11 var11
+	METHOD ClosestPtPointSegment2D ClosestPtPointSegment2D (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)F
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 6 var6
+		ARG 7 var7
+		ARG 8 var8
+		ARG 9 var9
+	METHOD IntersectLineTriangle IntersectLineTriangle (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;FFF)I
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 4 crlV45
+		ARG 5 float6
+		ARG 6 float7
+		ARG 7 float8
+		ARG 16 var16
+		ARG 17 var17
+		ARG 18 var18
+		ARG 19 var19
+	METHOD LineIntersect2D LineIntersect2D (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 4 crlV45
+		ARG 11 var11
+		ARG 12 var12
+		ARG 13 var13
+		ARG 14 var14
+		ARG 15 var15
+		ARG 16 var16
+		ARG 17 var17
+	METHOD LineQuad LineQuad (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 4 crlV45
+		ARG 5 crlV46
+		ARG 6 crlV47
+		ARG 19 var19
+		ARG 20 var20
+		ARG 21 var21
+		ARG 22 var22
+		ARG 23 var23
+		ARG 24 var24
+		ARG 25 var25
+		ARG 26 var26
+		ARG 27 var27
+		ARG 28 var28
+		ARG 29 var29
+	METHOD LineTri LineTri (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 4 crlV45
+	METHOD LineTriNoY LineTriNoY (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 4 crlV45
+	METHOD LineTriSafe LineTriSafe (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 4 crlV45
+	METHOD SegmentPlane SegmentPlane (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Game/crlPlane;LCoral/Math/Float/crlV4;)I
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlPlane
+		ARG 3 crlV44
+		ARG 6 var6
+		ARG 7 var7
+		ARG 8 var8
+	METHOD SqDistPointSegment SqDistPointSegment (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)F
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 10 var10
+	METHOD Test2DSegmentSegment Test2DSegmentSegment (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 4 crlV45
+		ARG 7 var7
+		ARG 8 var8
+		ARG 9 var9
+	METHOD TestOBBOBB TestOBBOBB (LCoral/Game/crlOBB;LCoral/Game/crlOBB;)Z
+		ARG 0 crlOBB1
+		ARG 1 crlOBB2
+		ARG 36 var36
+		ARG 37 var37
+		ARG 38 var38
+		ARG 39 var39
+		ARG 40 var40
+		ARG 41 var41
+		ARG 42 var42
+		ARG 43 var43
+		ARG 44 var44
+		ARG 45 var45
+		ARG 46 var46
+		ARG 47 var47
+		ARG 48 var48
+		ARG 49 var49
+		ARG 50 var50
+		ARG 51 var51
+	METHOD a a (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)F
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+	METHOD close close ()V
+	METHOD distPointPlane distPointPlane (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;F)F
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 float3
+	METHOD open open ()V
+	METHOD rayPlane rayPlane (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;FLCoral/Math/Float/crlV4;)I
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 float4
+		ARG 4 crlV45
+		ARG 7 var7
+		ARG 8 var8
+		ARG 9 var9
+	METHOD raySphere raySphere (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+	METHOD raySphere raySphere (LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;LCoral/Math/Float/crlV4;)Z
+		ARG 0 crlV41
+		ARG 1 crlV42
+		ARG 2 crlV43
+		ARG 3 crlV44
+		ARG 7 var7
+		ARG 8 var8
+		ARG 9 var9
+		ARG 10 var10
 CLASS STH2P1/State STH2P1/State
 	FIELD ADVAMD ADVAMD I
 	FIELD CONTINUEMD CONTINUEMD I
@@ -1166,6 +1639,7 @@ CLASS STH2P1/State STH2P1/State
 	METHOD setActions setActions ([LSTH2P1/Action;)V
 	METHOD setSoftKey setSoftKey (ILjava/lang/String;)V
 	METHOD update update ()V
+CLASS Coral/Math/Float/crlQ4 Coral/Math/Float/crlQ4
 CLASS Coral/crlCanvas Coral/crlCanvas
 	FIELD _mLastFrameTime _mLastFrameTime J
 	FIELD _mPaintFinished _mPaintFinished Z
@@ -1174,6 +1648,7 @@ CLASS Coral/crlCanvas Coral/crlCanvas
 	FIELD _mStartTime _mStartTime J
 	FIELD _mTriggerPaintUI _mTriggerPaintUI Z
 	FIELD currentState currentState LSTH2P1/State;
+	FIELD gResourceManager gResourceManager LCoral/Util/crlResourceManager;
 	FIELD mCounter mCounter J
 	FIELD mPad mPad I
 	METHOD close close ()V
@@ -1193,40 +1668,6 @@ CLASS Coral/crlCanvas Coral/crlCanvas
 	METHOD triggerPaint triggerPaint ()V
 CLASS Coral/Debug/crlDebug Coral/Debug/crlDebug
 	METHOD print print (Ljava/lang/String;J)V
-CLASS STH2P1/TitleState STH2P1/TitleState
-	FIELD ADVAMD_LOCALSTATE_ANIME_STAR ADVAMD_LOCALSTATE_ANIME_STAR I
-	FIELD ADVAMD_MENU_STRINGS ADVAMD_MENU_STRINGS [Ljava/lang/String;
-	FIELD ARROW_HEIGHT ARROW_HEIGHT I
-	FIELD ARROW_WIDTH ARROW_WIDTH I
-	FIELD mDemo mDemo I
-	FIELD mDemoURL mDemoURL Ljava/lang/String;
-	FIELD mDevCreditDisable mDevCreditDisable Z
-	FIELD mUpsell mUpsell I
-	FIELD mUpsellURL mUpsellURL Ljava/lang/String;
-	FIELD progressCode progressCode Ljava/lang/String;
-	FIELD smov_x smov_x I
-	METHOD a (Ljavax/microedition/lcdui/Graphics;)V
-		ARG 1 graphics
-	METHOD a (Ljavax/microedition/lcdui/Graphics;II)V
-		ARG 1 graphics
-	METHOD a (Ljavax/microedition/lcdui/Graphics;III)I
-		ARG 1 graphics
-	METHOD a (Ljavax/microedition/lcdui/Graphics;IIII)V
-		ARG 1 graphics
-	METHOD a (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;Ljava/lang/String;ZZ)V
-		ARG 0 graphics
-	METHOD b (Ljavax/microedition/lcdui/Graphics;)V
-		ARG 1 graphics
-	METHOD drawAudioSplash drawAudioSplash (Ljavax/microedition/lcdui/Graphics;)V
-	METHOD drawBar drawBar (Ljavax/microedition/lcdui/Graphics;IIZLjava/lang/String;I)V
-	METHOD drawConfirmation drawConfirmation (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;Ljava/lang/String;Z)V
-	METHOD drawConfirmationMenu drawConfirmationMenu (Ljavax/microedition/lcdui/Graphics;)V
-	METHOD drawPauseMenu drawPauseMenu (Ljavax/microedition/lcdui/Graphics;I)V
-	METHOD drawString drawString (Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;IIII)V
-		ARG 0 graphics
-	METHOD loadLanguage loadLanguage (I)V
-	METHOD updateConfirmationMenu updateConfirmationMenu ()V
-	METHOD updatePauseMenu updatePauseMenu ()V
 CLASS Coral/Audio/iAudio
 	METHOD isStarted isStarted (I)Z
 CLASS STH2P1/cCanvas STH2P1/cCanvas
@@ -1311,6 +1752,7 @@ CLASS STH2P1/cCanvas STH2P1/cCanvas
 		ARG 1 graphics
 	METHOD saveData saveData (Ljava/lang/String;[B)V
 		ARG 0 string
+		ARG 1 arr
 	METHOD saveDataExists saveDataExists (Ljava/lang/String;)Z
 		ARG 0 string
 	METHOD saveOption saveOption ()V
@@ -1323,117 +1765,7 @@ CLASS STH2P1/cCanvas STH2P1/cCanvas
 	METHOD sizeChanged sizeChanged (II)V
 	METHOD swRead swRead ()I
 	METHOD updateFade updateFade ()V
-CLASS STH2P1/MenuStrings STH2P1/MenuStrings
-	FIELD ABOUT_CONVERSION ABOUT_CONVERSION I
-	FIELD ABOUT_VERSION ABOUT_VERSION I
-	FIELD ARE_YOU_SURE2 ARE_YOU_SURE2 I
-	FIELD BY_NAKAMURA BY_NAKAMURA I
-	FIELD CLEAR_HISCORES CLEAR_HISCORES I
-	FIELD ENABLE_AUDIO ENABLE_AUDIO I
-	FIELD HELP_TITLE_CHECKPOINT HELP_TITLE_CHECKPOINT I
-	FIELD HELP_TITLE_CONTROLS_DPAD HELP_TITLE_CONTROLS_DPAD I
-	FIELD HELP_TITLE_CONTROLS_KEYPAD HELP_TITLE_CONTROLS_KEYPAD I
-	FIELD HELP_TITLE_DAMAGE HELP_TITLE_DAMAGE I
-	FIELD HELP_TITLE_END HELP_TITLE_END I
-	FIELD HELP_TITLE_GAME_OVER HELP_TITLE_GAME_OVER I
-	FIELD HELP_TITLE_ITEMS HELP_TITLE_ITEMS I
-	FIELD HELP_TITLE_MISSION HELP_TITLE_MISSION I
-	FIELD HELP_TITLE_PROGRESS_CODE HELP_TITLE_PROGRESS_CODE I
-	FIELD HELP_TITLE_RINGS HELP_TITLE_RINGS I
-	FIELD HELP_TITLE_SPIN_DASH HELP_TITLE_SPIN_DASH I
-	FIELD HELP_TITLE_TAILS HELP_TITLE_TAILS I
-	FIELD HELP_TITLE_UNDERWATER HELP_TITLE_UNDERWATER I
-	FIELD HISCORES_CLEARED HISCORES_CLEARED I
-	FIELD LOADING LOADING I
-	FIELD MUSIC_COMPOSED MUSIC_COMPOSED I
-	FIELD NOT_USED5 NOT_USED5 I
-	FIELD NOT_USED7 NOT_USED7 I
-	FIELD NOT_USED8 NOT_USED8 I
-	FIELD PAUSE_MENU PAUSE_MENU I
-	FIELD PAUSE_QUIT PAUSE_QUIT I
-	FIELD PAUSE_RESUME PAUSE_RESUME I
-	FIELD PRESS_OK_KEY PRESS_OK_KEY I
-	FIELD PROGRESS_CURRENT_CODE PROGRESS_CURRENT_CODE I
-	FIELD PROGRESS_EDIT PROGRESS_EDIT I
-	FIELD PROGRESS_EDIT_CODE PROGRESS_EDIT_CODE I
-	FIELD PROGRESS_TITLE PROGRESS_TITLE I
-	FIELD PROGRESS_USE PROGRESS_USE I
-	FIELD PROGRESS_USE_CODE PROGRESS_USE_CODE I
-	FIELD SELECT_LANG SELECT_LANG I
-	FIELD SETTING_AUDIO_OFF SETTING_AUDIO_OFF I
-	FIELD SETTING_AUDIO_ONE SETTING_AUDIO_ONE I
-	FIELD SETTING_AUDIO_THREE SETTING_AUDIO_THREE I
-	FIELD SETTING_AUDIO_TWO SETTING_AUDIO_TWO I
-	FIELD SETTING_DIFF_EASY SETTING_DIFF_EASY I
-	FIELD SETTING_DIFF_HARD SETTING_DIFF_HARD I
-	FIELD SETTING_DIFF_NORMAL SETTING_DIFF_NORMAL I
-	FIELD SETTING_LANG_ENGLISH SETTING_LANG_ENGLISH I
-	FIELD SETTING_LANG_FRENCH SETTING_LANG_FRENCH I
-	FIELD SETTING_LANG_GERMAN SETTING_LANG_GERMAN I
-	FIELD SETTING_LANG_ITALIAN SETTING_LANG_ITALIAN I
-	FIELD SETTING_LANG_SPANISH SETTING_LANG_SPANISH I
-	FIELD SETTING_VIBRA_OFF SETTING_VIBRA_OFF I
-	FIELD SETTING_VIBRA_ON SETTING_VIBRA_ON I
-	FIELD SET_DIFFICULTY SET_DIFFICULTY I
-	FIELD SET_LANGUAGE SET_LANGUAGE I
-	FIELD SET_VIBRATION SET_VIBRATION I
-	FIELD SET_VOLUME SET_VOLUME I
-	FIELD SOFTKEY_BACK SOFTKEY_BACK I
-	FIELD SOFTKEY_EXIT SOFTKEY_EXIT I
-	FIELD SOFTKEY_PAUSE SOFTKEY_PAUSE I
-	FIELD SOFTKEY_SELECT SOFTKEY_SELECT I
-	FIELD STRING_ABOUT STRING_ABOUT I
-	FIELD STRING_ARE_YOU_SURE STRING_ARE_YOU_SURE I
-	FIELD STRING_BUY_MORE_GAMES STRING_BUY_MORE_GAMES I
-	FIELD STRING_CHANGE_SETTINGS STRING_CHANGE_SETTINGS I
-	FIELD STRING_CLEAR_HISCORES_WITH_HASH STRING_CLEAR_HISCORES_WITH_HASH I
-	FIELD STRING_CREDITS STRING_CREDITS I
-	FIELD STRING_DIFFICULTY STRING_DIFFICULTY I
-	FIELD STRING_END_CONFORMATION STRING_END_CONFORMATION I
-	FIELD STRING_EXIT_CONFIRM STRING_EXIT_CONFIRM I
-	FIELD STRING_GAME_START STRING_GAME_START I
-	FIELD STRING_GET_MORE_GAMES STRING_GET_MORE_GAMES I
-	FIELD STRING_HOW_TO_PLAY STRING_HOW_TO_PLAY I
-	FIELD STRING_LANGUAGE STRING_LANGUAGE I
-	FIELD STRING_NO STRING_NO I
-	FIELD STRING_OPTIONS STRING_OPTIONS I
-	FIELD STRING_RANKINGS STRING_RANKINGS I
-	FIELD STRING_RESUME_GAME2 STRING_RESUME_GAME2 I
-	FIELD STRING_RESUME_GAME STRING_RESUME_GAME I
-	FIELD STRING_SELECT_A_STAGE STRING_SELECT_A_STAGE I
-	FIELD STRING_SELECT_STAGE STRING_SELECT_STAGE I
-	FIELD STRING_SOUND STRING_SOUND I
-	FIELD STRING_START_BEGINNING STRING_START_BEGINNING I
-	FIELD STRING_START_GAME STRING_START_GAME I
-	FIELD STRING_START_NEW_GAME STRING_START_NEW_GAME I
-	FIELD STRING_VIBRATION STRING_VIBRATION I
-	FIELD STRING_VIEW_HELP STRING_VIEW_HELP I
-	FIELD STRING_VIEW_HISCORES STRING_VIEW_HISCORES I
-	FIELD STRING_YES STRING_YES I
-	FIELD languageFiles languageFiles [Ljava/lang/String;
-CLASS STH2P1/PlayerAction2 STH2P1/PlayerAction2
-	FIELD PLEFFECTMOVE2 PLEFFECTMOVE2 I
-	FIELD PLEFFECT_PLORFOX PLEFFECT_PLORFOX I
-	FIELD PLEFFECT_SPIN_DASH PLEFFECT_SPIN_DASH I
-	FIELD PLEFFECT_WATER PLEFFECT_WATER I
-	FIELD USAGI_friend_no USAGI_friend_no I
-	FIELD USAGI_friendflag USAGI_friendflag I
-	FIELD USAGI_runaway_tm USAGI_runaway_tm I
-	FIELD USAGI_xspeed_m USAGI_xspeed_m I
-	FIELD stclearAudioOver stclearAudioOver Z
-	METHOD RING_RingGetSub0 RING_RingGetSub0 (LSTH2P1/Action;)V
-		ARG 0 action
-	METHOD a (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD a (Ljavax/microedition/lcdui/Graphics;III)V
-		ARG 1 graphics
-	METHOD b (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD c (LSTH2P1/State;)V
-		ARG 1 state
-	METHOD disposeImages disposeImages ()V
-	METHOD getPlayerSprites getPlayerSprites ()[Ljavax/microedition/lcdui/Image;
-	METHOD prepareImages prepareImages ()V
+CLASS Coral/Util/cStringLoaderProcObj Coral/Util/cStringLoaderProcObj
 CLASS Coral/Util/crlUtil Coral/Util/crlUtil
 	METHOD garbageWait garbageWait ()V
 	METHOD loadByteArray loadByteArray ([III[BI)V
@@ -1482,3 +1814,6 @@ CLASS STH2P1/CasinoNightAction STH2P1/CasinoNightAction
 		ARG 2 action
 	METHOD disposeImages disposeImages ()V
 	METHOD prepareImages prepareImages ()V
+CLASS Coral/Util/crlResourceManager
+	METHOD cacheSponge cacheSponge ()V
+	METHOD loadStrings loadStrings ()V
